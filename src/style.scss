@@ -22,12 +22,14 @@
 @import 'bootstrap-4-grid';
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .over-x{
     
 }
-.container{
+.xcontainer{
     @media (max-width: 576px) {
         overflow-x: hidden;    
         overflow-y: auto;
@@ -42,6 +44,9 @@ body{
 }
 .no-wrap{
     white-space: nowrap;
+    @media  (max-width :400px){
+        white-space: pre-wrap;
+    }
 }
 .cp{
     cursor: pointer;

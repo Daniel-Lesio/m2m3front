@@ -40,7 +40,7 @@
             border-left: white solid 3px;
             color: #2c2c2c;
             position: relative;
-                       &::after{
+                &::after{
                     position: absolute;
                     content: '';
                     left: 0px;
@@ -108,13 +108,12 @@
         padding-top: 20px;
         display: flex;
         font-family: Montserrat;
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: 36px;
-letter-spacing: 0px;
-text-align: left;
-
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0px;
+        text-align: left;
     }
 }
 .swiper-nav{
@@ -146,10 +145,6 @@ text-align: left;
     .swiper-button-prev{
         transform: rotate(180deg);
         &::before{
-
-            // transform: translate(-50%,-50%);
-            // left: 50%;
-            // top: 50%;
             background: url('./assets/arrow.svg')center no-repeat;
         }
     &:hover{

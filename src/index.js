@@ -16,6 +16,7 @@ window.addEventListener('load', function () {
 
       preloader.classList.add('go')
       over.classList.add('go')
+      
    
    jumps()
    scrolling()
