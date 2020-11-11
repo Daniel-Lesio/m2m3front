@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const miniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
+// const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
@@ -60,21 +60,14 @@ module.exports = {
     },
     plugins  : [
         new HtmlWebpackPlugin({
-            pagetitle : 'xxx',
+            
             template: path.join(__dirname , './src/index.html'),
             filename : "index.html",
             minify: false,
-            options : {
-                title : "xxxq"
-            }
+            
 
         }),
-        new HtmlWebpackPartialsPlugin({
-            path :path.join(__dirname,'./src/partials/navigation.html'),
-            priority: 'high',
-            location : 'body',
-            template_filename : ['index.html']
-        }),
+        
         new miniCssExtractPlugin({
             filename : "[name].css",
             chunkFilename : "[id].css"
