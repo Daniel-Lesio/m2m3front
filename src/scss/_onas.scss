@@ -1,0 +1,64 @@
+
+.h1{
+//styleName: Title;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: 0px;
+text-align: left;
+}
+.p{
+//styleName: body;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: left;
+
+}
+#onas{
+    padding-top: 120px;
+    background: white;
+
+    .grid{
+        display: flex;
+        min-height: 100px;
+        &__left{
+            @media (max-width : 1200px) {
+                display: none!important;
+            }
+            width : 384px;
+            position: relative;
+            margin-right: 96px;
+            img{
+                max-width: 100%;
+                width: 384px;
+                height: 560px;
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                width: 316px;
+                height: 349px;
+                background: url('./assets/desktop/pattern.svg')center center;
+                background-size: cover;
+                top: 0;
+                right: 0;
+                transform: translate(45px, -120px);
+            }
+        }
+        &__right{
+            flex : 1;
+            
+        }
+    }
+}
+.onasimg{
+    margin-top: 56px;
+}
+
+img{
+    max-width: 100%;
+}

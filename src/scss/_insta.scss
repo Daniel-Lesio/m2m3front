@@ -1,0 +1,33 @@
+#insta{
+    margin-bottom: 1rem;
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        @media (min-width : 968px) {
+            grid-template-columns: repeat(4,1fr);
+        }
+        @media (min-width : 1024px) {
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
+    .insta-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .insta-head{
+        margin-top : 80px;
+        color : $primary;
+        display :flex;
+        justify-content : center;
+        align-items:center;
+        text-align :center;
+        margin-left: auto;
+        margin-right: auto;
+        svg{
+            margin-right : 1rem;
+        }
+    }
+}

@@ -3,10 +3,681 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    
+    <title>Dobre Miejsce</title>
 </head>
 <body>
-    <h1>xxx</h1>
-    <img src="./assets/hero.jpg" alt="">
+    <div class="menu-fixed d-none d-sm-block ">
+        <div class="container p-0 d-flex my-0" style="height: 80px;">
+            <div class="menu-fixed-nav">
+                <ul style="background: white">
+                    <li data-scrollto="#onas"><a class="active" href="#">O NAS</a></li>
+                    <li data-scrollto="#gallery"><a href="#">GALERIA</a></li>
+                    <li data-scrollto="#dzieci"><a href="#">ATRAKCJE DLA DZIECI</a></li>
+                    <li data-scrollto="#okolica"><a href="#">ATRAKCJE W OKOLICY</a></li>
+                    <li data-scrollto="#domki"><a href="#">DOMKI</a></li>
+                    <li data-scrollto="#oferta"><a href="#">OFERTA</a></li>
+                    <li data-scrollto="#kontakt"><a href="#">KONTAKT</a></li>
+
+                </ul>                    
+            </div>
+            <div class="c left">
+                <div href="" class="menu-fixed-icon c cp">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.33325 8.00008C5.33325 7.64646 5.47373 7.30732 5.72378 7.05727C5.97382 6.80722 6.31296 6.66675 6.66659 6.66675H25.3333C25.6869 6.66675 26.026 6.80722 26.2761 7.05727C26.5261 7.30732 26.6666 7.64646 26.6666 8.00008C26.6666 8.3537 26.5261 8.69284 26.2761 8.94289C26.026 9.19294 25.6869 9.33341 25.3333 9.33341H6.66659C6.31296 9.33341 5.97382 9.19294 5.72378 8.94289C5.47373 8.69284 5.33325 8.3537 5.33325 8.00008Z" fill="#144D29"></path>
+                        <path d="M5.33325 24.0001C5.33325 23.6465 5.47373 23.3073 5.72378 23.0573C5.97382 22.8072 6.31296 22.6667 6.66659 22.6667H25.3333C25.6869 22.6667 26.026 22.8072 26.2761 23.0573C26.5261 23.3073 26.6666 23.6465 26.6666 24.0001C26.6666 24.3537 26.5261 24.6928 26.2761 24.9429C26.026 25.1929 25.6869 25.3334 25.3333 25.3334H6.66659C6.31296 25.3334 5.97382 25.1929 5.72378 24.9429C5.47373 24.6928 5.33325 24.3537 5.33325 24.0001Z" fill="#144D29"></path>
+                        <path d="M6.66659 14.6667C6.31296 14.6667 5.97382 14.8072 5.72378 15.0573C5.47373 15.3073 5.33325 15.6465 5.33325 16.0001C5.33325 16.3537 5.47373 16.6928 5.72378 16.9429C5.97382 17.1929 6.31296 17.3334 6.66659 17.3334H17.3333C17.6869 17.3334 18.026 17.1929 18.2761 16.9429C18.5261 16.6928 18.6666 16.3537 18.6666 16.0001C18.6666 15.6465 18.5261 15.3073 18.2761 15.0573C18.026 14.8072 17.6869 14.6667 17.3333 14.6667H6.66659Z" fill="#144D29"></path>
+                    </svg>
+                    
+                </div>
+                <img src="./assets/logo.svg" alt="">
+              
+            </div>
+            <div class="c center d-none d-md-flex">
+                <div class="btn-grp d-flex">
+                    <a href="/rezerwacja.html" class="cp btn-fix  btn btn-d btn-primary">
+                        ZAREZERWUJ TERMIN
+                    </a>
+                    <div class="btn cp btn-l btn-secondary">
+                        <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 16.4022V20.724C18.0001 21.0334 17.9042 21.3314 17.7316 21.5578C17.559 21.7842 17.3225 21.9221 17.07 21.9438C16.633 21.9804 16.276 22 16 22C7.16299 22 0 13.2452 0 2.44444C0 2.10711 0.015 1.67078 0.0459999 1.13667C0.0637223 0.827987 0.176581 0.539013 0.361803 0.328055C0.547025 0.117097 0.790822 -0.000139863 1.044 3.13597e-07H4.57999C4.70403 -0.000153187 4.82369 0.0560499 4.91572 0.157692C5.00775 0.259333 5.06559 0.399157 5.07799 0.55C5.10099 0.831111 5.12199 1.05478 5.14199 1.22467C5.34073 2.9198 5.748 4.56846 6.34999 6.11478C6.44499 6.35922 6.38299 6.65133 6.20299 6.80778L4.04499 8.69245C5.36445 12.4501 7.81454 15.4447 10.889 17.0573L12.429 14.4247C12.4919 14.3171 12.5838 14.24 12.6885 14.2067C12.7932 14.1734 12.9041 14.1861 13.002 14.2426C14.267 14.9769 15.6156 15.4735 17.002 15.7153C17.141 15.7398 17.324 15.7667 17.552 15.7936C17.6752 15.809 17.7894 15.8798 17.8723 15.9923C17.9553 16.1047 18.0011 16.2508 18.001 16.4022H18Z" fill="black"></path>
+                            </svg>                        
+                        <span>+48 534 478 005</span>
+                    </div>
+                </div>
+            </div>
+            <div class="c right">
+                <div class="socials">
+                    <a href="#" class="c"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.434 8.324v1.653h-1.21v2.02h1.21V18h2.487v-6.004h1.668s.157-.968.232-2.028h-1.89v-1.38c0-.207.27-.485.54-.485h1.353V6h-1.842c-2.61 0-2.548 2.022-2.548 2.324z" fill="#144D29"></path><path d="M12 21.6a9.6 9.6 0 100-19.2 9.6 9.6 0 000 19.2zm0 2.4C5.372 24 0 18.628 0 12S5.372 0 12 0s12 5.372 12 12-5.372 12-12 12z" fill="#144D29"></path></svg>
+                    </a>
+                    <a href="#" class="c" style="margin-left: 8px;">
+                        <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.99 5.818A6.167 6.167 0 007.634 7.62a6.148 6.148 0 000 8.701 6.168 6.168 0 008.715 0 6.148 6.148 0 000-8.701 6.167 6.167 0 00-4.357-1.802zm0 10.149a4.007 4.007 0 01-2.83-1.171 3.994 3.994 0 012.83-6.824c1.063 0 2.08.421 2.832 1.17a3.994 3.994 0 010 5.654c-.751.75-1.77 1.17-2.831 1.17zM18.397 7.026a1.436 1.436 0 10-1.437-1.434c0 .792.644 1.434 1.437 1.434z" fill="#144D29"></path><path d="M23.364 4.133A6.126 6.126 0 0019.855.631a8.816 8.816 0 00-2.913-.56C15.658.017 15.252 0 11.997 0 8.743 0 8.326 0 7.053.072c-.995.02-1.98.208-2.91.559a6.132 6.132 0 00-3.51 3.502 8.75 8.75 0 00-.558 2.909C.017 8.322 0 8.728 0 11.979c0 3.25 0 3.663.075 4.937.02.995.208 1.977.558 2.91a6.134 6.134 0 003.51 3.502c.93.364 1.915.566 2.913.599C8.339 23.983 8.746 24 12 24c3.255 0 3.672 0 4.945-.073a8.827 8.827 0 002.913-.558 6.15 6.15 0 003.509-3.503c.35-.932.538-1.914.558-2.91.058-1.28.075-1.685.075-4.936 0-3.25 0-3.663-.075-4.937a8.746 8.746 0 00-.56-2.95zm-1.623 12.684a6.702 6.702 0 01-.415 2.246 3.972 3.972 0 01-2.281 2.277 6.653 6.653 0 01-2.226.414c-1.266.058-1.623.073-4.87.073-3.249 0-3.58 0-4.87-.073a6.621 6.621 0 01-2.225-.414 3.979 3.979 0 01-2.291-2.277 6.75 6.75 0 01-.415-2.22c-.057-1.265-.07-1.621-.07-4.863 0-3.243 0-3.574.07-4.864a6.695 6.695 0 01.415-2.244 3.977 3.977 0 012.29-2.279 6.686 6.686 0 012.225-.413c1.268-.058 1.623-.074 4.871-.074s3.581 0 4.87.074c.76.009 1.513.149 2.226.413a3.987 3.987 0 012.281 2.279 6.75 6.75 0 01.415 2.22c.057 1.266.072 1.621.072 4.864 0 3.242 0 3.59-.057 4.862h-.015v-.001z" fill="#144D29"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header id="mobile-header" class="d-sm-none">
+        <div class="open-menu-icon">
+            <svg id="open-menu" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.33337 8.00008C5.33337 7.64646 5.47385 7.30732 5.7239 7.05727C5.97395 6.80722 6.31309 6.66675 6.66671 6.66675H25.3334C25.687 6.66675 26.0261 6.80722 26.2762 7.05727C26.5262 7.30732 26.6667 7.64646 26.6667 8.00008C26.6667 8.3537 26.5262 8.69284 26.2762 8.94289C26.0261 9.19294 25.687 9.33341 25.3334 9.33341H6.66671C6.31309 9.33341 5.97395 9.19294 5.7239 8.94289C5.47385 8.69284 5.33337 8.3537 5.33337 8.00008Z" fill="#144D29"></path>
+                <path d="M5.33337 24.0001C5.33337 23.6465 5.47385 23.3073 5.7239 23.0573C5.97395 22.8072 6.31309 22.6667 6.66671 22.6667H25.3334C25.687 22.6667 26.0261 22.8072 26.2762 23.0573C26.5262 23.3073 26.6667 23.6465 26.6667 24.0001C26.6667 24.3537 26.5262 24.6928 26.2762 24.9429C26.0261 25.1929 25.687 25.3334 25.3334 25.3334H6.66671C6.31309 25.3334 5.97395 25.1929 5.7239 24.9429C5.47385 24.6928 5.33337 24.3537 5.33337 24.0001Z" fill="#144D29"></path>
+                <path d="M6.66671 14.6667C6.31309 14.6667 5.97395 14.8072 5.7239 15.0573C5.47385 15.3073 5.33337 15.6465 5.33337 16.0001C5.33337 16.3537 5.47385 16.6928 5.7239 16.9429C5.97395 17.1929 6.31309 17.3334 6.66671 17.3334H17.3334C17.687 17.3334 18.0261 17.1929 18.2762 16.9429C18.5262 16.6928 18.6667 16.3537 18.6667 16.0001C18.6667 15.6465 18.5262 15.3073 18.2762 15.0573C18.0261 14.8072 17.687 14.6667 17.3334 14.6667H6.66671Z" fill="#144D29"></path>
+            </svg>
+        </div>
+        
+        <div class="mobile-socials">
+            <div class="socials">
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.434 8.324v1.653h-1.21v2.02h1.21V18h2.487v-6.004h1.668s.157-.968.232-2.028h-1.89v-1.38c0-.207.27-.485.54-.485h1.353V6h-1.842c-2.61 0-2.548 2.022-2.548 2.324z" fill="#144D29"></path><path d="M12 21.6a9.6 9.6 0 100-19.2 9.6 9.6 0 000 19.2zm0 2.4C5.372 24 0 18.628 0 12S5.372 0 12 0s12 5.372 12 12-5.372 12-12 12z" fill="#144D29"></path></svg>
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.99 5.818A6.167 6.167 0 007.634 7.62a6.148 6.148 0 000 8.701 6.168 6.168 0 008.715 0 6.148 6.148 0 000-8.701 6.167 6.167 0 00-4.357-1.802zm0 10.149a4.007 4.007 0 01-2.83-1.171 3.994 3.994 0 012.83-6.824c1.063 0 2.08.421 2.832 1.17a3.994 3.994 0 010 5.654c-.751.75-1.77 1.17-2.831 1.17zM18.397 7.026a1.436 1.436 0 10-1.437-1.434c0 .792.644 1.434 1.437 1.434z" fill="#144D29"></path><path d="M23.364 4.133A6.126 6.126 0 0019.855.631a8.816 8.816 0 00-2.913-.56C15.658.017 15.252 0 11.997 0 8.743 0 8.326 0 7.053.072c-.995.02-1.98.208-2.91.559a6.132 6.132 0 00-3.51 3.502 8.75 8.75 0 00-.558 2.909C.017 8.322 0 8.728 0 11.979c0 3.25 0 3.663.075 4.937.02.995.208 1.977.558 2.91a6.134 6.134 0 003.51 3.502c.93.364 1.915.566 2.913.599C8.339 23.983 8.746 24 12 24c3.255 0 3.672 0 4.945-.073a8.827 8.827 0 002.913-.558 6.15 6.15 0 003.509-3.503c.35-.932.538-1.914.558-2.91.058-1.28.075-1.685.075-4.936 0-3.25 0-3.663-.075-4.937a8.746 8.746 0 00-.56-2.95zm-1.623 12.684a6.702 6.702 0 01-.415 2.246 3.972 3.972 0 01-2.281 2.277 6.653 6.653 0 01-2.226.414c-1.266.058-1.623.073-4.87.073-3.249 0-3.58 0-4.87-.073a6.621 6.621 0 01-2.225-.414 3.979 3.979 0 01-2.291-2.277 6.75 6.75 0 01-.415-2.22c-.057-1.265-.07-1.621-.07-4.863 0-3.243 0-3.574.07-4.864a6.695 6.695 0 01.415-2.244 3.977 3.977 0 012.29-2.279 6.686 6.686 0 012.225-.413c1.268-.058 1.623-.074 4.871-.074s3.581 0 4.87.074c.76.009 1.513.149 2.226.413a3.987 3.987 0 012.281 2.279 6.75 6.75 0 01.415 2.22c.057 1.266.072 1.621.072 4.864 0 3.242 0 3.59-.057 4.862h-.015v-.001z" fill="#144D29"></path></svg>
+            </div>
+        </div>
+    </header>
+    <nav id="mobile-menu" class="d-sm-none">
+        <div class="mobile-menu_header">
+            <div class="left">
+                <h5 class="dm">DOBRE MIEJSCE</h5>
+                <h5 class="rz">RABKA-ZDRÓJ</h5>
+            </div>
+            <div class="right">
+                <div class="close-icon">
+                    <svg width="47" height="48" viewBox="0 0 47 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2252 12.8856C12.9185 12.5788 12.4212 12.5788 12.1144 12.8856C11.8077 13.1923 11.8077 13.6896 12.1144 13.9963L22.5162 24.3981L12.5125 34.4018C12.2058 34.7085 12.2058 35.2058 12.5125 35.5125C12.8192 35.8192 13.3165 35.8192 13.6232 35.5125L23.627 25.5088L33.6311 35.513C33.9379 35.8197 34.4351 35.8197 34.7419 35.513C35.0486 35.2062 35.0486 34.709 34.7419 34.4022L24.7377 24.3981L35.1399 13.9958C35.4466 13.6891 35.4466 13.1918 35.1399 12.8851C34.8332 12.5784 34.3359 12.5784 34.0292 12.8851L23.627 23.2873L13.2252 12.8856Z" fill="#144D29"></path>
+                        <path d="M13.2252 12.8856L13.5787 12.532L13.2252 12.8856ZM12.1144 13.9963L11.7609 14.3498L12.1144 13.9963ZM22.5162 24.3981L22.8698 24.7516C23.065 24.5563 23.065 24.2398 22.8698 24.0445L22.5162 24.3981ZM12.5125 34.4018L12.8661 34.7553L12.5125 34.4018ZM13.6232 35.5125L13.2697 35.159L13.6232 35.5125ZM23.627 25.5088L23.9805 25.1552C23.7852 24.96 23.4687 24.96 23.2734 25.1552L23.627 25.5088ZM33.6311 35.513L33.9847 35.1594L33.6311 35.513ZM34.7419 34.4022L34.3883 34.7558L34.7419 34.4022ZM24.7377 24.3981L24.3841 24.0445C24.1889 24.2398 24.1889 24.5563 24.3841 24.7516L24.7377 24.3981ZM34.0292 12.8851L33.6756 12.5315L34.0292 12.8851ZM23.627 23.2873L23.2734 23.6409C23.3672 23.7346 23.4943 23.7873 23.627 23.7873C23.7596 23.7873 23.8867 23.7346 23.9805 23.6409L23.627 23.2873ZM12.468 13.2391C12.5795 13.1276 12.7602 13.1276 12.8716 13.2391L13.5787 12.532C13.0768 12.03 12.2629 12.03 11.7609 12.532L12.468 13.2391ZM12.468 13.6427C12.3565 13.5313 12.3565 13.3506 12.468 13.2391L11.7609 12.532C11.2589 13.034 11.2589 13.8479 11.7609 14.3498L12.468 13.6427ZM22.8698 24.0445L12.468 13.6427L11.7609 14.3498L22.1627 24.7516L22.8698 24.0445ZM12.8661 34.7553L22.8698 24.7516L22.1627 24.0445L12.159 34.0482L12.8661 34.7553ZM12.8661 35.159C12.7546 35.0475 12.7546 34.8668 12.8661 34.7553L12.159 34.0482C11.657 34.5502 11.657 35.3641 12.159 35.8661L12.8661 35.159ZM13.2697 35.159C13.1582 35.2704 12.9775 35.2704 12.8661 35.159L12.159 35.8661C12.6609 36.368 13.4748 36.368 13.9768 35.8661L13.2697 35.159ZM23.2734 25.1552L13.2697 35.159L13.9768 35.8661L23.9805 25.8623L23.2734 25.1552ZM33.9847 35.1594L23.9805 25.1552L23.2734 25.8623L33.2776 35.8665L33.9847 35.1594ZM34.3883 35.1594C34.2769 35.2709 34.0961 35.2709 33.9847 35.1594L33.2776 35.8665C33.7796 36.3685 34.5934 36.3685 35.0954 35.8665L34.3883 35.1594ZM34.3883 34.7558C34.4998 34.8672 34.4998 35.048 34.3883 35.1594L35.0954 35.8665C35.5974 35.3645 35.5974 34.5507 35.0954 34.0487L34.3883 34.7558ZM24.3841 24.7516L34.3883 34.7558L35.0954 34.0487L25.0912 24.0445L24.3841 24.7516ZM34.7864 13.6423L24.3841 24.0445L25.0912 24.7516L35.4935 14.3494L34.7864 13.6423ZM34.7864 13.2386C34.8978 13.3501 34.8978 13.5308 34.7864 13.6423L35.4935 14.3494C35.9955 13.8474 35.9955 13.0335 35.4935 12.5315L34.7864 13.2386ZM34.3827 13.2386C34.4942 13.1272 34.6749 13.1272 34.7864 13.2386L35.4935 12.5315C34.9915 12.0296 34.1776 12.0295 33.6756 12.5315L34.3827 13.2386ZM23.9805 23.6409L34.3827 13.2386L33.6756 12.5315L23.2734 22.9338L23.9805 23.6409ZM12.8716 13.2391L23.2734 23.6409L23.9805 22.9338L13.5787 12.532L12.8716 13.2391Z" fill="#144D29"></path>
+                        </svg>
+                        
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu_body">
+            <ul>
+                <li class="mobile-link" data-scrollto="#onas"><a href="#">Od NAS</a></li>
+                <li class="mobile-link" data-scrollto="#gallery"><a href="#">GALERIA</a></li>
+                <li class="mobile-link" data-scrollto="#dzieci"><a href="#">ATRAKCJE DLA DZIECI</a></li>
+                <li class="mobile-link" data-scrollto="#okolica"><a href="#">ATRAKCJE W OKOLICY</a></li>
+                <li class="mobile-link" data-scrollto="#domki"><a href="#">DOMKI</a></li>
+                <li class="mobile-link" data-scrollto="#oferta"><a href="#">OFERTA</a></li>
+                <li class="mobile-link" data-scrollto="#kontakt"><a href="#">KONTAKT</a></li>
+            </ul>
+            <div class="btn btn-fix cp btn-primary">ZAREZERWUJ</div>
+            <div class="btn btn-secondary">+48 534 478 005</div>
+        </div>
+        <!-- <div class="mobile-header">     
+            <div class="m-h-name">
+                <p>DOBRE MIEJSCE</p>
+                <p class="bold">RABKA-ZDRÓJ</p>
+            </div>
+            <div class="m-h-icon">
+                <svg class="" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+            </div>
+        </div> -->
+    
+    
+    
+    </nav>
+    <div class=" mobile-logo d-sm-none">
+        <img src="./assets/logo.svg" alt="">
+    </div>  
+    <div class="d-flex   btns-small btn-grp  d-sm-none">
+        <div class="btn btn-fix cp btn-primary">
+            ZAREZERWUJ TERMIN
+        </div>
+        <div class="btn  cp btn-secondary" style="margin-left: 0px;">
+            <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 16.4022V20.724C18.0001 21.0334 17.9042 21.3314 17.7316 21.5578C17.559 21.7842 17.3225 21.9221 17.07 21.9438C16.633 21.9804 16.276 22 16 22C7.16299 22 0 13.2452 0 2.44444C0 2.10711 0.015 1.67078 0.0459999 1.13667C0.0637223 0.827987 0.176581 0.539013 0.361803 0.328055C0.547025 0.117097 0.790822 -0.000139863 1.044 3.13597e-07H4.57999C4.70403 -0.000153187 4.82369 0.0560499 4.91572 0.157692C5.00775 0.259333 5.06559 0.399157 5.07799 0.55C5.10099 0.831111 5.12199 1.05478 5.14199 1.22467C5.34073 2.9198 5.748 4.56846 6.34999 6.11478C6.44499 6.35922 6.38299 6.65133 6.20299 6.80778L4.04499 8.69245C5.36445 12.4501 7.81454 15.4447 10.889 17.0573L12.429 14.4247C12.4919 14.3171 12.5838 14.24 12.6885 14.2067C12.7932 14.1734 12.9041 14.1861 13.002 14.2426C14.267 14.9769 15.6156 15.4735 17.002 15.7153C17.141 15.7398 17.324 15.7667 17.552 15.7936C17.6752 15.809 17.7894 15.8798 17.8723 15.9923C17.9553 16.1047 18.0011 16.2508 18.001 16.4022H18Z" fill="black"></path>
+                </svg>                        
+            <span>+48 534 478 005</span>
+        </div>
+    </div>
+    <section id="hero-lg">
+        <svg style=" transform: translateY(-50px);z-index: 100;" class=" d-none  d-sm-block mouse" width="32" height="90" viewBox="0 0 32 90"><defs><style>.cls-1{fill:none;stroke:#000;stroke-width:2px;}</style></defs><g id="Warstwa_2" data-name="Warstwa 2"><g id="Warstwa_1-2" data-name="Warstwa 1"><path class="cls-1 " d="M10.39,0V50.91"></path><path class="cls-1 kr" d="M10.39,66.7v5.82"></path><rect class="cls-1 kropka" x="1" y="61" width="18.79" height="28" rx="9.39"></rect></g></g></svg>
+        <div class="hero-lg-header d-none d-sm-flex p-0   container over-x">
+            <div id="logo">
+                <img src="./assets/logo_DOBRE-MIEJSCE@4x 2.png" alt="">
+            </div>
+            <div class="btn-grp">
+                <div class="btn cp btn-primary">
+                    ZAREZERWUJ TERMIN
+                </div>
+                <div class="btn cp btn-secondary">
+                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 16.4022V20.724C18.0001 21.0334 17.9042 21.3314 17.7316 21.5578C17.559 21.7842 17.3225 21.9221 17.07 21.9438C16.633 21.9804 16.276 22 16 22C7.16299 22 0 13.2452 0 2.44444C0 2.10711 0.015 1.67078 0.0459999 1.13667C0.0637223 0.827987 0.176581 0.539013 0.361803 0.328055C0.547025 0.117097 0.790822 -0.000139863 1.044 3.13597e-07H4.57999C4.70403 -0.000153187 4.82369 0.0560499 4.91572 0.157692C5.00775 0.259333 5.06559 0.399157 5.07799 0.55C5.10099 0.831111 5.12199 1.05478 5.14199 1.22467C5.34073 2.9198 5.748 4.56846 6.34999 6.11478C6.44499 6.35922 6.38299 6.65133 6.20299 6.80778L4.04499 8.69245C5.36445 12.4501 7.81454 15.4447 10.889 17.0573L12.429 14.4247C12.4919 14.3171 12.5838 14.24 12.6885 14.2067C12.7932 14.1734 12.9041 14.1861 13.002 14.2426C14.267 14.9769 15.6156 15.4735 17.002 15.7153C17.141 15.7398 17.324 15.7667 17.552 15.7936C17.6752 15.809 17.7894 15.8798 17.8723 15.9923C17.9553 16.1047 18.0011 16.2508 18.001 16.4022H18Z" fill="black"></path>
+                        </svg>                        
+                    <span>+48 534 478 005</span>
+                </div>
+            </div>
+            <div class="socials">
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.434 8.324v1.653h-1.21v2.02h1.21V18h2.487v-6.004h1.668s.157-.968.232-2.028h-1.89v-1.38c0-.207.27-.485.54-.485h1.353V6h-1.842c-2.61 0-2.548 2.022-2.548 2.324z" fill="#144D29"></path><path d="M12 21.6a9.6 9.6 0 100-19.2 9.6 9.6 0 000 19.2zm0 2.4C5.372 24 0 18.628 0 12S5.372 0 12 0s12 5.372 12 12-5.372 12-12 12z" fill="#144D29"></path></svg>
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.99 5.818A6.167 6.167 0 007.634 7.62a6.148 6.148 0 000 8.701 6.168 6.168 0 008.715 0 6.148 6.148 0 000-8.701 6.167 6.167 0 00-4.357-1.802zm0 10.149a4.007 4.007 0 01-2.83-1.171 3.994 3.994 0 012.83-6.824c1.063 0 2.08.421 2.832 1.17a3.994 3.994 0 010 5.654c-.751.75-1.77 1.17-2.831 1.17zM18.397 7.026a1.436 1.436 0 10-1.437-1.434c0 .792.644 1.434 1.437 1.434z" fill="#144D29"></path><path d="M23.364 4.133A6.126 6.126 0 0019.855.631a8.816 8.816 0 00-2.913-.56C15.658.017 15.252 0 11.997 0 8.743 0 8.326 0 7.053.072c-.995.02-1.98.208-2.91.559a6.132 6.132 0 00-3.51 3.502 8.75 8.75 0 00-.558 2.909C.017 8.322 0 8.728 0 11.979c0 3.25 0 3.663.075 4.937.02.995.208 1.977.558 2.91a6.134 6.134 0 003.51 3.502c.93.364 1.915.566 2.913.599C8.339 23.983 8.746 24 12 24c3.255 0 3.672 0 4.945-.073a8.827 8.827 0 002.913-.558 6.15 6.15 0 003.509-3.503c.35-.932.538-1.914.558-2.91.058-1.28.075-1.685.075-4.936 0-3.25 0-3.663-.075-4.937a8.746 8.746 0 00-.56-2.95zm-1.623 12.684a6.702 6.702 0 01-.415 2.246 3.972 3.972 0 01-2.281 2.277 6.653 6.653 0 01-2.226.414c-1.266.058-1.623.073-4.87.073-3.249 0-3.58 0-4.87-.073a6.621 6.621 0 01-2.225-.414 3.979 3.979 0 01-2.291-2.277 6.75 6.75 0 01-.415-2.22c-.057-1.265-.07-1.621-.07-4.863 0-3.243 0-3.574.07-4.864a6.695 6.695 0 01.415-2.244 3.977 3.977 0 012.29-2.279 6.686 6.686 0 012.225-.413c1.268-.058 1.623-.074 4.871-.074s3.581 0 4.87.074c.76.009 1.513.149 2.226.413a3.987 3.987 0 012.281 2.279 6.75 6.75 0 01.415 2.22c.057 1.266.072 1.621.072 4.864 0 3.242 0 3.59-.057 4.862h-.015v-.001z" fill="#144D29"></path></svg>
+            </div>
+        </div>
+        
+        <div class="hero-lg-content container">
+            <div class="left">
+                <div class="menu-lg">
+                    <ul>
+                        <li data-scrollto="#onas"><a class="active" href="#">O NAS</a></li>
+                        <li data-scrollto="#gallery"><a href="#">GALERIA</a></li>
+                        <li data-scrollto="#dzieci"><a href="#">ATRAKCJE DLA DZIECI</a></li>
+                        <li data-scrollto="#okolica"><a href="#">ATRAKCJE W OKOLICY</a></li>
+                        <li data-scrollto="#domki"><a href="#">DOMKI</a></li>
+                        <li data-scrollto="#oferta"><a href="#">OFERTA</a></li>
+                        <li data-scrollto="#kontakt"><a href="#">KONTAKT</a></li>
+                    </ul>
+                
+                </div>
+            </div>
+            <div class="right  swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        
+                        <div class="swiper-slide">
+                            <img class="" src="./assets/desktop/slider/banner_slider.jpg" alt="">
+                            <div class="caption d-none d-sm-block">Dobre Miejsce dla całej rodziny</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="" src="./assets/desktop/slider/banner_slider.jpg" alt="">
+                            <div class="caption d-none d-sm-block">Dobre Miejsce dla całej rodziny</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="" src="./assets/desktop/slider/banner_slider.jpg" alt="">
+                            <div class="caption d-none d-sm-block">Dobre Miejsce dla całej rodziny</div>
+                        </div>
+                        
+                    </div>
+                    <!-- If we need pagination -->
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-nav">
+                        <div class="swiper-button swiper-button-prev"></div>
+                        <div class="swiper-button swiper-button-next"></div>
+    
+                    </div>
+                
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                      
+            </div>
+     
+            </div>
+        
+    </section>
+    <section id="onas" class="py">
+
+        <div class="container grid">
+            <div class="grid__left d-none d-lg-flex">
+                <img data-aos="fade-right" src="./assets/desktop/img/onas1.jpg" alt="">
+            </div>
+            <div class="grid__right">
+                <h1 class="h1">O NAS</h1>
+                <br>
+                <p class="p">
+                    Trafiłeś w Dobre Miejsce. A konkretniej, w Dobre Miejsce w Rabce-Zdroju, gdzie czas płynie nieco wolniej a dzieciaki nigdy się nie nudzą.
+                </p>
+                <br>
+                <p class="p">
+                    Nasza oferta skierowana jest do rodzin z dziećmi które szukają Dobrego Miejsca na złapanie oddechu, wspólny odpoczynek, zabawę oraz po prostu bycie razem.
+                </p>
+                <br>
+                <p class="p">
+                    Zapraszamy Was do dwóch całorocznych domków wyposażonych we wszystko co niezbędne, by w pełni się zrelaksować. 
+                </p>
+                
+                <img class="onasimg" data-aos="fade-left" src="./assets/desktop/img/onas2.jpg" alt="">
+            </div>
+        </div>         
+    </section>
+    <section id="gallery">
+        <div class="container text-center">
+            <h1 class="h1 text-center">GALERIA</h1>
+            <div class="choices pb-2">
+                <h2 class="gallery-choice active" data-nr="0">DOMKI</h2>
+                <h2 class="gallery-choice" data-nr="1">ATRAKCJE DLA DZIECI</h2>
+                <h2 class="gallery-choice" data-nr="2">OKOLICA</h2>
+            </div>
+            <div class="grid pb-2" style="overflow: hidden;">
+                <div class="grid__box" data-aos="fade-right">
+                    <img data-choice="0" src="./assets/desktop/Galeria/1/Rectangle-1.jpg" alt="">
+                    <img data-choice="1" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+                    <img data-choice="2" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+                </div>
+                <div class="grid__box" data-aos="fade-up">
+                    <img data-choice="0" src="./assets/desktop/Galeria/2/Rectangle-3.jpg" alt="">
+                    <img data-choice="1" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+                    <img data-choice="2" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+                </div>
+                <div class="grid__box" data-aos="fade-left">
+                    <img data-choice="0" src="./assets/desktop/Galeria/3/Rectangle-4.jpg" alt="">
+                    <img data-choice="1" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+                    <img data-choice="2" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+                </div>
+                <div class="grid__box" data-aos="fade-right">
+                    <img data-choice="0" src="./assets/desktop/Galeria/4/Rectangle-6.jpg" alt="">
+                    <img data-choice="1" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+                    <img data-choice="2" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+                </div>
+                <div class="grid__box" data-aos="fade-down">
+                    <img data-choice="0" src="./assets/desktop/Galeria/5/Rectangle-8.jpg" alt="">
+                    <img data-choice="1" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+                    <img data-choice="2" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+
+                </div>
+                <div class="grid__box" data-aos="fade-left">
+                    <img data-choice="0" src="./assets/desktop/Galeria/6/Rectangle-10.jpg" alt="">
+                    <img data-choice="1" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+                    <img data-choice="2" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+
+                </div>
+            </div>
+            <button class="gallery-btn">
+                <div class="text">WIĘCEJ ZDJĘĆ</div>
+            </button>
+        </div>
+    </section>
+    <section id="dzieci" class="pb-2">
+        <div class="container">
+            <h1 class="text-center">ATRAKCJE DLA DZIECI</h1>
+            <div class="grid-3">
+                <div class="box d-flex">
+                    <img data-aos="zoom-in" src="./assets/desktop/ico - atrakcje dla dzieci/plac_zabaw.svg" alt="">
+                    <h2 class="box__text">KRYTY 
+                        PLAC ZABAW (400 m2)
+                    </h2>
+                </div>
+                <div class="box d-flex">
+                    <img data-aos="zoom-in" src="./assets/desktop/ico - atrakcje dla dzieci/piaskownica.svg" alt="">
+                    <h2 class="box__text">Piaskownica
+                    </h2>
+                </div>
+                <div class="box d-flex">
+                    <img data-aos="zoom-in" src="./assets/desktop/ico - atrakcje dla dzieci/soccer.svg" alt="">
+                    <h2 class="box__text">TRAWIASTE BOISKO
+                        DO PIŁKI NOŻNEJ
+                    </h2>
+                </div>
+                <div class="box d-flex">
+                    <img data-aos="zoom-in" src="./assets/desktop/ico - atrakcje dla dzieci/zjezdzalnia.svg" alt="Zjeżdalnia">
+                    <h2 class="box__text">Zjeżdalnia
+                    </h2>
+                </div>
+                <div class="box d-flex">
+                    <img data-aos="zoom-in" src="./assets/desktop/ico - atrakcje dla dzieci/ping-pong.svg" alt="">
+                    <h2 class="box__text">PING-PONG
+                    </h2>
+                </div>
+                <div class="box d-flex">
+                    <img data-aos="zoom-in" src="./assets/desktop/ico - atrakcje dla dzieci/volley.svg" alt="">
+                    <h2 class="box__text">BOISKO DO SIATKÓWKI
+                    </h2>
+                </div>
+                <div class="box d-flex">
+                    <img data-aos="zoom-in" src="./assets/desktop/ico - atrakcje dla dzieci/trampolina.svg" alt="">
+                    <h2 class="box__text">TRAMPOLINA
+                    </h2>
+                </div>
+                <div class="box d-flex">
+                    <img data-aos="zoom-in" src="./assets/desktop/ico - atrakcje dla dzieci/pilkarzyki.svg" alt="">
+                    <h2 class="box__text">PIŁKARZYKI
+                    </h2>
+                </div>
+                <div class="box d-flex">
+                    <img data-aos="zoom-in" src="./assets/desktop/ico - atrakcje dla dzieci/tyrolka.svg" alt="">
+                    <h2 class="box__text">BEZPIECZNA TYROLKA DO ZJAZDÓW (25M)
+                    </h2>
+                </div>
+                <div class="box d-flex">
+                    <img data-aos="zoom-in" src="./assets/desktop/ico - atrakcje dla dzieci/hustawka.svg" alt="">
+                    <h2 class="box__text">HUŚTAWKI
+                    </h2>
+                </div>
+                <div class="box d-flex">
+                    <img data-aos="zoom-in" src="./assets/desktop/ico - atrakcje dla dzieci/basen.svg" alt="">
+                    <h2 class="box__text">BASEN Z KULKAMI 
+                        DLA DZIECI
+                    </h2>
+                </div>
+                <div class="box d-flex">
+                    <img data-aos="zoom-in" src="./assets/desktop/ico - atrakcje dla dzieci/sanki.svg" alt="">
+                    <h2 class="box__text">SANKI (ZIMĄ)
+                    </h2>
+                </div>
+            </div>
+            <div class="images">
+                <div class="image">
+                    <img data-aos="zoom-in" src="./assets/Rectangle.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img data-aos="zoom-in" src="./assets/Rectangle (2).jpg" alt="">
+                    
+                </div>
+                <div class="image">
+                    <img data-aos="zoom-in" src="./assets/Rectangle (3).jpg" alt="">
+
+                </div>
+            </div>
+            <div class="c">
+                
+                <button class=" mx-auto  gallery-btn">
+                    <div class="text">WIĘCEJ ZDJĘĆ</div>
+                </button>
+            </div>
+            
+        </div>
+    </section>
+    <section id="okolica" class="pb-2">
+        <div class="container">
+            <h1 class="text-center">ATRAKCJE W OKOLICY</h1>
+            <div class="grid-3">
+                <div class="box d-flex" data-aos="zoom-in">
+                    <h3 class="no-wrap">1 KM</h3>
+                    <h2 class="box__text">RABKOLAND
+                    </h2>
+                </div>
+                <div class="box d-flex" data-aos="zoom-in">
+                    <h3>4 KM</h3>
+                    <h2 class="box__text">BACÓWKA “MACIEJOWA”
+                    </h2>
+                </div>
+                <div class="box d-flex" data-aos="zoom-in">
+                    <h3>1,6 KM</h3>
+                    <h2 class="box__text">BASEN ODKRYTY
+                    </h2>
+                </div>
+                <div class="box d-flex" data-aos="zoom-in">
+                    <h3>500 M</h3>
+                    <h2 class="box__text">PARK ZDROJOWY
+                    </h2>
+                </div>
+                <div class="box d-flex" data-aos="zoom-in">
+                    <h3>11 KM</h3>
+                    <h2 class="box__text">TURBACZ
+                    </h2>
+                </div>
+                <div class="box d-flex" data-aos="zoom-in">
+                    <h3>900 M</h3>
+                    <h2 class="box__text">MUZEUM GÓRALI I ZBÓJNIKÓW
+                    </h2>
+                </div>
+                <div class="box d-flex" data-aos="zoom-in">
+                    <h3>800 M</h3>
+                    <h2 class="box__text">
+                        TĘŻNIA SOLANKOWA
+                    </h2>
+                </div>
+                <div class="box d-flex" data-aos="zoom-in">
+                    <h3>3,2 KM</h3>
+                    <h2 class="box__text">LUBOŃ WIELKI
+                    </h2>
+                </div>
+                <div class="box d-flex" data-aos="zoom-in">
+                    <h3>1,4 KM</h3>
+                    <h2 class="box__text">Szlaki nordic walking
+                    </h2>
+                </div>
+            </div>
+            <div class="images">
+                <div class="image">
+                    <img data-aos="flip-left" src="./assets/Rectangle.png" alt="">
+                </div>
+                <div class="image">
+                    <img data-aos="flip-up" src="./assets/Rectangle (1).png" alt="">
+                    
+                </div>
+                <div class="image">
+                    <img data-aos="flip-right" src="./assets/Rectangle (2).png" alt="">
+
+                </div>
+            </div>
+            <div class="c">
+                
+                <button class=" mx-auto  gallery-btn">
+                    <div class="text">WIĘCEJ ZDJĘĆ</div>
+                </button>
+            </div>
+            
+        </div>
+        
+    </section>
+    <section id="domki" class="py">
+        <div class="container grid-domki">
+            <div class="domki-1">
+                <h1>Domki Dobre Miejsce</h1>
+                <br>
+                <p>Idealne miejsce na wypoczynek dla rodzin z dziećmi. Zielona i spokojna okolica sprawia, że będziesz czuł się wypoczęty i w pełni zrelaksowany.</p>
+                <br>
+                <p class=" bold">Wyposażenie domku:</p>
+                    <ul class="">
+                        <li>wygodny dla 4-8 osób,</li>
+                        <li>2 sypialnie z klimatyzacją,</li>
+                        <li>w pełni wyposażona kuchnia,</li>
+                        <li>salon z wygodnym wypoczynkiem,</li>
+                        <li>w łazience prysznic, ręczniki, suszarka do włosów,</li>
+                        <li>ułatwienia dla dzieci (łóżeczko i krzesełko)</li>
+                        <li>Wi-Fi i TV</li>
+                        <li class="bold">kryty plac zabaw</li>
+                        <li class="bold">suchy basen z kulkami</li>
+                        <li class="bold">tyrolka i boisko sportowe</li>
+                    </ul>
+            </div>
+            <div class="domki-2">
+                <img data-aos="fade-up" src="./assets/desktop/pattern.svg" alt="" class="pattern">
+                <img data-aos="fade-right" src="./assets/domki-dobre03@2x.jpg" alt="">
+            </div>
+            <div class="domki-3">
+                <img data-aos="fade-left" class="mb-24" src="./assets/domki-dobre01@2x.jpg" alt="">
+                <img data-aos="fade-down" src="./assets/domki-dobre02@2x.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="oferta" class="py">
+        <div class="container">
+            <h1>OFERTA</h1>
+            <div class="of">
+                <p class="oferta">LAST MINUTE: Wolny termin 26 - 29.08.2021 r.</p>
+                    
+            </div>
+            <div class="btns">
+                <div class="btn cp btn-left oferta6 btn--active">
+                    <div class="circle"></div>
+                    <p>Do 6 osób</p>
+                    <img src="./assets/8x_ludzikow.svg" alt="">
+                </div>
+                <div class="btn cp btn-right oferta8">
+                    <div class="circle"></div>
+                    <p>Do 8 osób</p>
+                    <img src="./assets/6x_ludzikow.svg" alt="">
+                </div>
+            </div>
+            <div class="oferty">
+                <div data-aos="fade-up" class="oferta-1 promocja">
+                    <h4>Listopad, grudzień</h4>
+                    <p>min. 2 noce</p>
+                    <div class="icona" data-aos-delay="300" data-aos="fade-up">
+                        <img src="./assets/desktop/Oferta/walizki.svg" alt="">
+                    </div>
+                    <div class="cena">
+                        350 zł
+                    </div>
+                    <div class="btn  cp btn-g-fix">Rezerwuj</div>
+                </div>
+                <div data-aos="fade-up" class="oferta-2 promocja">
+                    <h4>BOŻE NARODZENIE</h4>
+                    <p>min. 3 noce</p>
+                    <div class="icona" data-aos-delay="300" data-aos="fade-up">
+                        <img src="./assets/desktop/Oferta/choinka.svg" alt="">
+                    </div>
+                    <div class="cena">
+                        450 zł
+                    </div>
+                    <div class="btn  cp  btn-g-fix">Rezerwuj</div>
+                </div>
+                <div data-aos="zoom-in" class="oferta-3 promocja">
+                    <h4>SYLWESTER</h4>
+                    <p>min. 4 noce</p>
+                    <div class="icona" data-aos-delay="300" data-aos="zoom-in">
+                        <img src="./assets/desktop/Oferta/sylwester.svg" alt="">
+                    </div>
+                    <div class="cena">
+                        550 zł
+                    </div>
+                    <div class="btn cp btn-g-fix">Rezerwuj</div>
+                </div>
+                <div data-aos="zoom-in" class="oferta-4 promocja">
+                    <h4>Styczeń–marzec</h4>
+                    <p>min. 4 noce</p>
+                    <div class="icona" data-aos-delay="300" data-aos="zoom-in">
+                        <img src="./assets/desktop/Oferta/platek_sniegu.svg" alt="">
+                    </div>
+                    <div class="cena">
+                        250 zł
+                    </div>
+                    <div class="btn cp btn-g-fix">Rezerwuj</div>
+                </div>
+            </div>
+            <div class="content">
+                Podane ceny dotyczą 1 domku za 1 dobę oraz korzystania ze wszystkich atrakcji dla dzieci. <br>
+                Nie przyjmujemy zwierząt. <br> 
+                Zapraszamy od godz. 15.00, pobyt do 10.00.
+            </div>
+            <button class="button  bold cp">
+                REZERWUJ DOWOLNY TERMIN
+            </button>
+        </div>
+    </section>
+    <section id="insta">
+        <div class="insta-head">
+        <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.99 5.818A6.167 6.167 0 007.634 7.62a6.148 6.148 0 000 8.701 6.168 6.168 0 008.715 0 6.148 6.148 0 000-8.701 6.167 6.167 0 00-4.357-1.802zm0 10.149a4.007 4.007 0 01-2.83-1.171 3.994 3.994 0 012.83-6.824c1.063 0 2.08.421 2.832 1.17a3.994 3.994 0 010 5.654c-.751.75-1.77 1.17-2.831 1.17zM18.397 7.026a1.436 1.436 0 10-1.437-1.434c0 .792.644 1.434 1.437 1.434z" fill="#144D29"></path><path d="M23.364 4.133A6.126 6.126 0 0019.855.631a8.816 8.816 0 00-2.913-.56C15.658.017 15.252 0 11.997 0 8.743 0 8.326 0 7.053.072c-.995.02-1.98.208-2.91.559a6.132 6.132 0 00-3.51 3.502 8.75 8.75 0 00-.558 2.909C.017 8.322 0 8.728 0 11.979c0 3.25 0 3.663.075 4.937.02.995.208 1.977.558 2.91a6.134 6.134 0 003.51 3.502c.93.364 1.915.566 2.913.599C8.339 23.983 8.746 24 12 24c3.255 0 3.672 0 4.945-.073a8.827 8.827 0 002.913-.558 6.15 6.15 0 003.509-3.503c.35-.932.538-1.914.558-2.91.058-1.28.075-1.685.075-4.936 0-3.25 0-3.663-.075-4.937a8.746 8.746 0 00-.56-2.95zm-1.623 12.684a6.702 6.702 0 01-.415 2.246 3.972 3.972 0 01-2.281 2.277 6.653 6.653 0 01-2.226.414c-1.266.058-1.623.073-4.87.073-3.249 0-3.58 0-4.87-.073a6.621 6.621 0 01-2.225-.414 3.979 3.979 0 01-2.291-2.277 6.75 6.75 0 01-.415-2.22c-.057-1.265-.07-1.621-.07-4.863 0-3.243 0-3.574.07-4.864a6.695 6.695 0 01.415-2.244 3.977 3.977 0 012.29-2.279 6.686 6.686 0 012.225-.413c1.268-.058 1.623-.074 4.871-.074s3.581 0 4.87.074c.76.009 1.513.149 2.226.413a3.987 3.987 0 012.281 2.279 6.75 6.75 0 01.415 2.22c.057 1.266.072 1.621.072 4.864 0 3.242 0 3.59-.057 4.862h-.015v-.001z" fill="#144D29"></path></svg>
+        <h1>#dobremiejsce</h1>
+        </div>
+        <div class="container grid-3">
+            <div class="insta-box">
+                <img data-aos="flip-left" src="./assets/Rectangle 18.png" alt="">
+            </div>
+            <div class="insta-box">
+                <img data-aos="flip-left" src="./assets/Rectangle 19.png" alt="">
+            </div>
+            <div class="insta-box">
+                <img data-aos="flip-left" src="./assets/Rectangle 20.png" alt="">
+            </div>
+            <div class="insta-box">
+                <img data-aos="flip-left" src="./assets/Rectangle 21.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="kontakt" class="py">
+        <div class="container">
+            <h1 class="text-center">KONTAKT</h1>
+            <div class="grid-contact">
+                <div class="contact-text">
+                    <p class="bold">Domki Dobre Miejsce</p>
+                    <p class="mb-8">Karolina i Bartłomiej Sarka</p>
+                    <p>ul. Bystra 18</p>
+                    <p class="mb-8">34-700 Rabka-Zdrój</p>
+                    <p>+48 534 478 005</p>
+                    <a class="contact-link mb-8" href="mailto:kontakt@domkidobremiejsce.pl">kontakt@domkidobremiejsce.pl</a>
+                    <p>Konto bankowe:</p>
+                    <p class="mb-24">14 1050 1445 1000 0097 2146 2498</p>
+                    <p>Współpracujemy blisko <br> z <span class="bold">Willą Hanusia</span> do której <br> również serdecznie <br> zapraszamy rodziny z dziećmi : <br>  <a class="contact-link" href="https://www.hanusia-rabka.pl">www.hanusia-rabka.pl</a></p>
+                </div>
+                <div class="contact-form">
+                    <form action="">
+                        <div class="form-head">
+                            <div class="fname">
+                                <label for="fname">Imię</label>
+                                <input type="text" id="fname" name="firstname">   
+                            </div>
+                            <div class="email">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" name="email">
+                            </div>
+                            <div class="tel">
+                                <label for="email">Tel. (opcjonalne)</label>
+                                <input type="text" id="email" name="email">
+                            </div>
+                        </div>
+                        <div class="form-content mb-8">
+                            <label for="content">Treść</label>
+                            <textarea name="" id="" cols="30" rows="10">
+                            </textarea>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox" name="checkbox" value="Bike">
+                            <label class="ml-8" for="checkbox">Oświadczam, że zapoznałem się i akceptuję treść <a href="#">Polityki Prywatności</a></label>
+                        </div>
+                        <div class="sub">
+                            <input type=" submit" value="Wyślij" class="bold submit-btn btn-fix">
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="map" class="d-none">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2585.641805990502!2d19.93809561566675!3d49.60450387936761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4715e021c1d8dcb9%3A0xb75a9e869c3013c8!2sBystra%2018%2C%2034-700%20Rabka-Zdr%C3%B3j!5e0!3m2!1spl!2spl!4v1604900681530!5m2!1spl!2spl" width="100%" height="100%" style="min-height: 500px;" frameborder="0" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe> 
+    </section>
+    <section id="last" class="py">
+        <div class="container rekomendacje">
+                <div class="rekomendacje-box">
+                    <p class="bold text-center">
+                        ZNALEŹĆ NAS MOŻNA:
+                    </p>
+                </div>
+                <div class="rekomendacje-box r-img">
+                    <img class="mb-8" src="./assets/image 6.svg" alt="">
+                    <img class="mb-8" src="./assets/image 6.svg" alt="">
+                    <img class="mb-8" src="./assets/image 6.svg" alt="">
+                </div>
+                <div class="rekomendacje-box r-img">
+                    <img class="mb-8" src="./assets/image 6.svg" alt="">
+                    <img class="mb-8" src="./assets/image 6.svg" alt="">
+                    <img class="mb-8" src="./assets/image 6.svg" alt="">
+                    
+                </div>
+                <div class="rekomendacje-box r-img">
+                    <img class="mb-8" src="./assets/image 6.svg" alt="">
+                    <img class="mb-8" src="./assets/image 6.svg" alt="">
+                    <img class="mb-8" src="./assets/image 6.svg" alt="">
+                    
+                </div>
+                <div class="rekomendacje-box r-img">
+                    <img class="mb-8" src="./assets/image 6.svg" alt="">
+                    <img class="mb-8" src="./assets/image 6.svg" alt="">
+                    <img class="mb-8" src="./assets/image 6.svg" alt="">
+
+                </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <img class="footer__logo" src="./assets/logo_DOBRE-MIEJSCE@4x 2.svg" alt="">
+            <div class="footer__col footer__left">
+                Polityka prywatności.
+            </div>
+            <div class="footer__col footer__center">
+                © 2020 DOBRE MIEJSCE. All rights reserved.
+            </div>
+            <div class="footer__col footer__right">
+                Design: mocio.co
+            </div>
+            <div class="up " data-scrollto="#hero-lg">
+                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="28" fill="#E4F5EB"></circle>
+                    <path class="path-up" d="M23.728 39.144C26.116 39.144 27.532 37.776 27.532 35.304V30.6H25.612V35.232C25.612 36.828 24.928 37.488 23.74 37.488C22.564 37.488 21.868 36.828 21.868 35.232V30.6H19.924V35.304C19.924 37.776 21.34 39.144 23.728 39.144ZM33.089 30.6H29.453V39H31.397V36.684H33.089C35.333 36.684 36.737 35.52 36.737 33.648C36.737 31.764 35.333 30.6 33.089 30.6ZM32.981 35.1H31.397V32.184H32.981C34.169 32.184 34.769 32.724 34.769 33.648C34.769 34.56 34.169 35.1 32.981 35.1Z" fill="#144D29"></path>
+                    <path d="M34 20L28 14L22 20" stroke="#144D29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                    
+            </div>
+        </div>
+    </footer>
+    <div class="over d-none">
+        <div class="preloader">
+            <img src="./assets/logo.svg" alt="">
+        </div>
+    </div>
+    <div id="classes" class="showMobileMenu go btn--active active hide-img d-none show-menu-fixed-nav menu-fixed--scrolled "></div>
 </body>
 </html>

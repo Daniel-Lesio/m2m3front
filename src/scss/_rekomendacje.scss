@@ -1,0 +1,33 @@
+.rekomendacje{
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width:768px) {
+        flex-direction: column;
+    }
+    justify-content: space-between;
+    //styleName: H6;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    .rekomendacje-box{
+        @media (max-width:768px) {
+            flex-direction: column;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        height: 150px;
+    }
+    .r-img{
+        display: flex;
+        flex-direction: column;
+        img{
+            margin-bottom: 1rem;
+        }
+    }
+}
