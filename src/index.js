@@ -14,10 +14,9 @@ const preloader = document.querySelector(".preloader")
 const over = document.querySelector(".over")
 window.addEventListener('load', function () {
 
-   setTimeout(() => {
       preloader.classList.add('go')
       over.classList.add('go')
-   }, 3000);
+   
    jumps()
    scrolling()
    mobilemenu()
