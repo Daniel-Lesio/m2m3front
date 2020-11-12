@@ -5,6 +5,10 @@
     }
     height: 100%;
     z-index: 0;
+    img{
+        height: 176px;
+        width: auto;
+    }
 }
 #hero-lg{
     position: relative;
@@ -19,26 +23,26 @@
     display: flex;
     justify-content: space-between;
     align-items: top;
-    
 }
     .menu-lg{
-    margin-top: 120px;
+    margin-top: 82px;
     width: 290px;
     min-height: 200px;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    transform : translateY(0px);
     ul{
         padding-left: 20px;
         padding-top: 1rem;
         li{
             transition :all ease-in-out 0.3s;
             line-height: 24px;
-            font-weight: 400;
+            font-weight: 500;
             font-size: 16px;
             text-transform: uppercase;
             margin-bottom: 1rem;
             border-left: white solid 3px;
-            color: #2c2c2c;
+            color: black;
             position: relative;
                 &::after{
                     position: absolute;
@@ -51,8 +55,8 @@
                     transition: all ease-in-out .3s;
                 }
                 &:hover{
-                    font-weight: 700;
-                    color : $primary;
+                    // font-weight: 700;
+                    // color : $primary;
                     &::after{
                         height: 100%;
                     }
@@ -63,8 +67,8 @@
                 border-left: white solid 3px;
             }
             &:hover{
-                font-weight: 700;
-                color: $primary;
+                // font-weight: 700;
+                // color: $primary;
             }
         }
     }
@@ -166,15 +170,24 @@
         align-self: top;
         height: 48px;
         align-items: center;
-        svg{
-            width: 24px;
-            height: 24px;
-        }
-        svg:nth-child(even){
-            margin-left: 9px;
-        }
-        svg:nth-child(odd){
-            margin-right: 9px;
+        
+        a{
+            margin: 0;
+            padding: 0;
+            &:nth-child(odd){
+                margin-right: 6px;
+            }
+            
+            svg{
+                width: 24px;
+                height: 24px;
+            }
+            svg:nth-child(even){
+                margin-left: 9px;
+            }
+            svg:nth-child(odd){
+                margin-right: 9px;
+            }
         }
 
     }
