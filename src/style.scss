@@ -65,8 +65,12 @@ body{
     top: -28px;
     right: 0;
     cursor: pointer;
+    
     &:hover{
         svg{
+            .up-arrow{
+                transform: translateY(-3px);
+            }
             circle{
                 fill : $primary;
             }
@@ -75,6 +79,7 @@ body{
             }
             .path-up{
                 fill : $secondary;
+                
             }
         }
     }
@@ -97,7 +102,6 @@ text-align: center;
     margin-bottom: 64px;
 }
 section{
-    min-height: 50vh;
     &:nth-child(even){
         // background: #ddd;
     }
@@ -142,4 +146,7 @@ section{
             background: $secondary!important;
             color: $primary;
         }
+    }
+    .up-arrow{
+        transition: transform ease-in-out .3s;
     }
