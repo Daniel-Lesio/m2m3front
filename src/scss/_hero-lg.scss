@@ -146,7 +146,12 @@
     align-items: center;
     
     .swiper-button{
-        
+        svg{
+            path{
+
+                transition:  all ease-in-out .3s;
+            }
+        }       
         &::after{
             display: none;
         }
