@@ -12,13 +12,13 @@
     }
 
 }
-.grid-3{
-    display: none;
+.grid-33{
     margin-top: 68px;
     // display: grid!important;
     grid-template-columns: repeat(2,1fr);
     gap: 96px ;
     @media (min-width : 768px) {
+        display: none!important;
         grid-template-columns: repeat(2,1fr);    
     }
     @media (min-width : 768px) {
@@ -26,9 +26,11 @@
         
     }
     .box{
+
         align-items: center;
+        height: 70px;
         img{
-            width: 30%;
+            width: auto;
         }        
         h2{
             margin-left: 2rem;
@@ -74,4 +76,57 @@
 .gallery-btn{
     margin-top: 3rem;
     align-self: center;
+}
+.grid-dzieci{
+    display: grid;
+    line-height: 24px;
+    font-size: 14px;
+    
+    gap:  26px;
+    grid-template-columns: repeat(2,1fr);
+    @media (min-width : 768px) {
+        grid-template-columns: repeat(2,1fr);    
+    }
+    @media (min-width : 768px) {
+        grid-template-columns: repeat(3,1fr);    
+        
+    }
+    .grid-box{
+        display: flex;
+        min-height: 70px;
+        height: 70px;
+        width: 100%;
+        min-height: 100px;
+        display: flex;
+        .left{
+            display: flex;
+            width: 100px!important;
+            img{
+                max-height: 100%;
+                align-self: center;
+            }
+        }
+        .right{
+            flex: 1;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            img{
+
+            }
+        }
+    }
+}
+.volley{
+    img{
+        height: 50px!important;
+        width: 50px!important;
+    }
+}
+.tyrolka{
+img{
+    width: 55px;
+    height: 60px;
+}
 }
