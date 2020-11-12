@@ -1,5 +1,5 @@
 #okolica{
-    padding-top: 120px;    
+    padding-top: 96px;    
     background: white;
     h1{
         font-size: 32px;
@@ -26,7 +26,7 @@
 
 }
 .grid-3{
-    margin-top: 68px;
+    margin-top: 50px;
     grid-template-columns: repeat(1,1fr);
     display: none;
     gap: 40px 42px;
@@ -46,7 +46,6 @@
         
         h2{
             margin-left: 2rem;
-            font-weight: 700;
         }
 
     }
@@ -90,4 +89,9 @@
 .gallery-btn{
     margin-top: 3rem;
     align-self: center;
+}
+h2{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
 }
