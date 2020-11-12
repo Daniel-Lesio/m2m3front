@@ -65,7 +65,7 @@ body{
     top: -28px;
     right: 0;
     cursor: pointer;
-    
+    transition: all ease-in-out .3s;
     &:hover{
         svg{
             .up-arrow{
