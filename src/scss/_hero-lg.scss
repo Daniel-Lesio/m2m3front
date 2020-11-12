@@ -11,9 +11,18 @@
     }
 }
 #hero-lg{
+
     position: relative;
     padding-top: 2rem;
     padding-bottom: 5rem;
+    overflow: hidden;
+    .patt{
+        position: absolute;
+        right: 0px ;
+        top: 0px;
+        z-index: -1;
+        transform: translateX(60%);
+    }
 }
 .hero-lg-header{
     padding-left: 0;
