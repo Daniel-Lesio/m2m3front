@@ -91,7 +91,13 @@
         transform : translateY(0px)
     }
 }
+.op{
+    opacity: 0;
+}
 .swiper-container {
+    z-index: 0;
+    
+    transition: opacity ease-in-out 1s;
     width: 100%;
     // height: calc( 100vh - 200px);
     // position: relative;
@@ -265,6 +271,8 @@
     }
 
     .mouse{
+        transition: opacity ease-in-out 1s;
+        
         position: absolute;
         transform: translateX(-50%);
         left: 50%;

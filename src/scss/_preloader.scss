@@ -1,4 +1,6 @@
-
+body{
+  position: relative;
+}
 .over{
   position: fixed;
   left: 0px;
@@ -13,14 +15,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: all ease-in-out .3s;
+  transition: all ease-in-out 1s;
 }
 .go{
   transform: translateX(300vw);
   opacity: 0;
 }
 .preloader{
-  transition: all ease-in-out .3s;
+  transition: all ease-in-out 1s;
   position: relative;
   display: flex;
   justify-content: center;

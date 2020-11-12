@@ -12,18 +12,26 @@ const oferta8 = document.querySelector('.oferta8')
 const oferta6 = document.querySelector('.oferta6')
 const preloader = document.querySelector(".preloader")
 const over = document.querySelector(".over")
+const swipercontainer = document.querySelector(".swiper-container")
+const mouse = document.querySelector(".mouse")
+const footerlogo = document.querySelector('.footer__logo')
 window.addEventListener('load', function () {
 
       preloader.classList.add('go')
       over.classList.add('go')
-      
+
+      setTimeout(() => {
+        swipercontainer.classList.remove('d-none')
+        mouse.classList.add('d-sm-block')
+        footerlogo.classList.remove("d-none")
+        swipers()
+      }, 1100);
    
-   jumps()
-   scrolling()
-   mobilemenu()
-   swipers()
+      jumps()
+      scrolling()
+      mobilemenu()
   
-   menuFixedIcon.addEventListener("click",()=>{
+    menuFixedIcon.addEventListener("click",()=>{
     
     menuFixedNav.classList.toggle("show-menu-fixed-nav")
    })

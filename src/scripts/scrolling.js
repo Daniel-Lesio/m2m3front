@@ -7,7 +7,6 @@ const scrolling = () =>{
     window.addEventListener("scroll",scrolled)
 }
 function scrolled(){
-    console.log('scrolled : ' , window.pageYOffset , 'px');;   
     
     window.pageYOffset > 200 ? fixedMenu.classList.add('menu-fixed--scrolled') : fixedMenu.classList.remove('menu-fixed--scrolled')
     if(window.pageXOffset<200){

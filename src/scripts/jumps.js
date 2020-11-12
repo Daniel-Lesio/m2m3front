@@ -7,7 +7,7 @@ const jumps = ()=>{
     if(!links){
         return null
     }
-    console.log('links : ', links);
+    
     [...links].forEach(element => {
         element.addEventListener('click',()=>{
             jump(`${element.dataset.scrollto}`)
