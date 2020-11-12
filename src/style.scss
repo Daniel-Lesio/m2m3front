@@ -65,7 +65,12 @@ body{
     top: -28px;
     right: 0;
     cursor: pointer;
-    transition: all ease-in-out .3s;
+    svg{
+        circle{
+            transition: all ease-in-out 1s;
+
+        }
+    }
     &:hover{
         svg{
             .up-arrow{
