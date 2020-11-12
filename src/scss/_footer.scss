@@ -28,12 +28,21 @@ footer{
     }
     &__left{
         text-align: left;
+        text-decoration: underline;
+        
+            color: #83C5BE;
+            text-decoration: underline;
+        
     }
     &__center{
         text-align: center;
     }
     &__right{
         text-align: right;
+        a{
+            color: #83C5BE;
+            text-decoration: underline;
+        }
     }
     &__logo{
  z-index: 99;
