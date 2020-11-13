@@ -1,6 +1,8 @@
 #dzieci{
+
     padding-top: 40px;    
     background: white;
+
     padding-bottom: 58px;
     background-image: url('./assets/desktop/pattern.svg');
     h1{
@@ -27,7 +29,6 @@
         
     }
     .box{
-
         align-items: center;
         height: 70px;
         img{
@@ -99,7 +100,9 @@
         width: 100%;
         min-height: 100px;
         display: flex;
+        justify-content: center;
         .left{
+            background: red;
             display: flex;
             width: 100px!important;
             img{
@@ -108,6 +111,8 @@
             }
         }
         .right{
+            padding-left: 24px;
+            background: blue;
             flex: 1;
             text-transform: uppercase;
             display: flex;
