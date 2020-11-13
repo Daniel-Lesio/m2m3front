@@ -102,7 +102,7 @@
         display: flex;
         justify-content: center;
         .left{
-            background: red;
+            // background: #ddd;
             display: flex;
             width: 100px!important;
             img{
@@ -111,16 +111,16 @@
             }
         }
         .right{
-            padding-left: 24px;
-            background: blue;
+            
+            // background: rgba( #2c2c2c,.7);
             flex: 1;
             text-transform: uppercase;
             display: flex;
             align-items: center;
             font-weight: 600;
-            img{
+            // img{
 
-            }
+            // }
         }
     }
 }
@@ -135,4 +135,7 @@ img{
     width: 55px;
     height: 60px;
 }
+}
+.pl-24{
+    padding-left: 24px!important;
 }
