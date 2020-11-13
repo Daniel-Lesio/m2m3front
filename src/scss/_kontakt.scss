@@ -158,3 +158,35 @@ form{
 .kontakt-title{
     margin-bottom: 48px;
 }
+#checkbox{
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    display: none;
+}
+.ct{
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: solid 2px $primary;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0px;
+    .ct-x{
+        transition: all ease-in-out .3s;
+        transform: scale(1.5) translateX(0px);       
+        width: 100%;
+        height: 100%;
+        // transform: scale(1.4);
+    }
+    
+}
+.hide-checkbox{
+    
+    transform: scale(1.5) translateX(100px)!important;       
+}

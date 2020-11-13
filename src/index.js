@@ -87,3 +87,12 @@ galleryImages.forEach(gi=>{
          })
      })
  }
+
+
+
+ const checkbox = document.querySelector(".ct")
+ const checkboxIcon  = document.querySelector('.ct-x')
+
+ checkbox.addEventListener('click',()=>{
+   checkboxIcon.classList.toggle('hide-checkbox')
+ })

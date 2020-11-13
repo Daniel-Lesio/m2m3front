@@ -20,6 +20,9 @@
 @import './scss/preloader';
 
 @import 'bootstrap-4-grid';
+.ucase{
+    text-transform: uppercase!important;
+}
 .show{
     opacity: 1!important;
 }
