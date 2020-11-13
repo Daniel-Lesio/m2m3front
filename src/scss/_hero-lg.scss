@@ -187,6 +187,13 @@
         a{
             margin: 0;
             padding: 0;
+            &:hover{
+                svg{
+                    path{
+                        fill : #E4F5EB;
+                    }
+                }
+            }
             &:nth-child(odd){
                 margin-right: 6px;
             }
@@ -194,9 +201,14 @@
             svg{
                 width: 24px;
                 height: 24px;
+                path{
+                    transition:  all ease-in-out .3s;
+                }
+
             }
             svg:nth-child(even){
                 margin-left: 9px;
+                display: none;
             }
             svg:nth-child(odd){
                 margin-right: 9px;
