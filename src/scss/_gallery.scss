@@ -4,16 +4,17 @@
 
 }
 .choices{
-margin-top: 24px;
-justify-content: center;
-display: flex;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0px;
-text-align: left;
-h2{
+    margin-top: 24px;
+    justify-content: center;
+    display: flex;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    .gallery-choice{
+    position: relative;
     font-weight: 400;
         text-align: center;
         cursor: pointer;
