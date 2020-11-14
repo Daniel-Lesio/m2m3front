@@ -5,7 +5,8 @@ import 'bootstrap-4-grid'
 import { scrolling } from './scripts/scrolling';
 import { jumps } from './scripts/jumps';
 import { mobilemenu } from './scripts/mobilemenu';
-import { swipers } from './scripts/swipers';
+import { swiper1 } from './scripts/swipers';
+import { galleryScript } from './scripts/gallery'
 const menuFixedIcon = document.querySelector(".menu-fixed-icon");
 const menuFixedNav = document.querySelector(".menu-fixed-nav")
 const oferta8 = document.querySelector('.oferta8')
@@ -24,9 +25,10 @@ window.addEventListener('load', function () {
         swipercontainer.classList.remove('d-none')
         mouse.classList.add('d-sm-block')
         footerlogo.classList.remove("d-none")
-        swipers()
+        swiper1()
       }, 1100);
-   
+      
+      galleryScript()
       jumps()
       scrolling()
       mobilemenu()
