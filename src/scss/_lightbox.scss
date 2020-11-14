@@ -25,9 +25,13 @@
             .swiper-wrapper{
                 width: 100%!important;
                 height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 .gallery-image{
                     width: 100%;
                     transition: all ease-in-out .5s;
+                    
                 }
             }
             .swiper-slide{
