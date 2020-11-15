@@ -111,7 +111,6 @@
     align-items: center;
     .slide{
         position: absolute;
-        opacity: 1;
         display: flex;
         transform: translateX(-100vw);
         opacity: 0;
@@ -120,8 +119,7 @@
         img{
             width: 100vw;
             max-width:  800px!important;
-            background: red;
-            opacity: .6;
+            opacity: 1;
         }
         figcaption{
             z-index: 35;
