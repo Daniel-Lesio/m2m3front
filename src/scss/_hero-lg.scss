@@ -64,7 +64,6 @@
                     transition: all ease-in-out .3s;
                 }
                 &:hover{
-                    transform: scale(1.1);
                     font-size: 16px;
                     font-weight: 700;
                     color : $primary;
@@ -293,7 +292,7 @@
 
     .mouse{
         transition: opacity ease-in-out 1s;
-        
+        z-index: 1;
         position: absolute;
         transform: translateX(-50%);
         left: 50%;
