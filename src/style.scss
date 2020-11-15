@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
-@import './scss/base';
+// @import './scss/base';
 @import './scss/reset';
 @import './scss/variables';
 @import './scss/lightbox';
@@ -11,6 +11,7 @@
 @import './scss/footer';
 @import './scss/onas';
 @import './scss/gallery';
+@import './scss/gallery2';
 @import './scss/dzieci';
 @import './scss/okolica';
 @import './scss/domki';
@@ -23,7 +24,15 @@
 @import './scss/preloader';
 
 @import 'bootstrap-4-grid';
-
+.test-div{
+    position: fixed ;
+    z-index: 99;
+    left: 10px;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .ucase{
     text-transform: uppercase!important;

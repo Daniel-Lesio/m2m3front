@@ -6,7 +6,8 @@ import { scrolling } from './scripts/scrolling';
 import { jumps } from './scripts/jumps';
 import { mobilemenu } from './scripts/mobilemenu';
 import { swiper1 } from './scripts/swipers';
-import { galleryScript } from './scripts/gallery'
+// import { galleryScript } from './scripts/gallery'
+import { gallery2 , gallery2Carousel } from './scripts/gallery2'
 const menuFixedIcon = document.querySelector(".menu-fixed-icon");
 const menuFixedNav = document.querySelector(".menu-fixed-nav")
 const oferta8 = document.querySelector('.oferta8')
@@ -16,6 +17,7 @@ const over = document.querySelector(".over")
 const swipercontainer = document.querySelector(".swiper-container")
 const mouse = document.querySelector(".mouse")
 const footerlogo = document.querySelector('.footer__logo')
+
 window.addEventListener('load', function () {
 
       preloader.classList.add('go')
@@ -27,12 +29,11 @@ window.addEventListener('load', function () {
         footerlogo.classList.remove("d-none")
         swiper1()
       }, 1100);
-      
-      galleryScript()
+       gallery2Carousel.create(0)
       jumps()
       scrolling()
       mobilemenu()
-  
+      gallery2()
     menuFixedIcon.addEventListener("click",()=>{
     
     menuFixedNav.classList.toggle("show-menu-fixed-nav")
@@ -75,8 +76,9 @@ const galleryImages = document.querySelectorAll('.grid__box img')
 // })
 galleryImages.forEach(gi=>{
   if(gi.dataset.choice === '2' || gi.dataset.choice === '1'){
-    gi.classList.add('hide-img')
+    gi.classList.add('hide-img') 
   }
+
 })
 
  for (let i = 0; i < galleryChoices.length; i++) {
