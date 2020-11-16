@@ -19,12 +19,8 @@ const mouse = document.querySelector(".mouse")
 const footerlogo = document.querySelector('.footer__logo')
 
 window.addEventListener('load', function () {
-
-      setTimeout(()=>{
-        preloader.classList.add('go')
-      over.classList.add('go')
-
-      },3000)
+  preloader.classList.add('go')
+  over.classList.add('go')
       setTimeout(() => {
         swipercontainer.classList.remove('d-none')
         mouse.classList.add('d-sm-block')
