@@ -56,7 +56,25 @@ html, body {
     margin: 0;
     padding: 0;
 }
+body{
+    position: relative;
+    .patt1{
+        width: 225px;
+        height: 249px;
+        transform: translateX(25%);
+        
+        @media (min-width: 576px) { 
+            width: 316px;
+            height: 349px;
+            transform: translateX(60%);
+         }
 
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index:-1;
+    }
+}
 .over-x{
     
 }
