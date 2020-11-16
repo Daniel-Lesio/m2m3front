@@ -17,7 +17,8 @@ const over = document.querySelector(".over")
 const swipercontainer = document.querySelector(".swiper-container")
 const mouse = document.querySelector(".mouse")
 const footerlogo = document.querySelector('.footer__logo')
-
+const privacy = document.querySelector(".privacy")
+const privacyBtn = document.querySelector(".privacy-btn")
 window.addEventListener('load', function () {
   preloader.classList.add('go')
   over.classList.add('go')
@@ -26,8 +27,12 @@ window.addEventListener('load', function () {
         mouse.classList.add('d-sm-block')
         footerlogo.classList.remove("d-none")
         swiper1()
-      }, 1100);
-       gallery2Carousel.create(0)
+        privacy.classList.add("show-privacy")
+      }, 100);
+      //  gallery2Carousel.create(0)
+      privacyBtn.addEventListener("click",()=>{
+        privacy.classList.remove("show-privacy")
+      })
       jumps()
       scrolling()
       mobilemenu()
