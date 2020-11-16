@@ -24,6 +24,9 @@
     flex-direction: column;
     p{
         padding-bottom: 1rem;
+        a{
+            text-decoration: underline;
+        }
     }
     .btn{
         padding: 10px 13px ;
