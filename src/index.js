@@ -20,9 +20,11 @@ const footerlogo = document.querySelector('.footer__logo')
 
 window.addEventListener('load', function () {
 
-      preloader.classList.add('go')
+      setTimeout(()=>{
+        preloader.classList.add('go')
       over.classList.add('go')
 
+      },3000)
       setTimeout(() => {
         swipercontainer.classList.remove('d-none')
         mouse.classList.add('d-sm-block')
