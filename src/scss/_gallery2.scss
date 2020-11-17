@@ -13,7 +13,7 @@
     opacity: 0;
     background: white;
     transition:  opacity .3s ease-in-out;
-    
+
     &::after{
         position: fixed;
         left: 0;
@@ -37,12 +37,32 @@
         align-items: center;
         border-radius: 50%;
         background: $primary;
+        transition: all ease-in-out .3s;
         svg{
             width: 24px;
             height: 24px;
+            line{
+                transition: all ease .3s;
+                transform-origin: 50% 50%;
+            }
         }
         
+        &:hover{
+            transform: rotate(180deg);
+            background: $secondary;
+            svg{
+                fill : $primary;
+                line{
+                    stroke : $primary;
+                    transform: rotate(45deg);
+                    &:nth-child(odd){
+                        transform: rotate(-45deg);
 
+                    }
+
+                }
+            }
+        }
 
     }
     .arrow{

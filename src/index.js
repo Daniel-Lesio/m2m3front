@@ -40,6 +40,7 @@ window.addEventListener('load', function () {
     menuFixedIcon.addEventListener("click",()=>{
     
     menuFixedNav.classList.toggle("show-menu-fixed-nav")
+
    })
   
   
