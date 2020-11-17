@@ -63,7 +63,7 @@ const gallery2Carousel = {
                     return `
                     <figure class="slide">
                         <img data-id="${this.id}"    src="${img.url}" alt="Trulli" style="width:100%">
-                        <figcaption>Fig.${this.id} - Trulli, Puglia, Italy.</figcaption>
+                        <figcaption class='d-none'>Fig.${this.id} - Trulli, Puglia, Italy.</figcaption>
                     </figure>
                     `
                 }
