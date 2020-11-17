@@ -1,3 +1,19 @@
+.indicator-container{
+    z-index: 33;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 2px;
+    background: $secondary;
+
+    .indicator{
+        
+        height: 2px;
+        background: $primary;
+    }
+
+}
 .test-div{
     display: grid;
     position: fixed;
