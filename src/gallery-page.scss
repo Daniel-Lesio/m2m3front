@@ -30,9 +30,6 @@
 @import './scss/privacy';
 
 @import 'bootstrap-4-grid';
-footer{
-    margin-top: 200px!important;
-}
 .test-div{
     position: fixed ;
     z-index: 99;
@@ -41,6 +38,11 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.fixed-logo{
+    align-self: center;
+    display: flex;
 }
 .over-hidden{
   overflow: hidden;  
@@ -205,3 +207,8 @@ section{
     .up-arrow{
         transition: transform ease-in-out .3s;
     }
+
+
+#gallery{
+    padding-bottom: 200px;
+}

@@ -15,7 +15,7 @@
 .grid-3{
     margin-top: 50px;
     grid-template-columns: repeat(1,1fr);
-    display: none;
+    display: grid;
     gap: 40px 42px;
     @media (min-width : 768px) {
         display: grid!important;

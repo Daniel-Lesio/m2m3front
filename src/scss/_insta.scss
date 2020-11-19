@@ -1,5 +1,5 @@
 #insta{
-margin-top: 0px;
+    margin-top: 0px;
     margin-bottom: 1rem;
     text-transform: uppercase;
     .container{
@@ -31,5 +31,11 @@ margin-top: 0px;
         svg{
             margin-right : 1rem;
         }
+    }
+}
+
+#hashtag{
+    @media (max-width : 768px) {
+        font-size: 1.4rem;
     }
 }

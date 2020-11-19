@@ -5,10 +5,13 @@ const miniCssExtractPlugin = require("mini-css-extract-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-    entry : './src/index.js',
+    entry : {
+        index : './src/index.js',
+        gallery : './src/gallery.js',
+    },
     output : {
         path : path.resolve(__dirname ,'dist'),
-        filename : 'bundle.js'
+        filename : '[name].js'
     },
     module : {
         rules : [
@@ -59,12 +62,19 @@ module.exports = {
         ],
     },
     plugins  : [
-        new HtmlWebpackPlugin({
-            
+        new HtmlWebpackPlugin({   
             template: path.join(__dirname , './src/index.html'),
             filename : "index.html",
             minify: false,
+            chunks: ['index']
             
+            
+        }),
+        new HtmlWebpackPlugin({
+            template: path.join(__dirname , './src/gallery.html'),
+            filename : "gallery.html",
+            minify: false,
+            chunks: ['gallery']
 
         }),
         

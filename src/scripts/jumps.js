@@ -3,13 +3,13 @@ import jump from 'jump.js'
 
 const jumps = ()=>{
     const links = document.querySelectorAll('[data-scrollto]')
-    let x = 0
     if(!links){
         return null
     }
     
     [...links].forEach(element => {
-        element.addEventListener('click',()=>{
+        element.addEventListener('click',(e)=>{
+            e.preventDefault();
             jump(`${element.dataset.scrollto}`)
         })
         

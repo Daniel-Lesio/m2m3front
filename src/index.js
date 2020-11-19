@@ -1,11 +1,18 @@
- import './style.scss';
+import './style.scss';
 // import 'bootstrap-4-grid';
 
 import 'bootstrap-4-grid'
+import { localGallery } from './scripts/locals'
+import { changeLink } from './scripts/links'
 import { scrolling } from './scripts/scrolling';
 import { jumps } from './scripts/jumps';
 import { mobilemenu } from './scripts/mobilemenu';
 import { swiper1 } from './scripts/swipers';
+import { privacy } from './scripts/privacy'
+import { oferta } from './scripts/oferta'
+import { contact } from './scripts/contact'
+import { choiceScript } from './scripts/choices'
+
 // import { galleryScript } from './scripts/gallery'
 import { gallery2 , gallery2Carousel } from './scripts/gallery2'
 const menuFixedIcon = document.querySelector(".menu-fixed-icon");
@@ -17,26 +24,31 @@ const over = document.querySelector(".over")
 const swipercontainer = document.querySelector(".swiper-container")
 const mouse = document.querySelector(".mouse")
 const footerlogo = document.querySelector('.footer__logo')
-const privacy = document.querySelector(".privacy")
-const privacyBtn = document.querySelector(".privacy-btn")
+// const privacy = document.querySelector(".privacy")
+// const privacyBtn = document.querySelector(".privacy-btn")
+
+const pageName = 'index'
 window.addEventListener('load', function () {
   preloader.classList.add('go')
   over.classList.add('go')
-      setTimeout(() => {
-        swipercontainer.classList.remove('d-none')
-        mouse.classList.add('d-sm-block')
-        footerlogo.classList.remove("d-none")
-        swiper1()
-        privacy.classList.add("show-privacy")
-      }, 100);
+      
+  setTimeout(() => {
+    swipercontainer.classList.remove('d-none')
+    mouse.classList.add('d-sm-block')
+    footerlogo.classList.remove("d-none")
+    swiper1()
+  }, 100);
       //  gallery2Carousel.create(0)
-      privacyBtn.addEventListener("click",()=>{
-        privacy.classList.remove("show-privacy")
-      })
-      jumps()
-      scrolling()
-      mobilemenu()
-      gallery2()
+    jumps()
+    scrolling('index')
+    mobilemenu()
+    gallery2()
+    privacy()
+    oferta()
+    contact()
+    changeLink()
+    choiceScript()
+
     menuFixedIcon.addEventListener("click",()=>{
     
     menuFixedNav.classList.toggle("show-menu-fixed-nav")
@@ -44,63 +56,30 @@ window.addEventListener('load', function () {
    })
   
   
-   oferta6.addEventListener('click',()=>{
-     oferta8.classList.remove("btn--active")
-     oferta6.classList.add("btn--active")
-     document.querySelector('.oferta-1 .cena').innerHTML ='350 zł'
-     document.querySelector('.oferta-2 .cena').innerHTML ='450 zł'
-     document.querySelector('.oferta-3 .cena').innerHTML ='550 zł'
-     document.querySelector('.oferta-4 .cena').innerHTML ='250 zł'
-   })
-   oferta8.addEventListener('click',()=>{
-     oferta6.classList.remove("btn--active")
-     oferta8.classList.add("btn--active")
-     document.querySelector('.oferta-1 .cena').innerHTML ='450 zł'
-     document.querySelector('.oferta-2 .cena').innerHTML ='550 zł'
-     document.querySelector('.oferta-3 .cena').innerHTML ='650 zł'
-     document.querySelector('.oferta-4 .cena').innerHTML ='350 zł'
-   })
   
-   const choices = document.querySelectorAll(".choices h2")
-   choices.forEach(choice=>{
-     choice.addEventListener('click',()=>{       
-       choices.forEach(ch=>ch.classList.remove('active')) 
-       choice.classList.add('active')    
-     })
-   })  
+  
  })
+//  const  choices = document.querySelectorAll('.choices h2')
 
 
-
-const galleryChoices = document.querySelectorAll('.gallery-choice')
-const galleryImages = document.querySelectorAll('.grid__box img')
-
-// galleryChoices.forEach(choice=>{
-//   console.log(choice.data)
-// })
-galleryImages.forEach(gi=>{
-  if(gi.dataset.choice === '2' || gi.dataset.choice === '1'){
-    gi.classList.add('hide-img') 
+ const galleryChoices = document.querySelectorAll('.gallery-choice')
+ const galleryImages = document.querySelectorAll('.grid__box img')
+ 
+ galleryImages.forEach(gi=>{
+   if(gi.dataset.choice === '2' || gi.dataset.choice === '1'){
+     gi.classList.add('hide-img') 
+   }
+ 
+ })
+ 
+  for (let i = 0; i < galleryChoices.length; i++) {
+      galleryChoices[i].addEventListener('click',()=>{
+          galleryImages.forEach(gi=>{
+            gi.classList.add('hide-img')
+            if(gi.dataset.choice == i ){
+              gi.classList.remove('hide-img')
+            }       
+          })
+      })
   }
 
-})
-
- for (let i = 0; i < galleryChoices.length; i++) {
-     galleryChoices[i].addEventListener('click',()=>{
-         galleryImages.forEach(gi=>{
-           gi.classList.add('hide-img')
-           if(gi.dataset.choice == i ){
-             gi.classList.remove('hide-img')
-           }       
-         })
-     })
- }
-
-
-
- const checkbox = document.querySelector(".ct")
- const checkboxIcon  = document.querySelector('.ct-x')
-
- checkbox.addEventListener('click',()=>{
-   checkboxIcon.classList.toggle('hide-checkbox')
- })

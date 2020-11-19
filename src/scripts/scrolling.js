@@ -7,7 +7,7 @@ import sal from 'sal.js'
 const indicator = document.querySelector('.indicator')
 const totalHeight = (document.body.scrollHeight - window.innerHeight )
 
-const scrolling = () =>{
+const scrolling = (page) =>{
     sal({
         once : false
     });
@@ -22,7 +22,7 @@ const scrolling = () =>{
         
         if(!ticking){
             window.requestAnimationFrame(()=>{
-                scrolled(scroll_position , scroll_units)
+                scrolled(scroll_position , scroll_units ,page)
             })
         }
         
@@ -31,9 +31,11 @@ const scrolling = () =>{
 }
 
 
-function scrolled(scroll_position , units){
+function scrolled(scroll_position , units , page){
     
-    scroll_position > 200 ? fixedMenu.classList.add('menu-fixed--scrolled') : fixedMenu.classList.remove('menu-fixed--scrolled')
+    if(page === 'index'){
+        scroll_position > 200  ? fixedMenu.classList.add('menu-fixed--scrolled') : fixedMenu.classList.remove('menu-fixed--scrolled')
+    }
     if(scroll_position<200){
         menuFixedNav.classList.remove('show-menu-fixed-nav')
     }
