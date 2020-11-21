@@ -12,7 +12,6 @@ const jumps = ()=>{
             e.preventDefault();
             jump(`${element.dataset.scrollto}-target`,{
                 offset: -100,
-                easing: easeInOutQuad
             })
         })
         
