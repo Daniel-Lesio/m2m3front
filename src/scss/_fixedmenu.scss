@@ -87,6 +87,7 @@
         background: white;
     }
     .menu-fixed-nav-2{
+    
         box-shadow: 0px 1px 9px 4px rgba(0, 0, 0, 0.1)!important;    
         position: absolute;    
         opacity: 1!important;
@@ -115,7 +116,7 @@
                 color: black;
                 position: relative;
                 cursor: pointer;
-                
+                font-weight : 400;
                     &::after{
                         position: absolute;
                         content: '';
@@ -170,6 +171,7 @@
 .show-menu-fixed-nav{
     opacity: 1!important;
     transform: translateY(0px)!important;
+    
     box-shadow: 0px 1px 9px 4px rgba(0, 0, 0, 0.1)!important;    
     // box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0)!important;    
     
