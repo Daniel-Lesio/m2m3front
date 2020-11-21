@@ -8,6 +8,7 @@ module.exports = {
     entry : {
         index : './src/index.js',
         gallery : './src/gallery.js',
+        privacy : './src/privacy.js',
     },
     output : {
         path : path.resolve(__dirname ,'dist'),
@@ -75,6 +76,13 @@ module.exports = {
             filename : "gallery.html",
             minify: false,
             chunks: ['gallery']
+
+        }),
+        new HtmlWebpackPlugin({
+            template: path.join(__dirname , './src/privacy.html'),
+            filename : "privacy.html",
+            minify: false,
+            chunks: ['privacy']
 
         }),
         

@@ -20,6 +20,10 @@ footer{
         align-items: center;
         
     }
+    a:hover{
+        text-decoration: none;
+        color: white;
+    }
     &__col{
         flex: 1;
         @media (max-width : 992px) {
@@ -29,9 +33,7 @@ footer{
     &__left{
         text-align: left;
         text-decoration: underline;
-        
-            color: #83C5BE;
-            text-decoration: underline;
+        color: #83C5BE;
         
     }
     &__center{

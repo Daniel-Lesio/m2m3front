@@ -10,7 +10,9 @@ const jumps = ()=>{
     [...links].forEach(element => {
         element.addEventListener('click',(e)=>{
             e.preventDefault();
-            jump(`${element.dataset.scrollto}`)
+            jump(`${element.dataset.scrollto}-target`,{
+                offset: -100,
+            })
         })
         
     });

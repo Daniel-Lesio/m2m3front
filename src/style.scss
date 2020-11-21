@@ -82,19 +82,7 @@ body{
         z-index:-1;
     }
 }
-.over-x{
-    
-}
-.xcontainer{
-    @media (max-width: 576px) {
-        overflow-x: hidden;    
-        overflow-y: auto;
-    }
-    width: 100vw!important;
-    max-width: 1200px!important;
-    padding-right: 10px!important;
-    padding-left: 10px!important;
-}
+
 body{
     overflow-x : hidden!important;
 }
