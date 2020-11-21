@@ -16,7 +16,7 @@ import { choiceScript } from './scripts/choices'
 // import { galleryScript } from './scripts/gallery'
 import { gallery2 , gallery2Carousel } from './scripts/gallery2'
 const menuFixedIcon = document.querySelector(".menu-fixed-icon");
-const menuFixedNav = document.querySelector(".menu-fixed-nav")
+const menuFixedNav = document.querySelector(".menu-fixed-nav-2")
 const oferta8 = document.querySelector('.oferta8')
 const oferta6 = document.querySelector('.oferta6')
 const preloader = document.querySelector(".preloader")

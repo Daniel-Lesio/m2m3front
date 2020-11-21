@@ -1,7 +1,7 @@
 
 /* DOME ELEMENTS */
 const fixedMenu = document.querySelector('.menu-fixed')
-const menuFixedNav = document.querySelector(".menu-fixed-nav")
+const menuFixedNav = document.querySelector(".menu-fixed-nav-2")
 import sal from 'sal.js'
 
 const indicator = document.querySelector('.indicator')
