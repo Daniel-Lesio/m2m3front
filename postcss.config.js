@@ -9,5 +9,4 @@ module.exports = {
         //     content: ['./src/*.html'],
         //     css : ['./src/scss/_uuix.scss']
         // })
-    ]
-}
+    ]}

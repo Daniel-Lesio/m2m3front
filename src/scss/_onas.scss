@@ -21,7 +21,7 @@ text-align: left;
 #onas{
     padding-top: 0px;
     background: white;
-    @media (min-width : 768px) {
+    @media (min-width : 996px) {
         padding-top: 120px;
         
     }
@@ -30,7 +30,7 @@ text-align: left;
         min-height: 100px;
         
         flex-direction: column-reverse;
-        @media (min-width : 768px) {
+        @media (min-width : 996px) {
             flex-direction: row; 
         }
         &__left{
@@ -45,7 +45,7 @@ text-align: left;
             display: flex;
             flex-direction: column;
 
-            @media (max-width : 768px) {
+            @media (max-width : 996px) {
                 overflow: hidden;
                 width: 100%; 
             }
@@ -54,12 +54,12 @@ text-align: left;
                 max-width: 100%;
                 width: 384px;
                 height: 560px;
-                @media (max-width : 768px) {
+                @media (max-width : 996px) {
                     align-self: center; 
                 }
             }
             &::after{
-                @media (max-width : 768px) {
+                @media (max-width : 996px) {
                     z-index: 1;
                 }
                 
@@ -82,7 +82,7 @@ text-align: left;
 }
 .onas-img-2{
     margin-top: 56px;
-    @media (max-width : 768px) {
+    @media (max-width : 996px) {
         display: none; 
     }
 }

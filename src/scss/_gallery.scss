@@ -81,16 +81,34 @@
         }
     }
 }
-.gallery-btn{
+.center-btn{
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: center;
+
+    margin-top: 40px;
     background: $primary;
     align-self: center;
-
+    font-family: Arial, Helvetica, sans-serif;
     border: inherit;
     color: white;
     border-radius: 50px;
-    padding : 18px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 186px;
     cursor: pointer;
     transition: all ease-in-out .3s ;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 18px;
+    padding-right: 18px;
     &:focus{
         border-radius: 50px;
         outline: none;
@@ -101,7 +119,7 @@
     }
         .text{
             width: 150px;
-            font-weight: 700;
+            
         }
 }
 .hide-img{
@@ -121,3 +139,4 @@
 
     }
 }
+

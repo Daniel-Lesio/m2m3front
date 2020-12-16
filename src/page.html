@@ -34,9 +34,10 @@
 
         <div class="container p-0  my-0 fixed-container" >
             <div class="c left">
-                <div class="menu-fixed-nav-2 " >
-                    <ul class="menu-fixed-ul">
-                        <li data-scrollto="#onas"><a class="active" href="#">O NAS</a></li>
+                <div class="menu-fixed-nav-2   menu-fixed-nav" >
+                    <ul class="menu-fixed-ul" style="box-shadow: 0px 1px 9px 4px rgba(0, 0, 0, 0.1)!important;    
+                    ">
+                        <li data-scrollto="index.html#onas"><a class="active" href="#">O NAS</a></li>
                         <li data-scrollto="#gallery"><a href="#">GALERIA</a></li>
                         <li data-scrollto="#dzieci"><a href="#">ATRAKCJE DLA DZIECI</a></li>
                         <li data-scrollto="#okolica"><a href="#">ATRAKCJE W OKOLICY</a></li>
@@ -153,19 +154,20 @@
             <span>+48 534 478 005</span>
         </div>
     </div>
+
+
+
     
-    <section id="gallery">
-        <div class="choices pb-2 ">
-            <h2 class="gallery-choice active" data-nr="0">DOMKI</h2>
-            <h2 class="gallery-choice" data-nr="1">ATRAKCJE DLA DZIECI</h2>
-            <h2 class="gallery-choice" data-nr="2">OKOLICA</h2>
-        </div>
-        <div id="gallery-grid" class="container grid-3">
-                    loading...
-        </div>
-    </section>
-    
-    
+<section class='page w-h100' style="padding-top: 150px;">
+    <div class="container">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://panel.hotres.pl/public/api/hotres_v3.js"></script>
+<div id="hotresContainer"></div>
+<script>
+createHotres({'action':'index','auth':'2afeb2bf2991a3b0f68f476fb3e41476','lang':'pl' });
+</script><p style="padding:15px;text-align:center"> Rezerwację obsługuje system : <a href="https://hotres.pl" title="system rezerwacji pokoi online">HOTRES.pl</a></p>
+    </div>
+</section>
     <footer>
         <div class="footer">
             <img class="footer__logo d-none" src="./assets/logo/logo_footer_DOBRE-MIEJSCE.png" srcset="./assets/logo/logo_footer_DOBRE-MIEJSCE@2x.png 2x" alt="">
@@ -193,38 +195,11 @@
             <img src="./assets/logo/logo_DOBRE-MIEJSCE.png" srcset="./assets/logo/logo_DOBRE-MIEJSCE@2x.png 2x" alt="">
         </div>
     </div>
-    <div class="gallery2 ">
+    
 
-        <div class="close-gallery2">
-            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line x1="1.11074" y1="2.00046" x2="22.6274" y2="23.5171" stroke="white" stroke-width="1.57082" stroke-linecap="round" stroke-linejoin="round"/>
-                <line x1="1.50879" y1="23.5167" x2="23.0255" y2="1.99999" stroke="white" stroke-width="1.57082" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                
-        </div>
-        <div class="arrows">
-            
-            <div class="arrow arrow-left">
-                <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17 0.999999L1 17L17 33" stroke="#144D29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                                        
-            </div>
-            <div class="arrow arrow-right">
-                <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 0.999999L17 17L1 33" stroke="#144D29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-            </div>
-        </div>
-        <div class="galery2-carousel">
-              
-        </div>
 
-    </div>
+    
     <div id="classes" class="
-    c    
-    gallery-grid
-        gallery-box
         slide
         slide-active
         show-gallery2 
@@ -240,6 +215,7 @@
         show-menu-fixed-nav 
         menu-fixed--scrolled">
     </div>
+    
     <div class="privacy">
         <p>
             Ta strona używa cookies. Korzystając <br> z niej wyrażasz zgodę na wykorzystywanie cookies, zgodnie z ustawieniami Twojej przeglądarki. <br> Więcej w <a href="#">Polityce Prywatności</a>

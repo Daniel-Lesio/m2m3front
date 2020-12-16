@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
-@import '../node_modules/sal.js/dist/sal.css';
 
 @import './scss/reset';
 @import './scss/variables';
@@ -9,24 +8,11 @@
 @import './scss/hero-lg';
 @import './scss/fixedmenu';
 @import './scss/footer';
-@import './scss/onas';
-@import './scss/gallery';
-@import './scss/gallery2';
-@import './scss/dzieci';
-@import './scss/okolica';
-@import './scss/domki';
-@import './scss/oferta';
-@import './scss/youtube';
-@import './scss/insta';
-@import './scss/info';
-@import './scss/kontakt';
-@import './scss/rekomendacje';
 @import './scss/preloader';
 @import './scss/map';
 @import './scss/uiux';
 @import './scss/preloader';
 @import './scss/privacy';
-@import './scss/extra';
 
 @import 'bootstrap-4-grid';
 .base-content{

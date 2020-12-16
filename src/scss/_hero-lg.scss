@@ -183,7 +183,7 @@
     
     .hero-lg-content{
         .swiper-container {
-            z-index: 0;
+
             
             transition: opacity ease-in-out 1s;
             width: 100%;
@@ -277,11 +277,7 @@
                 }
                 
             }
-            .swiper-button-prev{
-                
-            }
-            .swiper-button-next{
-            }
+        
             
         }
         display: flex;

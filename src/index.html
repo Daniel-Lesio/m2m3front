@@ -155,9 +155,6 @@
     </div>
     <section id="hero-lg">
 
-        <!-- <div class="patt1">
-            <img src="./assets/desktop/pattern2.svg" alt="">
-        </div> -->
         <svg style=" transform: translateY(-50px);" class=" d-none   mouse" width="32" height="90" viewBox="0 0 32 90"><defs><style>.cls-1{fill:none;stroke:#000;stroke-width:2px;}</style></defs><g id="Warstwa_2" data-name="Warstwa 2"><g id="Warstwa_1-2" data-name="Warstwa 1"><path class="cls-1 " d="M10.39,0V50.91"></path><path class="cls-1 kr" d="M10.39,66.7v5.82"></path><rect class="cls-1 kropka" x="1" y="61" width="18.79" height="28" rx="9.39"></rect></g></g></svg>
         <div class="hero-lg-header d-none d-sm-flex p-0   container over-x" style="padding-left: 16px; padding-right: 16px;"> 
             <div id="logo"
@@ -168,14 +165,14 @@
                 <img src="./assets/logo/logo_DOBRE-MIEJSCE.png" srcset="./assets/logo/logo_DOBRE-MIEJSCE@2x.png 2x" alt="">
             </div>
             <div class="btn-grp">
-                <div class="btn btn-fix cp btn-primary"
+                <a href='#' class="btn btn-fix cp btn-primary"
                 data-sal="slide-down"
                 data-sal-easing="easeInOutSine"
                 data-sal-duration='500'
                 data-sal-delay='200'
                 >
                     ZAREZERWUJ TERMIN
-                </div>
+                </a>
                 <a  href="tel:+48534478005" class="btn cp btn-secondary"
                 data-sal="slide-down"
                 data-sal-easing="easeInOutSine"
@@ -212,30 +209,61 @@
                 
                 </div>
             </div>
+            <div class="right swiper-container">
+                <div class="swiper-wrapper">
+              
+                  <!-- Lazy image -->
+                  <div class="swiper-slide">
+                    <img src="https://images.pexels.com/photos/4034037/pexels-photo-4034037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+              
+                  <!-- Lazy image with srscet-->
+                  <div class="swiper-slide">
+                    <img data-src="path/to/logo-small.png" data-srcset="path/logo/logo-large.png 2x" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+              
+                  <!-- Element with lazy background image -->
+                  <div class="swiper-slide">
+                    <div data-background="https://images.pexels.com/photos/4034037/pexels-photo-4034037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="swiper-lazy">
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                  </div>
+              
+                  <!-- Lazy background image on slide itself -->
+                  <div data-background="https://images.pexels.com/photos/4034037/pexels-photo-4034037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="swiper-slide swiper-lazy">
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
             <div class="right d-none  swiper-container">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        
+                    <div class="swiper-wrapper">    
                         <div class="swiper-slide">
-                            <img class="" src="./assets/desktop/slider/banner_slider.jpg" srcset="./assets/desktop/slider/banner_slider@2x.jpg 2x" alt="" >
-                            <div class="caption">Dobre Miejsce <span>dla całej rodziny</span></div>
-                            
+
+                            <img class="swiper-lazy" data-src="https://images.pexels.com/photos/4034037/pexels-photo-4034037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-srcset="https://images.pexels.com/photos/4034037/pexels-photo-4034037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 2x" alt="" >
+                            <!-- <div class="caption">Dobre Miejsce <span>dla całej rodziny</span></div> -->
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-lazy" data-src="https://images.pexels.com/photos/4034037/pexels-photo-4034037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-srcset="https://images.pexels.com/photos/4034037/pexels-photo-4034037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 2x" alt="" >
+                            <!-- <div class="caption">Dobre Miejsce dla całej rodziny</div> -->
+                            <div class="swiper-lazy-preloader"></div>
 
                         </div>
                         <div class="swiper-slide">
-                            <img class="" src="./assets/desktop/slider/banner_slider.jpg" srcset="./assets/desktop/slider/banner_slider@2x.jpg 2x" alt="" >
-                            <div class="caption">Dobre Miejsce dla całej rodziny</div>
-                            
-
+                            <img class="swiper-lazy" data-src="https://images.pexels.com/photos/4034037/pexels-photo-4034037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-srcset="https://images.pexels.com/photos/4034037/pexels-photo-4034037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 2x" alt="" >
+                            <!-- <div class="caption">Dobre Miejsce dla całej rodziny</div> -->
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
-                        <div class="swiper-slide">
-                            <img class="" src="./assets/desktop/slider/banner_slider.jpg" srcset="./assets/desktop/slider/banner_slider@2x.jpg 2x" alt="" >
-                            <div class="caption">Dobre Miejsce dla całej rodziny</div>
-                            
-
-                        </div>
-                        
+                        <div data-background="./assets/desktop/pattern.svg" class="swiper-slide swiper-lazy">
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
                     </div>
                     <!-- If we need pagination -->
                 
@@ -315,7 +343,7 @@
                     data-sal-duration='500'
                     data-sal-delay='100'
                 >
-                    <img data-choice="0" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="./assets/desktop/Galeria/1/Rectangle.jpg" srcset="./assets/desktop/Galeria/1/Rectangle@2x.jpg 2x" alt="">
+                    <img data-id='92' data-choice="0" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="./assets/desktop/Galeria/1/Rectangle.jpg" srcset="./assets/desktop/Galeria/1/Rectangle@2x.jpg 2x" alt="">
                     <img data-choice="1" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
                     <img data-choice="2" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
                 </div>
@@ -324,7 +352,7 @@
                     data-sal-easing="easeInOutSine"
                     data-sal-duration='500'
                 >
-                    <img data-choice="0" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="./assets/desktop/Galeria/2/Rectangle-2.jpg" srcset="./assets/desktop/Galeria/2/Rectangle@2x-1.jpg 2x" alt="">
+                    <img data-id="90" data-choice="0" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="./assets/desktop/Galeria/2/Rectangle-2.jpg" srcset="./assets/desktop/Galeria/2/Rectangle@2x-1.jpg 2x" alt="">
                     <img data-choice="1" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
                     <img data-choice="2" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
                 </div>
@@ -362,8 +390,6 @@
                     data-sal-easing="easeInOutSine"
                     data-sal-duration='500'
                 >
-                    <!-- <img data-choice="0" src="./assets/desktop/Galeria/6/Rectangle-10.jpg" alt=""> -->
-                    <!-- <img data-choice="0" data-img="https://dobremiejsce-demo.netlify.app/assets/Rectangle-10.jpg" src="https://dobremiejsce-demo.netlify.app/assets/Rectangle-10.jpg" alt=""> -->
                     
                     <img data-choice="0" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="https://images.pexels.com/photos/92657/pexels-photo-92657.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
                     <img data-choice="1" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
@@ -371,9 +397,9 @@
 
                 </div>
             </div>
-            <button class="gallery-btn  cp">
-                <a href="https://www.google.com" class="text d-block">WIĘCEJ ZDJĘĆ</a>
-            </button>
+            <a href="https://www.google.com" class=" center-btn  cp">
+                <div  class="">WIĘCEJ ZDJĘĆ</div>
+            </a>
         </div>
     </section>
     <section id="dzieci">
@@ -565,9 +591,9 @@
             </div>
             <div class="c">
                 
-                <button class=" mx-auto  gallery-btn">
+                <a href='#' class=" mx-auto  center-btn">
                     <div class="text">WIĘCEJ ZDJĘĆ</div>
-                </button>
+                </a>
             </div>
             
         </div>
@@ -725,9 +751,9 @@
             </div>
             <div class="c">
                 
-                <button class=" mx-auto  gallery-btn">
+                <a href="#" class=" mx-auto  center-btn">
                     <div class="text">WIĘCEJ ZDJĘĆ</div>
-                </button>
+                </a>
             </div>
             
         </div>
@@ -781,7 +807,7 @@
                     data-sal-easing="easeInOutSine"
                     data-sal-duration='500'
                     data-sal-delay='400'
-                >
+                />
             </div>
         </div>
     </section>
@@ -818,7 +844,7 @@
                         data-sal-delay='200'
                         >
                     </div>
-                    <div class="cena">
+                    <div class="cena" data-cena-1="550" data-cena-2="650">
                         650 zł
                     </div>
                     <div class="btn ucase  cp btn-g-fix">Rezerwuj</div>
@@ -834,7 +860,7 @@
                         data-sal-delay='400'
                         >
                     </div>
-                    <div class="cena">
+                    <div class="cena" data-cena-1="550" data-cena-2="650">
                         750 zł
                     </div>
                     <div class="btn  cp  ucase btn-g-fix">Rezerwuj</div>
@@ -850,7 +876,7 @@
                         data-sal-delay='600'
                         >
                     </div>
-                    <div class="cena">
+                    <div class="cena" data-cena-1="550" data-cena-2="650">
                         550 zł
                     </div>
                     <div class="btn ucase cp btn-g-fix">Rezerwuj</div>
@@ -866,7 +892,7 @@
                         data-sal-delay='800'
                         >
                     </div>
-                    <div class="cena">
+                    <div class="cena" data-cena-1="550" data-cena-2="650">
                         490 zł
                     </div>
                     <div class="btn cp btn-g-fix ucase">Rezerwuj</div>
@@ -877,9 +903,9 @@
                 Nie przyjmujemy zwierząt. <br> 
                 Zapraszamy od godz. 15.00, pobyt do 10.00.
             </div>
-            <button class="button">
+            <a href="#" class="button">
                 REZERWUJ DOWOLNY TERMIN
-            </button>
+            </a>
         </div>
     </section>
     <section id="insta">
@@ -1067,25 +1093,20 @@
 
     </div>
     <div id="classes" class="
-    slide
-    slide-active
-    show-gallery2 
-    show-privacy 
-    hide hide-gallery2  
-    hide-checkbox 
-    showMobileMenu 
-    go 
-    btn--active 
-    active 
-    hide-img 
-    d-none 
-    show-menu-fixed-nav 
-    menu-fixed--scrolled ">
-
-
-    </div>
-    <div class="test-div d-none">
-        
+        slide
+        slide-active
+        show-gallery2 
+        show-privacy 
+        hide hide-gallery2  
+        hide-checkbox 
+        showMobileMenu 
+        go 
+        btn--active 
+        active 
+        hide-img 
+        d-none 
+        show-menu-fixed-nav 
+        menu-fixed--scrolled">
     </div>
     <div class="privacy">
         <p>
@@ -1093,7 +1114,5 @@
         </p>
         <div class="btn privacy-btn">OK, ZAMKNIJ</div>
     </div>
-    <style></style>
-    </script>
 </body>
 </html>

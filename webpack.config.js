@@ -1,14 +1,14 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const miniCssExtractPlugin = require("mini-css-extract-plugin");
-// const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry : {
         index : './src/index.js',
         gallery : './src/gallery.js',
         privacy : './src/privacy.js',
+        page : './src/page.js',
+        base : './src/base.js',
     },
     output : {
         path : path.resolve(__dirname ,'dist'),
@@ -71,6 +71,14 @@ module.exports = {
             
             
         }),
+        new HtmlWebpackPlugin({   
+            template: path.join(__dirname , './src/base.html'),
+            filename : "base.html",
+            minify: false,
+            chunks: ['base']
+            
+            
+        }),
         new HtmlWebpackPlugin({
             template: path.join(__dirname , './src/gallery.html'),
             filename : "gallery.html",
@@ -85,11 +93,15 @@ module.exports = {
             chunks: ['privacy']
 
         }),
-        
+        new HtmlWebpackPlugin({
+            template: path.join(__dirname , './src/page.html'),
+            filename : "page.html",
+            minify: false,
+            chunks: ['page']
+        }),
         new miniCssExtractPlugin({
             filename : "[name].css",
             chunkFilename : "[id].css"
          }) 
-
     ]
 }

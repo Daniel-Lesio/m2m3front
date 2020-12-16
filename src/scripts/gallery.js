@@ -21,7 +21,6 @@ const galleryScript = ()=> {
         })
     })
     
-    let imagesLength = images.length;
     const urls = []
     images.forEach((image,index)=>{
         urls.push({

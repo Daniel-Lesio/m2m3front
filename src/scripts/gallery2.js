@@ -2,8 +2,9 @@ const images = document.querySelectorAll('[data-img]')
 const arrowLeft = document.querySelector('.arrow-left')
 const arrowRight = document.querySelector('.arrow-right')
 const carousel = document.querySelector('.galery2-carousel')
+
 const gallery2 = ()=>{
-     
+    console.log("images : " , images) 
     const gallery2 = document.querySelector(".gallery2")
     const closeGallery2Icon = document.querySelector(".close-gallery2")
     closeGallery2Icon.addEventListener("click", ()=>{
@@ -59,7 +60,6 @@ const gallery2Carousel = {
                 id : index,
                 url : image.dataset.img,
                 html(){
-
                     return `
                     <figure class="slide">
                         <img data-id="${this.id}"    src="${img.url}" alt="Trulli" style="width:100%">

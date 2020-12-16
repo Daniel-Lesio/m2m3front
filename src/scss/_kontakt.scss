@@ -64,7 +64,6 @@ form{
                 border : solid 1px $primary;
                 transition: border ease-in-out .3s;
                 background: #F7F9F7;
-
                 &:focus{
                     border: solid 2px $primary;
                     outline: none;
@@ -92,6 +91,7 @@ form{
             max-width: 100%;
             background: #F7F9F7;
             font-family: Montserrat;
+     
             padding: 10px;
             border-radius: 4px;
             line-height: 20px;

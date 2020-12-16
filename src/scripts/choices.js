@@ -46,7 +46,7 @@ const choiceScript = () =>{
     choicesbtns.forEach(choice=>{
         
       choice.addEventListener('click',()=>{       
-         console.log('choice: ',choice)
+         
          let expr = choice.dataset.nr
          switch(expr){
              case '0':
