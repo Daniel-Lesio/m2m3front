@@ -5,6 +5,8 @@ import sal from 'sal.js'
 
 const indicator = document.querySelector('.indicator')
 const totalHeight = (document.body.scrollHeight - window.innerHeight )
+const langsList= document.querySelector('.langs')
+const langsList2= document.querySelector('.langs2')
 
 const scrolling = (page) =>{
     sal({
@@ -33,16 +35,14 @@ const scrolling = (page) =>{
 
 
 function scrolled(scroll_position , units , page){
-    if(page === 'base'){
-
-    }
-    if(page === 'index'){
-        scroll_position > 200  ? fixedMenu.classList.add('menu-fixed--scrolled') : fixedMenu.classList.remove('menu-fixed--scrolled')
+    langsList.classList.remove('show-langs')
+    langsList2.classList.remove('show-langs')
+    if(scroll_position>200){
+        fixedMenu.classList.add('show-menu-fixed-nav')
     }
     if(scroll_position<200){
-        menuFixedNav.classList.remove('show-menu-fixed-nav')
+        fixedMenu.classList.remove('show-menu-fixed-nav')
     }
-    menuFixedNav.classList.remove('show-menu-fixed-nav')
     indicator.style.width = `${scroll_position / totalHeight * 100}%` 
     
 

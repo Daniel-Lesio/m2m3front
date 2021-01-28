@@ -5,10 +5,10 @@ const miniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
     entry : {
         index : './src/index.js',
-        gallery : './src/gallery.js',
-        privacy : './src/privacy.js',
-        page : './src/page.js',
-        base : './src/base.js',
+        // gallery : './src/gallery.js',
+        // privacy : './src/privacy.js',
+        // page : './src/page.js',
+        // base : './src/base.js',
     },
     output : {
         path : path.resolve(__dirname ,'dist'),
@@ -43,7 +43,7 @@ module.exports = {
                 test: /\.(sa|sc|c)ss$/,
                 use: [
                     { loader: 'style-loader' },
-                    MiniCssExtractPlugin.loader,
+                    miniCssExtractPlugin.loader,
                     {
                       loader: 'css-loader'
                     },
@@ -71,34 +71,34 @@ module.exports = {
             
             
         }),
-        new HtmlWebpackPlugin({   
-            template: path.join(__dirname , './src/base.html'),
-            filename : "base.html",
-            minify: false,
-            chunks: ['base']
+        // new HtmlWebpackPlugin({   
+        //     template: path.join(__dirname , './src/base.html'),
+        //     filename : "base.html",
+        //     minify: false,
+        //     chunks: ['base']
             
             
-        }),
-        new HtmlWebpackPlugin({
-            template: path.join(__dirname , './src/gallery.html'),
-            filename : "gallery.html",
-            minify: false,
-            chunks: ['gallery']
+        // }),
+        // new HtmlWebpackPlugin({
+        //     template: path.join(__dirname , './src/gallery.html'),
+        //     filename : "gallery.html",
+        //     minify: false,
+        //     chunks: ['gallery']
 
-        }),
-        new HtmlWebpackPlugin({
-            template: path.join(__dirname , './src/privacy.html'),
-            filename : "privacy.html",
-            minify: false,
-            chunks: ['privacy']
+        // }),
+        // new HtmlWebpackPlugin({
+        //     template: path.join(__dirname , './src/privacy.html'),
+        //     filename : "privacy.html",
+        //     minify: false,
+        //     chunks: ['privacy']
 
-        }),
-        new HtmlWebpackPlugin({
-            template: path.join(__dirname , './src/page.html'),
-            filename : "page.html",
-            minify: false,
-            chunks: ['page']
-        }),
+        // }),
+        // new HtmlWebpackPlugin({
+        //     template: path.join(__dirname , './src/page.html'),
+        //     filename : "page.html",
+        //     minify: false,
+        //     chunks: ['page']
+        // }),
         new miniCssExtractPlugin({
             filename : "[name].css",
             chunkFilename : "[id].css"

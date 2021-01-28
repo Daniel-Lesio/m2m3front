@@ -16,32 +16,84 @@
         height: 80px;
         display: flex;
         background: white;
-        .left{
-            
-            position: relative;
-            flex: 1;
-            justify-content: flex-start;
+        .brand{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
             img{
-                height: 64px;
-                padding-left: 64px;
-                @media (max-width : 992px){
-                    padding-left: 16px;
-                    transform : translateY(0px)
+                height: 60px;
+
+            }
+        }
+        ul{
+            margin-left: 10px;
+            display: flex;
+            li{
+                padding-left: 10px;
+                cursor: pointer;
+                padding-right: 10px;
+                text-transform: uppercase;
+                transition: all ease-in-out .3s;
+                &:hover{
+                    font-weight: 900;
                 }
             }
-            .menu-fixed-icon{
-                cursor: pointer;   
+        }
+        .contact{
+            position: relative;
+            margin-left: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 24px;
+            width: 24px;
+            align-self: center;
+            .lang2{
+                width: 39px;
+                height: 39px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                position: relative;
+                padding: 10px;
+                background: $whitey;
+                border-radius: 50%;
+                transition: all ease-in-out .3s;
+                &:hover{
+                    background: $dark;
+                    color: $whitey;
+                }
+            }
+            .langs2{
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                bottom: -36px;
+                z-index: 40;
+                transform: translate(-50%,100%);
+                left: 50%;
+                padding: 20px;
+                background: #fff;
+                border : solid 1px $primary;
+                box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);    
+                div{
+                    cursor: pointer;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    color: $primary;
+                    transition: all ease-in-out .3s ;
+                    &:hover{
+                        color: $dark;
+                        font-weight: 900;
+                    }
+
+                }
             }
         }
-        .center{
-            flex: 1;
-        }
-        .right{
-            flex: 1;
-            display: flex;
-            justify-content: flex-end;
-            padding-right: 1rem;
-        }
+
+        
     }
     &--scrolled{
         transform : translateY(0px)

@@ -1,0 +1,23 @@
+#team{
+    text-align: center;
+    padding-bottom: 64px;
+    background: $primary;
+    color : white!important;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    h2{
+        text-transform: uppercase;
+        text-align: center;
+        color: $primary;
+        margin-bottom: 32px;
+        color : $whitey!important;
+    }
+    h4{
+        color : $whitey!important;
+
+    }
+    img{
+        border-radius: 50%;
+    }
+
+}

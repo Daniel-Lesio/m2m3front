@@ -3,1116 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Dobre Miejsce</title>
+    <title>Document</title>
 </head>
 <body>
-    <noscript>
-        <style type="text/css">
-          [data-sal|='fade'] {
-            opacity: 1;
-          }
-      
-          [data-sal|='slide'],
-          [data-sal|='zoom'] {
-            opacity: 1;
-            transform: none;
-          }
-      
-          [data-sal|='flip'] {
-            transform: none;
-          }
-        </style>
-    </noscript>
     <div class="indicator-container">
         <div class="indicator"></div>
     </div>
-    <div id="top-target" class="patt1">
-            <img src="./assets/desktop/pattern2.svg" alt="">
-        </div> 
-    <div class="menu-fixed d-none d-sm-block ">
-
-        <div class="container p-0  my-0 fixed-container" >
-            <div class="c left">
-                <div class="menu-fixed-nav-2 " >
-                    <ul class="menu-fixed-ul">
-                        <li data-scrollto="#onas"><a class="active" href="#">O NAS</a></li>
-                        <li data-scrollto="#gallery"><a href="#">GALERIA</a></li>
-                        <li data-scrollto="#dzieci"><a href="#">ATRAKCJE DLA DZIECI</a></li>
-                        <li data-scrollto="#okolica"><a href="#">ATRAKCJE W OKOLICY</a></li>
-                        <li data-scrollto="#domki"><a href="#">DOMKI</a></li>
-                        <li data-scrollto="#oferta"><a href="#">OFERTA</a></li>
-                        <li data-scrollto="#kontakt"><a href="#">KONTAKT</a></li>
-                    </ul>                    
+    <header class="menu-fixed">
+        <div class="container">
+            <a href="#" class="brand">
+                <img src="./assets/logo/logo-color.svg" alt="">
+            </a>
+            <ul>
+                <li data-scroll="about">O nas</li>
+                <li data-scroll="investments" >Inwestycje</li>
+                <li data-scroll="rent">Wynajem</li>
+                <li data-scroll="realizacje" >Realizacje</li>
+                <li data-scroll="hero">Home</li>
+            </ul>
+            <div class="contact">
+                <div class="lang2">PL</div> 
+                <div class="langs2">
+                    <div>Pl</div>
+                    <div>EN</div>
+                    <div>RU</div>
                 </div>
-    
-                <div class="menu-fixed-icon c cp">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.33325 8.00008C5.33325 7.64646 5.47373 7.30732 5.72378 7.05727C5.97382 6.80722 6.31296 6.66675 6.66659 6.66675H25.3333C25.6869 6.66675 26.026 6.80722 26.2761 7.05727C26.5261 7.30732 26.6666 7.64646 26.6666 8.00008C26.6666 8.3537 26.5261 8.69284 26.2761 8.94289C26.026 9.19294 25.6869 9.33341 25.3333 9.33341H6.66659C6.31296 9.33341 5.97382 9.19294 5.72378 8.94289C5.47373 8.69284 5.33325 8.3537 5.33325 8.00008Z" fill="#144D29"></path>
-                        <path d="M5.33325 24.0001C5.33325 23.6465 5.47373 23.3073 5.72378 23.0573C5.97382 22.8072 6.31296 22.6667 6.66659 22.6667H25.3333C25.6869 22.6667 26.026 22.8072 26.2761 23.0573C26.5261 23.3073 26.6666 23.6465 26.6666 24.0001C26.6666 24.3537 26.5261 24.6928 26.2761 24.9429C26.026 25.1929 25.6869 25.3334 25.3333 25.3334H6.66659C6.31296 25.3334 5.97382 25.1929 5.72378 24.9429C5.47373 24.6928 5.33325 24.3537 5.33325 24.0001Z" fill="#144D29"></path>
-                        <path d="M6.66659 14.6667C6.31296 14.6667 5.97382 14.8072 5.72378 15.0573C5.47373 15.3073 5.33325 15.6465 5.33325 16.0001C5.33325 16.3537 5.47373 16.6928 5.72378 16.9429C5.97382 17.1929 6.31296 17.3334 6.66659 17.3334H17.3333C17.6869 17.3334 18.026 17.1929 18.2761 16.9429C18.5261 16.6928 18.6666 16.3537 18.6666 16.0001C18.6666 15.6465 18.5261 15.3073 18.2761 15.0573C18.026 14.8072 17.6869 14.6667 17.3333 14.6667H6.66659Z" fill="#144D29"></path>
-                    </svg>                            
-                </div>
-                <img src="./assets/logo.svg" srcset="./assets/logo/logo_DOBRE-MIEJSCE@2x.png 2x" alt="">
-              
-            </div>
-            <div class="c center d-none d-md-flex">
-                <div class="btn-grp d-flex">
-                    <a href="/rezerwacja.html" class="cp btn-fix  btn btn-d btn-primary">
-                        ZAREZERWUJ TERMIN
-                    </a>
-                    <div class="btn cp btn-l btn-secondary">
-                        <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 16.4022V20.724C18.0001 21.0334 17.9042 21.3314 17.7316 21.5578C17.559 21.7842 17.3225 21.9221 17.07 21.9438C16.633 21.9804 16.276 22 16 22C7.16299 22 0 13.2452 0 2.44444C0 2.10711 0.015 1.67078 0.0459999 1.13667C0.0637223 0.827987 0.176581 0.539013 0.361803 0.328055C0.547025 0.117097 0.790822 -0.000139863 1.044 3.13597e-07H4.57999C4.70403 -0.000153187 4.82369 0.0560499 4.91572 0.157692C5.00775 0.259333 5.06559 0.399157 5.07799 0.55C5.10099 0.831111 5.12199 1.05478 5.14199 1.22467C5.34073 2.9198 5.748 4.56846 6.34999 6.11478C6.44499 6.35922 6.38299 6.65133 6.20299 6.80778L4.04499 8.69245C5.36445 12.4501 7.81454 15.4447 10.889 17.0573L12.429 14.4247C12.4919 14.3171 12.5838 14.24 12.6885 14.2067C12.7932 14.1734 12.9041 14.1861 13.002 14.2426C14.267 14.9769 15.6156 15.4735 17.002 15.7153C17.141 15.7398 17.324 15.7667 17.552 15.7936C17.6752 15.809 17.7894 15.8798 17.8723 15.9923C17.9553 16.1047 18.0011 16.2508 18.001 16.4022H18Z" fill="black"></path>
-                            </svg>                        
-                        <span>+48 534 478 005</span>
-                    </div>
-                </div>
-            </div>
-            <div class="c right">
-                <div class="socials">
-                    <a href="#" class="c"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.434 8.324v1.653h-1.21v2.02h1.21V18h2.487v-6.004h1.668s.157-.968.232-2.028h-1.89v-1.38c0-.207.27-.485.54-.485h1.353V6h-1.842c-2.61 0-2.548 2.022-2.548 2.324z" fill="#144D29"></path><path d="M12 21.6a9.6 9.6 0 100-19.2 9.6 9.6 0 000 19.2zm0 2.4C5.372 24 0 18.628 0 12S5.372 0 12 0s12 5.372 12 12-5.372 12-12 12z" fill="#144D29"></path></svg>
-                    </a>
-                    <a href="#" class="c" style="margin-left: 8px;">
-                        <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.99 5.818A6.167 6.167 0 007.634 7.62a6.148 6.148 0 000 8.701 6.168 6.168 0 008.715 0 6.148 6.148 0 000-8.701 6.167 6.167 0 00-4.357-1.802zm0 10.149a4.007 4.007 0 01-2.83-1.171 3.994 3.994 0 012.83-6.824c1.063 0 2.08.421 2.832 1.17a3.994 3.994 0 010 5.654c-.751.75-1.77 1.17-2.831 1.17zM18.397 7.026a1.436 1.436 0 10-1.437-1.434c0 .792.644 1.434 1.437 1.434z" fill="#144D29"></path><path d="M23.364 4.133A6.126 6.126 0 0019.855.631a8.816 8.816 0 00-2.913-.56C15.658.017 15.252 0 11.997 0 8.743 0 8.326 0 7.053.072c-.995.02-1.98.208-2.91.559a6.132 6.132 0 00-3.51 3.502 8.75 8.75 0 00-.558 2.909C.017 8.322 0 8.728 0 11.979c0 3.25 0 3.663.075 4.937.02.995.208 1.977.558 2.91a6.134 6.134 0 003.51 3.502c.93.364 1.915.566 2.913.599C8.339 23.983 8.746 24 12 24c3.255 0 3.672 0 4.945-.073a8.827 8.827 0 002.913-.558 6.15 6.15 0 003.509-3.503c.35-.932.538-1.914.558-2.91.058-1.28.075-1.685.075-4.936 0-3.25 0-3.663-.075-4.937a8.746 8.746 0 00-.56-2.95zm-1.623 12.684a6.702 6.702 0 01-.415 2.246 3.972 3.972 0 01-2.281 2.277 6.653 6.653 0 01-2.226.414c-1.266.058-1.623.073-4.87.073-3.249 0-3.58 0-4.87-.073a6.621 6.621 0 01-2.225-.414 3.979 3.979 0 01-2.291-2.277 6.75 6.75 0 01-.415-2.22c-.057-1.265-.07-1.621-.07-4.863 0-3.243 0-3.574.07-4.864a6.695 6.695 0 01.415-2.244 3.977 3.977 0 012.29-2.279 6.686 6.686 0 012.225-.413c1.268-.058 1.623-.074 4.871-.074s3.581 0 4.87.074c.76.009 1.513.149 2.226.413a3.987 3.987 0 012.281 2.279 6.75 6.75 0 01.415 2.22c.057 1.266.072 1.621.072 4.864 0 3.242 0 3.59-.057 4.862h-.015v-.001z" fill="#144D29"></path></svg>
-              
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <header id="mobile-header" class="d-sm-none">
-        <div class="open-menu-icon">
-            <svg id="open-menu" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.33337 8.00008C5.33337 7.64646 5.47385 7.30732 5.7239 7.05727C5.97395 6.80722 6.31309 6.66675 6.66671 6.66675H25.3334C25.687 6.66675 26.0261 6.80722 26.2762 7.05727C26.5262 7.30732 26.6667 7.64646 26.6667 8.00008C26.6667 8.3537 26.5262 8.69284 26.2762 8.94289C26.0261 9.19294 25.687 9.33341 25.3334 9.33341H6.66671C6.31309 9.33341 5.97395 9.19294 5.7239 8.94289C5.47385 8.69284 5.33337 8.3537 5.33337 8.00008Z" fill="#144D29"></path>
-                <path d="M5.33337 24.0001C5.33337 23.6465 5.47385 23.3073 5.7239 23.0573C5.97395 22.8072 6.31309 22.6667 6.66671 22.6667H25.3334C25.687 22.6667 26.0261 22.8072 26.2762 23.0573C26.5262 23.3073 26.6667 23.6465 26.6667 24.0001C26.6667 24.3537 26.5262 24.6928 26.2762 24.9429C26.0261 25.1929 25.687 25.3334 25.3334 25.3334H6.66671C6.31309 25.3334 5.97395 25.1929 5.7239 24.9429C5.47385 24.6928 5.33337 24.3537 5.33337 24.0001Z" fill="#144D29"></path>
-                <path d="M6.66671 14.6667C6.31309 14.6667 5.97395 14.8072 5.7239 15.0573C5.47385 15.3073 5.33337 15.6465 5.33337 16.0001C5.33337 16.3537 5.47385 16.6928 5.7239 16.9429C5.97395 17.1929 6.31309 17.3334 6.66671 17.3334H17.3334C17.687 17.3334 18.0261 17.1929 18.2762 16.9429C18.5262 16.6928 18.6667 16.3537 18.6667 16.0001C18.6667 15.6465 18.5262 15.3073 18.2762 15.0573C18.0261 14.8072 17.687 14.6667 17.3334 14.6667H6.66671Z" fill="#144D29"></path>
-            </svg>
-        </div>
-        
-        <div class="mobile-socials">
-            <div class="socials">
-                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.434 8.324v1.653h-1.21v2.02h1.21V18h2.487v-6.004h1.668s.157-.968.232-2.028h-1.89v-1.38c0-.207.27-.485.54-.485h1.353V6h-1.842c-2.61 0-2.548 2.022-2.548 2.324z" fill="#144D29"></path><path d="M12 21.6a9.6 9.6 0 100-19.2 9.6 9.6 0 000 19.2zm0 2.4C5.372 24 0 18.628 0 12S5.372 0 12 0s12 5.372 12 12-5.372 12-12 12z" fill="#144D29"></path></svg>
-                <svg style="margin-left: 1rem;" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.99 5.818A6.167 6.167 0 007.634 7.62a6.148 6.148 0 000 8.701 6.168 6.168 0 008.715 0 6.148 6.148 0 000-8.701 6.167 6.167 0 00-4.357-1.802zm0 10.149a4.007 4.007 0 01-2.83-1.171 3.994 3.994 0 012.83-6.824c1.063 0 2.08.421 2.832 1.17a3.994 3.994 0 010 5.654c-.751.75-1.77 1.17-2.831 1.17zM18.397 7.026a1.436 1.436 0 10-1.437-1.434c0 .792.644 1.434 1.437 1.434z" fill="#144D29"></path><path d="M23.364 4.133A6.126 6.126 0 0019.855.631a8.816 8.816 0 00-2.913-.56C15.658.017 15.252 0 11.997 0 8.743 0 8.326 0 7.053.072c-.995.02-1.98.208-2.91.559a6.132 6.132 0 00-3.51 3.502 8.75 8.75 0 00-.558 2.909C.017 8.322 0 8.728 0 11.979c0 3.25 0 3.663.075 4.937.02.995.208 1.977.558 2.91a6.134 6.134 0 003.51 3.502c.93.364 1.915.566 2.913.599C8.339 23.983 8.746 24 12 24c3.255 0 3.672 0 4.945-.073a8.827 8.827 0 002.913-.558 6.15 6.15 0 003.509-3.503c.35-.932.538-1.914.558-2.91.058-1.28.075-1.685.075-4.936 0-3.25 0-3.663-.075-4.937a8.746 8.746 0 00-.56-2.95zm-1.623 12.684a6.702 6.702 0 01-.415 2.246 3.972 3.972 0 01-2.281 2.277 6.653 6.653 0 01-2.226.414c-1.266.058-1.623.073-4.87.073-3.249 0-3.58 0-4.87-.073a6.621 6.621 0 01-2.225-.414 3.979 3.979 0 01-2.291-2.277 6.75 6.75 0 01-.415-2.22c-.057-1.265-.07-1.621-.07-4.863 0-3.243 0-3.574.07-4.864a6.695 6.695 0 01.415-2.244 3.977 3.977 0 012.29-2.279 6.686 6.686 0 012.225-.413c1.268-.058 1.623-.074 4.871-.074s3.581 0 4.87.074c.76.009 1.513.149 2.226.413a3.987 3.987 0 012.281 2.279 6.75 6.75 0 01.415 2.22c.057 1.266.072 1.621.072 4.864 0 3.242 0 3.59-.057 4.862h-.015v-.001z" fill="#144D29"></path></svg>
             </div>
         </div>
     </header>
-    <nav id="mobile-menu" class="d-sm-none">
-        <div class="mobile-menu_header">
-            <div class="left">
-                <h5 class="dm">DOBRE MIEJSCE</h5>
-                <h5 class="rz">RABKA-ZDRÓJ</h5>
-            </div>
-            <div class="right">
-                <div class="close-icon">
-                    <svg width="47" height="48" viewBox="0 0 47 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2252 12.8856C12.9185 12.5788 12.4212 12.5788 12.1144 12.8856C11.8077 13.1923 11.8077 13.6896 12.1144 13.9963L22.5162 24.3981L12.5125 34.4018C12.2058 34.7085 12.2058 35.2058 12.5125 35.5125C12.8192 35.8192 13.3165 35.8192 13.6232 35.5125L23.627 25.5088L33.6311 35.513C33.9379 35.8197 34.4351 35.8197 34.7419 35.513C35.0486 35.2062 35.0486 34.709 34.7419 34.4022L24.7377 24.3981L35.1399 13.9958C35.4466 13.6891 35.4466 13.1918 35.1399 12.8851C34.8332 12.5784 34.3359 12.5784 34.0292 12.8851L23.627 23.2873L13.2252 12.8856Z" fill="#144D29"></path>
-                        <path d="M13.2252 12.8856L13.5787 12.532L13.2252 12.8856ZM12.1144 13.9963L11.7609 14.3498L12.1144 13.9963ZM22.5162 24.3981L22.8698 24.7516C23.065 24.5563 23.065 24.2398 22.8698 24.0445L22.5162 24.3981ZM12.5125 34.4018L12.8661 34.7553L12.5125 34.4018ZM13.6232 35.5125L13.2697 35.159L13.6232 35.5125ZM23.627 25.5088L23.9805 25.1552C23.7852 24.96 23.4687 24.96 23.2734 25.1552L23.627 25.5088ZM33.6311 35.513L33.9847 35.1594L33.6311 35.513ZM34.7419 34.4022L34.3883 34.7558L34.7419 34.4022ZM24.7377 24.3981L24.3841 24.0445C24.1889 24.2398 24.1889 24.5563 24.3841 24.7516L24.7377 24.3981ZM34.0292 12.8851L33.6756 12.5315L34.0292 12.8851ZM23.627 23.2873L23.2734 23.6409C23.3672 23.7346 23.4943 23.7873 23.627 23.7873C23.7596 23.7873 23.8867 23.7346 23.9805 23.6409L23.627 23.2873ZM12.468 13.2391C12.5795 13.1276 12.7602 13.1276 12.8716 13.2391L13.5787 12.532C13.0768 12.03 12.2629 12.03 11.7609 12.532L12.468 13.2391ZM12.468 13.6427C12.3565 13.5313 12.3565 13.3506 12.468 13.2391L11.7609 12.532C11.2589 13.034 11.2589 13.8479 11.7609 14.3498L12.468 13.6427ZM22.8698 24.0445L12.468 13.6427L11.7609 14.3498L22.1627 24.7516L22.8698 24.0445ZM12.8661 34.7553L22.8698 24.7516L22.1627 24.0445L12.159 34.0482L12.8661 34.7553ZM12.8661 35.159C12.7546 35.0475 12.7546 34.8668 12.8661 34.7553L12.159 34.0482C11.657 34.5502 11.657 35.3641 12.159 35.8661L12.8661 35.159ZM13.2697 35.159C13.1582 35.2704 12.9775 35.2704 12.8661 35.159L12.159 35.8661C12.6609 36.368 13.4748 36.368 13.9768 35.8661L13.2697 35.159ZM23.2734 25.1552L13.2697 35.159L13.9768 35.8661L23.9805 25.8623L23.2734 25.1552ZM33.9847 35.1594L23.9805 25.1552L23.2734 25.8623L33.2776 35.8665L33.9847 35.1594ZM34.3883 35.1594C34.2769 35.2709 34.0961 35.2709 33.9847 35.1594L33.2776 35.8665C33.7796 36.3685 34.5934 36.3685 35.0954 35.8665L34.3883 35.1594ZM34.3883 34.7558C34.4998 34.8672 34.4998 35.048 34.3883 35.1594L35.0954 35.8665C35.5974 35.3645 35.5974 34.5507 35.0954 34.0487L34.3883 34.7558ZM24.3841 24.7516L34.3883 34.7558L35.0954 34.0487L25.0912 24.0445L24.3841 24.7516ZM34.7864 13.6423L24.3841 24.0445L25.0912 24.7516L35.4935 14.3494L34.7864 13.6423ZM34.7864 13.2386C34.8978 13.3501 34.8978 13.5308 34.7864 13.6423L35.4935 14.3494C35.9955 13.8474 35.9955 13.0335 35.4935 12.5315L34.7864 13.2386ZM34.3827 13.2386C34.4942 13.1272 34.6749 13.1272 34.7864 13.2386L35.4935 12.5315C34.9915 12.0296 34.1776 12.0295 33.6756 12.5315L34.3827 13.2386ZM23.9805 23.6409L34.3827 13.2386L33.6756 12.5315L23.2734 22.9338L23.9805 23.6409ZM12.8716 13.2391L23.2734 23.6409L23.9805 22.9338L13.5787 12.532L12.8716 13.2391Z" fill="#144D29"></path>
-                        </svg>
-                        
+    <div class="menu-static">
+        <div class="container">
+            <a href="#" class="brand">
+                <img src="./assets/logo/logo-color.svg" alt="">
+            </a>
+            <ul>
+                <li data-scroll="about">O nas</li>
+                <li data-scroll="investments" >Inwestycje</li>
+                <li data-scroll="rent">Wynajem</li>
+                <li data-scroll="realizacje" >Realizacje</li>
+                <li data-scroll="hero">Home</li>
+            </ul>
+            <div class="contact">
+                
+                    
+                <div class="lang">PL</div> 
+                <div class="langs">
+                    <div>Pl</div>
+                    <div>EN</div>
+                    <div>RU</div>
                 </div>
             </div>
-        </div>
-        <div class="mobile-menu_body">
-            <ul>
-                <li class="mobile-link" data-scrollto="#onas"><a href="#">O NAS</a></li>
-                <li class="mobile-link" data-scrollto="#gallery"><a href="#">GALERIA</a></li>
-                <li class="mobile-link" data-scrollto="#dzieci"><a href="#">ATRAKCJE DLA DZIECI</a></li>
-                <li class="mobile-link" data-scrollto="#okolica"><a href="#">ATRAKCJE W OKOLICY</a></li>
-                <li class="mobile-link" data-scrollto="#domki"><a href="#">DOMKI</a></li>
-                <li class="mobile-link" data-scrollto="#oferta"><a href="#">OFERTA</a></li>
-                <li class="mobile-link" data-scrollto="#kontakt"><a href="#">KONTAKT</a></li>
-            </ul>
-            <div class="btn btn-fix cp btn-primary">ZAREZERWUJ</div>
-            <div class="btn btn-secondary">+48 534 478 005</div>
-        </div>
-        <!-- <div class="mobile-header">     
-            <div class="m-h-name">
-                <p>DOBRE MIEJSCE</p>
-                <p class="bold">RABKA-ZDRÓJ</p>
-            </div>
-            <div class="m-h-icon">
-                <svg class="" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-            </div>
-        </div> -->
-    
-    
-    
-    </nav>
-    <div class=" mobile-logo d-sm-none">
-        <img src="./assets/logo.svg" srcset="./assets/logo/logo_DOBRE-MIEJSCE@2x.png 2x" alt="">
-    </div>  
-    <div class="d-flex   btns-small btn-grp  d-sm-none">
-        <div class="btn btn-fix cp btn-primary">
-            ZAREZERWUJ TERMIN
-        </div>
-        <div class="btn  cp btn-secondary" style="margin-left: 0px;">
-            <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 16.4022V20.724C18.0001 21.0334 17.9042 21.3314 17.7316 21.5578C17.559 21.7842 17.3225 21.9221 17.07 21.9438C16.633 21.9804 16.276 22 16 22C7.16299 22 0 13.2452 0 2.44444C0 2.10711 0.015 1.67078 0.0459999 1.13667C0.0637223 0.827987 0.176581 0.539013 0.361803 0.328055C0.547025 0.117097 0.790822 -0.000139863 1.044 3.13597e-07H4.57999C4.70403 -0.000153187 4.82369 0.0560499 4.91572 0.157692C5.00775 0.259333 5.06559 0.399157 5.07799 0.55C5.10099 0.831111 5.12199 1.05478 5.14199 1.22467C5.34073 2.9198 5.748 4.56846 6.34999 6.11478C6.44499 6.35922 6.38299 6.65133 6.20299 6.80778L4.04499 8.69245C5.36445 12.4501 7.81454 15.4447 10.889 17.0573L12.429 14.4247C12.4919 14.3171 12.5838 14.24 12.6885 14.2067C12.7932 14.1734 12.9041 14.1861 13.002 14.2426C14.267 14.9769 15.6156 15.4735 17.002 15.7153C17.141 15.7398 17.324 15.7667 17.552 15.7936C17.6752 15.809 17.7894 15.8798 17.8723 15.9923C17.9553 16.1047 18.0011 16.2508 18.001 16.4022H18Z" fill="black"></path>
-                </svg>                        
-            <span>+48 534 478 005</span>
         </div>
     </div>
-    <section id="hero-lg">
-
-        <svg style=" transform: translateY(-50px);" class=" d-none   mouse" width="32" height="90" viewBox="0 0 32 90"><defs><style>.cls-1{fill:none;stroke:#000;stroke-width:2px;}</style></defs><g id="Warstwa_2" data-name="Warstwa 2"><g id="Warstwa_1-2" data-name="Warstwa 1"><path class="cls-1 " d="M10.39,0V50.91"></path><path class="cls-1 kr" d="M10.39,66.7v5.82"></path><rect class="cls-1 kropka" x="1" y="61" width="18.79" height="28" rx="9.39"></rect></g></g></svg>
-        <div class="hero-lg-header d-none d-sm-flex p-0   container over-x" style="padding-left: 16px; padding-right: 16px;"> 
-            <div id="logo"
-                data-sal="slide-right"
-                data-sal-easing="easeInOutSine"
-                data-sal-duration='500'
-            >
-                <img src="./assets/logo/logo_DOBRE-MIEJSCE.png" srcset="./assets/logo/logo_DOBRE-MIEJSCE@2x.png 2x" alt="">
-            </div>
-            <div class="btn-grp">
-                <a href='#' class="btn btn-fix cp btn-primary"
-                data-sal="slide-down"
-                data-sal-easing="easeInOutSine"
-                data-sal-duration='500'
-                data-sal-delay='200'
-                >
-                    ZAREZERWUJ TERMIN
-                </a>
-                <a  href="tel:+48534478005" class="btn cp btn-secondary"
-                data-sal="slide-down"
-                data-sal-easing="easeInOutSine"
-                data-sal-duration='500'
-                data-sal-delay='400'
-                >
-                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18 16.4022V20.724C18.0001 21.0334 17.9042 21.3314 17.7316 21.5578C17.559 21.7842 17.3225 21.9221 17.07 21.9438C16.633 21.9804 16.276 22 16 22C7.16299 22 0 13.2452 0 2.44444C0 2.10711 0.015 1.67078 0.0459999 1.13667C0.0637223 0.827987 0.176581 0.539013 0.361803 0.328055C0.547025 0.117097 0.790822 -0.000139863 1.044 3.13597e-07H4.57999C4.70403 -0.000153187 4.82369 0.0560499 4.91572 0.157692C5.00775 0.259333 5.06559 0.399157 5.07799 0.55C5.10099 0.831111 5.12199 1.05478 5.14199 1.22467C5.34073 2.9198 5.748 4.56846 6.34999 6.11478C6.44499 6.35922 6.38299 6.65133 6.20299 6.80778L4.04499 8.69245C5.36445 12.4501 7.81454 15.4447 10.889 17.0573L12.429 14.4247C12.4919 14.3171 12.5838 14.24 12.6885 14.2067C12.7932 14.1734 12.9041 14.1861 13.002 14.2426C14.267 14.9769 15.6156 15.4735 17.002 15.7153C17.141 15.7398 17.324 15.7667 17.552 15.7936C17.6752 15.809 17.7894 15.8798 17.8723 15.9923C17.9553 16.1047 18.0011 16.2508 18.001 16.4022H18Z" fill="black"></path>
-                        </svg>                        
-                    <span>+48 534 478 005</span>
-                </a >
-            </div>
-            <div class="socials">
-                <a href="#" class="c"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.434 8.324v1.653h-1.21v2.02h1.21V18h2.487v-6.004h1.668s.157-.968.232-2.028h-1.89v-1.38c0-.207.27-.485.54-.485h1.353V6h-1.842c-2.61 0-2.548 2.022-2.548 2.324z" fill="#144D29"></path><path d="M12 21.6a9.6 9.6 0 100-19.2 9.6 9.6 0 000 19.2zm0 2.4C5.372 24 0 18.628 0 12S5.372 0 12 0s12 5.372 12 12-5.372 12-12 12z" fill="#144D29"></path></svg>
-                </a>
-                <a href="#" class="c" style="margin-left: 8px;">
-                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.99 5.818A6.167 6.167 0 007.634 7.62a6.148 6.148 0 000 8.701 6.168 6.168 0 008.715 0 6.148 6.148 0 000-8.701 6.167 6.167 0 00-4.357-1.802zm0 10.149a4.007 4.007 0 01-2.83-1.171 3.994 3.994 0 012.83-6.824c1.063 0 2.08.421 2.832 1.17a3.994 3.994 0 010 5.654c-.751.75-1.77 1.17-2.831 1.17zM18.397 7.026a1.436 1.436 0 10-1.437-1.434c0 .792.644 1.434 1.437 1.434z" fill="#144D29"></path><path d="M23.364 4.133A6.126 6.126 0 0019.855.631a8.816 8.816 0 00-2.913-.56C15.658.017 15.252 0 11.997 0 8.743 0 8.326 0 7.053.072c-.995.02-1.98.208-2.91.559a6.132 6.132 0 00-3.51 3.502 8.75 8.75 0 00-.558 2.909C.017 8.322 0 8.728 0 11.979c0 3.25 0 3.663.075 4.937.02.995.208 1.977.558 2.91a6.134 6.134 0 003.51 3.502c.93.364 1.915.566 2.913.599C8.339 23.983 8.746 24 12 24c3.255 0 3.672 0 4.945-.073a8.827 8.827 0 002.913-.558 6.15 6.15 0 003.509-3.503c.35-.932.538-1.914.558-2.91.058-1.28.075-1.685.075-4.936 0-3.25 0-3.663-.075-4.937a8.746 8.746 0 00-.56-2.95zm-1.623 12.684a6.702 6.702 0 01-.415 2.246 3.972 3.972 0 01-2.281 2.277 6.653 6.653 0 01-2.226.414c-1.266.058-1.623.073-4.87.073-3.249 0-3.58 0-4.87-.073a6.621 6.621 0 01-2.225-.414 3.979 3.979 0 01-2.291-2.277 6.75 6.75 0 01-.415-2.22c-.057-1.265-.07-1.621-.07-4.863 0-3.243 0-3.574.07-4.864a6.695 6.695 0 01.415-2.244 3.977 3.977 0 012.29-2.279 6.686 6.686 0 012.225-.413c1.268-.058 1.623-.074 4.871-.074s3.581 0 4.87.074c.76.009 1.513.149 2.226.413a3.987 3.987 0 012.281 2.279 6.75 6.75 0 01.415 2.22c.057 1.266.072 1.621.072 4.864 0 3.242 0 3.59-.057 4.862h-.015v-.001z" fill="#144D29"></path></svg>
-                </a>
-            </div>
-        </div>
-        
-        <div class="hero-lg-content container">
-            <div class="left">
-                <div class="menu-lg">
-                    <ul>
-                        <li data-scrollto="#onas"><a class="active" href="#">O NAS</a></li>
-                        <li data-scrollto="#gallery"><a href="#">GALERIA</a></li>
-                        <li data-scrollto="#dzieci"><a href="#">ATRAKCJE DLA DZIECI</a></li>
-                        <li data-scrollto="#okolica"><a href="#">ATRAKCJE W OKOLICY</a></li>
-                        <li data-scrollto="#domki"><a href="#">DOMKI</a></li>
-                        <li data-scrollto="#oferta"><a href="#">OFERTA</a></li>
-                        <li data-scrollto="#kontakt"><a href="#">KONTAKT</a></li>
-                    </ul>
-                
-                </div>
-            </div>
-            <div class="right swiper-container">
-                <div class="swiper-wrapper">
-              
-                  <!-- Lazy image -->
-                  <div class="swiper-slide">
-                    <img src="https://images.pexels.com/photos/4034037/pexels-photo-4034037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="swiper-lazy">
-                    <div class="swiper-lazy-preloader"></div>
-                  </div>
-              
-                  <!-- Lazy image with srscet-->
-                  <div class="swiper-slide">
-                    <img data-src="path/to/logo-small.png" data-srcset="path/logo/logo-large.png 2x" class="swiper-lazy">
-                    <div class="swiper-lazy-preloader"></div>
-                  </div>
-              
-                  <!-- Element with lazy background image -->
-                  <div class="swiper-slide">
-                    <div data-background="https://images.pexels.com/photos/4034037/pexels-photo-4034037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="swiper-lazy">
-                      <div class="swiper-lazy-preloader"></div>
-                    </div>
-                  </div>
-              
-                  <!-- Lazy background image on slide itself -->
-                  <div data-background="https://images.pexels.com/photos/4034037/pexels-photo-4034037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="swiper-slide swiper-lazy">
-                    <div class="swiper-lazy-preloader"></div>
-                  </div>
-                </div>
-              </div>
-
-
-
-
-
-            <div class="right d-none  swiper-container">
-                    <div class="swiper-wrapper">    
-                        <div class="swiper-slide">
-
-                            <img class="swiper-lazy" data-src="https://images.pexels.com/photos/4034037/pexels-photo-4034037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-srcset="https://images.pexels.com/photos/4034037/pexels-photo-4034037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 2x" alt="" >
-                            <!-- <div class="caption">Dobre Miejsce <span>dla całej rodziny</span></div> -->
-                            <div class="swiper-lazy-preloader"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-lazy" data-src="https://images.pexels.com/photos/4034037/pexels-photo-4034037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-srcset="https://images.pexels.com/photos/4034037/pexels-photo-4034037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 2x" alt="" >
-                            <!-- <div class="caption">Dobre Miejsce dla całej rodziny</div> -->
-                            <div class="swiper-lazy-preloader"></div>
-
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-lazy" data-src="https://images.pexels.com/photos/4034037/pexels-photo-4034037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-srcset="https://images.pexels.com/photos/4034037/pexels-photo-4034037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 2x" alt="" >
-                            <!-- <div class="caption">Dobre Miejsce dla całej rodziny</div> -->
-                            <div class="swiper-lazy-preloader"></div>
-                        </div>
-                        <div data-background="./assets/desktop/pattern.svg" class="swiper-slide swiper-lazy">
-                            <div class="swiper-lazy-preloader"></div>
-                          </div>
-                    </div>
-                    <!-- If we need pagination -->
-                
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-nav">
-                        <div class="swiper-button swiper-button-prev">
-                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 1.96356L1 7.98178L7 14" stroke="#144D29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <section id='hero'>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="hero-box">
+                        <h1>Mieszkania w Łodzi...</h1>
+                        <p>Szukasz mieszkania, pokoju ? A może chcesz zainwestować w mieszkania na wynajem. Świetnie trafiłeś, chętnie ci w tym pomożemy</p>
+                        <div class="btns">
+                            <div class="btn btn-two">
+                                <span>Usługi</span>
+                                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.9673 0.188738L6.00057 5.45056L1.03381 0.188105C0.797007 -0.0627017 0.413951 -0.0627017 0.177151 0.188105C-0.0590504 0.438912 -0.0590504 0.845259 0.177151 1.09607L5.57197 6.8119C5.80817 7.0627 6.19183 7.0627 6.42803 6.8119L11.8228 1.09612C12.059 0.845312 12.059 0.438331 11.8228 0.187525C11.5872 -0.0620682 11.2035 -0.0620683 10.9673 0.188738Z" fill="#972355"/>
+                                </svg>                            
+                            </div>
+                            <span style='width : 25px'></span>
+                            <div class="btn btn-one">
+                                <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 5V4L18 6L15 4V5L18 7L21 5ZM22 0H2C0.9 0 0 0.9 0 2V16C0 17.1 0.9 18 2 18H22C23.1 18 23.99 17.1 23.99 16L24 2C24 0.9 23.1 0 22 0ZM8 3C9.66 3 11 4.34 11 6C11 7.66 9.66 9 8 9C6.34 9 5 7.66 5 6C5 4.34 6.34 3 8 3ZM14 15H2V14C2 12 6 10.9 8 10.9C10 10.9 14 12 14 14V15ZM22 9H14V3H22V9Z" fill="white"/>
                                 </svg>
-                                
-                        </div>
-                        <svg width="1" height="20" viewBox="0 0 1 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <line x1="0.5" y1="0.5" x2="0.499999" y2="19.5" stroke="#E6ECE7" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                            
-                        <div class="swiper-button swiper-button-next">
-                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 13.0364L7 7.01822L1 1" stroke="#144D29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                
+                                <span>Kontakt</span>
+                            </div>
                         </div>
                     </div>
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
-                      
-            </div>
-     
-            </div>
-        
-    </section>
-    <section id="onas" class="">
-
-        <div class="container grid">
-            <div class="grid__left d-flex"
-                data-sal="slide-left"
-                data-sal-easing="easeInOutSine"
-                data-sal-duration='500'
-                >   
-                <img  class="onas-img onas-img-1"  src="./assets/desktop/img/onas1.jpg" alt="">
-            </div>
-            <div class="grid__right">
-                <h1 id="onas-target" class="h1">O NAS</h1>
-                <br>
-                <p class="p">
-                    Trafiłeś w Dobre Miejsce. A konkretniej, w Dobre Miejsce w Rabce-Zdroju, gdzie czas płynie nieco wolniej a dzieciaki nigdy się nie nudzą.
-                </p>
-                <br>
-                <p class="p">
-                    Nasza oferta skierowana jest do rodzin z dziećmi które szukają Dobrego Miejsca na złapanie oddechu, wspólny odpoczynek, zabawę oraz po prostu bycie razem.
-                </p>
-                <br>
-                <p class="p">
-                    Zapraszamy Was do dwóch całorocznych domków wyposażonych we wszystko co niezbędne, by w pełni się zrelaksować. 
-                </p>
-                <br>
-                <img class="onas-img onas-img-2" data-target  src="./assets/desktop/img/onas2.jpg" alt=""
-                data-sal="slide-right"
-                data-sal-easing="easeInOutSine"
-                data-sal-duration='500'
-       
-                >
-            </div>
-        </div>         
-    </section>
-    <section id="gallery">
-        <div class="container text-center">
-            <h1 class="h1 text-center target" id="gallery-target" data-target="">GALERIA</h1>
-            <div class="choices pb-2">
-                <h2 class="gallery-choice active" data-nr="0">DOMKI</h2>
-                <h2 class="gallery-choice" data-nr="1">ATRAKCJE DLA DZIECI</h2>
-                <h2 class="gallery-choice" data-nr="2">OKOLICA</h2>
-            </div>
-            <div class="grid" style="overflow: hidden;">
-                <div class="grid__box" 
-                    data-sal="slide-right"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='100'
-                >
-                    <img data-id='92' data-choice="0" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="./assets/desktop/Galeria/1/Rectangle.jpg" srcset="./assets/desktop/Galeria/1/Rectangle@2x.jpg 2x" alt="">
-                    <img data-choice="1" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
-                    <img data-choice="2" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
                 </div>
-                <div class="grid__box" 
-                    data-sal="slide-down"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                >
-                    <img data-id="90" data-choice="0" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="./assets/desktop/Galeria/2/Rectangle-2.jpg" srcset="./assets/desktop/Galeria/2/Rectangle@2x-1.jpg 2x" alt="">
-                    <img data-choice="1" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
-                    <img data-choice="2" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
-                </div>
-                <div class="grid__box" 
-                    data-sal="slide-left"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                >
-                    <!-- <img data-choice="0" data-img="./assets/desktop/Galeria/3/Rectangle-4.jpg" src="./assets/desktop/Galeria/3/Rectangle-4.jpg" alt=""> -->
-                    <img data-choice="0" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="./assets/desktop/Galeria/3/Rectangle-4.jpg" alt="">
-                    <img data-choice="1" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
-                    <img data-choice="2" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
-                </div>
-                <div class="grid__box" 
-                    data-sal="slide-right"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                >
-                    <img data-choice="0" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="./assets/desktop/Galeria/4/Rectangle-6.jpg" alt="">
-                    <img data-choice="1" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
-                    <img data-choice="2" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
-                </div>
-                <div class="grid__box" 
-                    data-sal="slide-up"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                >
-                    <img data-choice="0" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="./assets/desktop/Galeria/5/Rectangle-8.jpg" alt="">
-                    <img data-choice="1" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
-                    <img data-choice="2" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
-
-                </div>
-                <div class="grid__box" 
-                    data-sal="slide-left"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                >
-                    
-                    <img data-choice="0" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="https://images.pexels.com/photos/92657/pexels-photo-92657.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-                    <img data-choice="1" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
-                    <img data-choice="2" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
-
-                </div>
-            </div>
-            <a href="https://www.google.com" class=" center-btn  cp">
-                <div  class="">WIĘCEJ ZDJĘĆ</div>
-            </a>
-        </div>
-    </section>
-    <section id="dzieci">
-        <div class="container">
-            <h1 id="dzieci-target" class="text-center">ATRAKCJE DLA DZIECI</h1>
-            
-            <div class="grid-dzieci">
-                <div class="grid-box"
-                    data-sal="slide-up"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='0'
-                >
-                    <div class="left">
-                        <img src="./assets/desktop/ico - atrakcje dla dzieci/plac_zabaw.svg" alt="">
-                    </div>
-                    <div class="right pl-24">KRYTY <br> 
-                        PLAC ZABAW (400 m2)</div>
-                </div>
-                <div class="grid-box"
-                    data-sal="slide-up"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='200'
-                >
-                    <div class="left">
-                        <img src="./assets/desktop//ico - atrakcje dla dzieci/piaskownica.svg" alt="">
-                    </div>
-                    <div class="right pl-24">PIASKOWINICA</div>
-                </div>
-                <div class="grid-box"
-                    data-sal="slide-up"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='400'
-                >
-                    <div class="left">
-                        <img style="width: 50px;" src="./assets/desktop/ico - atrakcje dla dzieci/soccer.svg" alt="">
-                    </div>
-                    <div class="right">
-                        TRAWIASTE BOISKO
-                        DO PIŁKI NOŻNEJ
-                    </div>
-                </div>
-                <div class="grid-box"
-                    data-sal="slide-up"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='200'
-                >
-                    <div class="left">
-                        <img src="./assets/desktop/ico - atrakcje dla dzieci/zjezdzalnia.svg" alt="">
-                    </div>
-                    <div class="right pl-24">
-                        Zjeżdżalnia
-                    </div>
-                </div>
-                <div class="grid-box"
-                    data-sal="slide-up"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='400'
-                >
-                    <div class="left">
-                        <img src="./assets/desktop/ico - atrakcje dla dzieci/ping-pong.svg" alt="">
-                    </div>
-                    <div class="right pl-24">
-                        ping-pong
-                    </div>
-                </div>
-                <div class="grid-box"
-                    data-sal="slide-up"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='600'
-                >
-                    <div class="left volley">
-                        <img class="" src="./assets/desktop/ico - atrakcje dla dzieci/volley.svg" alt="">
-                    </div>
-                    <div class="right">
-                        BOISKO DO SIATKÓWKI
-                    </div>
-                </div>
-                <div class="grid-box"
-                    data-sal="slide-up"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='400'
-                >
-                    <div class="left">
-                        <img src="./assets/desktop/ico - atrakcje dla dzieci/trampolina.svg" alt="">
-                    </div>
-                    <div class="right pl-24">
-                        trampolina
-                    </div>
-                </div>
-                <div class="grid-box"
-                    data-sal="slide-up"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='600'
-                >
-                    <div class="left">
-                        <img src="./assets/desktop/ico - atrakcje dla dzieci/pilkarzyki.svg" alt="">
-                    </div>
-                    <div class="right pl-24">
-                        PIŁKARZYKI
-                    </div>
-                </div>
-                <div class="grid-box"
-                    data-sal="slide-up"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='800'
-                >
-                    <div class="left tyrolka">
-                        <img src="./assets/desktop/ico - atrakcje dla dzieci/tyrolka.svg" alt="">
-                    </div>
-                    <div class="right">
-                        BEZPIECZNA TYROLKA DO ZJAZDÓW (25M)
-                    </div>
-                </div>
-                <div class="grid-box"
-                    data-sal="slide-up"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='600'
-                >
-                    <div class="left">
-                        <img src="./assets/desktop/ico - atrakcje dla dzieci/hustawka.svg" alt="">
-                    </div>
-                    <div class="right pl-24">
-                        HUŚTAWKI
-                    </div>
-                </div>
-                <div class="grid-box"
-                    data-sal="slide-up"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='800'
-                >
-                    <div class="left">
-                        <img src="./assets/desktop/ico - atrakcje dla dzieci/basen.svg" alt="">
-                    </div>
-                    <div class="right pl-24">
-                        suchy basen <br> z kulkami 6x4m
-                    </div>
-                </div>
-                <div class="grid-box"
-                    data-sal="slide-up"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='1000'
-                >
-                    <div class="left">
-                        <img src="./assets/desktop/ico - atrakcje dla dzieci/sanki.svg" alt="">
-                    </div>
-                    <div class="right">
-                        SANKI (ZIMĄ)
-                    </div>
-                </div>
-            </div>
-            <div class="images">
-                <div class="image" 
-                    data-sal="slide-up"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='0'
-                >
-                    <img class='cp' data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="./assets/Rectangle.jpg" alt="">
-                </div>
-                <div class="image" 
-                    data-sal="slide-up"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='200'
-                >
-                    <img class='cp' data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"  src="./assets/Rectangle (2).jpg" alt="">
-                    
-                </div>
-                <div class="image" 
-                    data-sal="slide-up"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='400'
-                >
-                    <img class='cp' data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"  src="./assets/Rectangle (3).jpg" alt="">
-                </div>
-            </div>
-            <div class="c">
                 
-                <a href='#' class=" mx-auto  center-btn">
-                    <div class="text">WIĘCEJ ZDJĘĆ</div>
-                </a>
             </div>
-            
         </div>
     </section>
-    <section id="okolica" class="pb-2">
-
+    <section id="about" class='py-5'>
         <div class="container">
-            <h1 id="okolica-target"  class="text-center">ATRAKCJE W OKOLICY</h1>
-            <div class="grid-3">
-                <div class="box"
-                    data-sal="slide-right"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='0'
-                >
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h4>O nas</h4>
+                    <p>Jesteśmy agencją, która od 13 lat z sukcesami działa na łódzkim rynku nieruchomości. Funkcjonujemy głównie w sektorze nieruchomości mieszkalnych dla klientów indywidualnych oraz inwestorów. Od 8 lat dodatkowo zajmujemy się wynajmem lokali mieszkalnych. Jesteśmy nowoczesną firmą, którą wyróżnia indywidualne i uczciwe podejście do Klientów. Działamy w oparciu o wypracowane przez lata standardy. Posiadamy szeroką wiedzę oraz doświadczenie , które pomagają osiągnąć pełną satysfakcję naszych klientów , a profesjonalizm i rzetelność pozwalają nam zaufać, a także  czuć się bezpiecznie. Dzięki temu jesteśmy solidnym partnerem dla naszych Klientów. Pomnażamy ich pieniądze inwestując w nieruchomości na wynajem.
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 right">
+                    <img src="./assets/logo/logo-bw.svg" alt="" class="logo-w">
+                    <img src="./assets/m2m3/heroes/2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id='investments'>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8">
                     <div class="left">
-                        <h3>1 km</h3>
-                    </div>
-                    <div class="right">
-                        <h2 class="box__text">RABKOLAND</h2>
+                        <img class="dots" src="./assets/m2m3/dots.svg" alt="">
+                        <img src="./assets/m2m3/investments.jpg" alt="">
                     </div>
                 </div>
-                <div class="box"
-                    data-sal="slide-down"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='200'
-                >
-                    <div class="left">
-                        <h3>4 km</h3>
-                    </div>
+                <div class="col-12 col-md-4">
                     <div class="right">
-                        <h2 class="box__text">BACÓWKA “MACIEJOWA”</h2>
-                    </div>
-                </div>
-                <div class="box"
-                    data-sal="slide-left"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='0'
-                >
-                    <div class="left">
-                        <h3>1,6 km</h3>
-                    </div>
-                    <div class="right">
-                        <h2 class="box__text">BASEN ODKRYTY</h2>
-                    </div>
-                </div>
-                <div class="box"
-                    data-sal="slide-right"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='200'
-                >
-                    <div class="left">
-                        <h3>500 m</h3>
-                    </div>
-                    <div class="right">
-                        <h2 class="box__text">PARK ZDROJOWY</h2>
-                    </div>
-                </div>
-                <div class="box"
-                    data-sal="slide-up"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='400'
-                >
-                    <div class="left">
-                        <h3>11 km</h3>
-                    </div>
-                    <div class="right">
-                        <h2 class="box__text">TURBACZ</h2>
-                    </div>
-                </div>
-                <div class="box"
-                    data-sal="slide-left"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='600'
-                >
-                    <div class="left">
-                        <h3>900 m</h3>
-                    </div>
-                    <div class="right">
-                        <h2 class="box__text">MUZEUM GÓRALI I ZBÓJNIKÓW</h2>
-                    </div>
-                </div>
-                <div class="box"
-                    data-sal="slide-right"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='400'
-                >
-                    <div class="left">
-                        <h3>800 m</h3>
-                    </div>
-                    <div class="right">
-                        <h2 class="box__text">TĘŻNIA SOLANKOWA</h2>
-                    </div>
-                </div>
-                <div class="box"
-                    data-sal="slide-up"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='600'
-                >
-                    <div class="left">
-                        <h3>3,2 km</h3>
-                    </div>
-                    <div class="right">
-                        <h2 class="box__text">LUBOŃ WIELKI</h2>
-                    </div>
-                </div>
-                <div class="box"
-                    data-sal="slide-left"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='800'
-                >
-                    <div class="left">
-                        <h3>1,4 km</h3>
-                    </div>
-                    <div class="right">
-                        <h2 class="box__text" style='text-transform: uppercase;'>Szlaki nordic walking</h2>
+                        <h2 class="mb-2">Inwestycje</h2>
+                        <ul>
+                            <li>współpraca z nami umożliwia bezpieczną  inwestycje  w lokale mieszkalne oraz pozwala cieszyć się wysokim , stałym przez cały czas trwania umowy, zyskiem</li>
+                            <li>przejmujemy wszystkie obowiązki związane z najmem</li>
+                            <li>oddajemy inwestycję gotową , pod klucz, z pełnym wyposażeniem i dokumentacją i profesjonalna sesją zdjęciową</li>
+                            <li>zapewniamy profesjonalne zarządzanie wynajmowanymi lokalami</li>
+                            <li>gwarantujemy uczciwe zasady najmu</li>
+                            <li>odpowiadamy za utrzymanie lokalu i niezbędne naprawy</li>
+                            <li>ZERO RYZYKA, ponieważ to biuro Rent a Room jest najemcą, a inwestor otrzymuje należny czynsz zawsze na czas, niezależnie od wynajęcia </li>
+                        </ul>    
                     </div>
                 </div>
             </div>
-            <div class="images">
-                <div class="image"
-                    data-sal="slide-right"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='0'
-                >
-                    <img class="cp" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="./assets/Rectangle.png" alt="">
-                </div>
-                <div class="image"
-                    data-sal="slide-up"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='200'
-                >
-                    <img class="cp" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="./assets/Rectangle (1).png" alt="">
-                    
-                </div>
-                <div class="image"
-                data-sal="slide-left
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='400'
-                >
-                    <img class="cp" data-img="https://images.pexels.com/photos/1442486/pexels-photo-1442486.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" src="./assets/Rectangle (2).png" alt="">
-
-                </div>
-            </div>
-            <div class="c">
+        </div>
+    </section>
+    <section id='team'>
+        <h2>Nasz zespół</h2>
+        <div class="container">
+            <div class="row">
                 
-                <a href="#" class=" mx-auto  center-btn">
-                    <div class="text">WIĘCEJ ZDJĘĆ</div>
-                </a>
-            </div>
-            
-        </div>
-        
-
-    </section>
-    <section id="domki" class="py">
-        
-        <img  src="./assets/desktop/pattern.svg" alt="" class="patternx">
-        <img  src="./assets/desktop/pattern.svg" alt="" class="patterny">
-        <div class="container grid-domki">
-            <div class="domki-1">
-                <img  src="./assets/desktop/pattern.svg" alt="" class="pattern1">
-                <h1 id="domki-target">Domki Dobre Miejsce</h1>
-                <br>
-                <p>Idealne miejsce na wypoczynek dla rodzin z dziećmi. Zielona i spokojna okolica sprawia, że będziesz czuł się wypoczęty i w pełni zrelaksowany.</p>
-                <br>
-                <p class=" bold">Wyposażenie domku:</p>
-                    <ul class="list">
-                        <li>wygodny dla 4-8 osób,</li>
-                        <li>2 sypialnie z klimatyzacją,</li>
-                        <li>w pełni wyposażona kuchnia,</li>
-                        <li>salon z wygodnym wypoczynkiem,</li>
-                        <li>w łazience prysznic, ręczniki, suszarka do włosów,</li>
-                        <li>ułatwienia dla dzieci (łóżeczko i krzesełko)</li>
-                        <li>Wi-Fi i TV</li>
-                        <li class="bold">kryty plac zabaw</li>
-                        <li class="bold">suchy basen z kulkami</li>
-                        <li class="bold">tyrolka i boisko sportowe</li>
-                    </ul>
-            </div>
-            <div class="domki-2">
-                <img  src="./assets/desktop/pattern.svg" alt="" class="pattern">
-                <img  src="./assets/desktop/pattern.svg" alt="" class="pattern3 ">
-                <img  src="./assets/domki-dobre03@2x.jpg" alt=""
-                    data-sal="slide-left"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='0'
-                >
-            </div>
-            <div class="domki-3">
-                <img  
-                    data-sal="slide-right"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='200'
-                class="mb-24" src="./assets/domki-dobre01@2x.jpg" alt="">
-                <img  src="./assets/domki-dobre02@2x.jpg" alt=""
-                    data-sal="slide-up"
-                    data-sal-easing="easeInOutSine"
-                    data-sal-duration='500'
-                    data-sal-delay='400'
-                />
+                <div class="col-12 offset-md-2 mb-2 col-md-4 shadow d-flex flex-column align-items-center">
+                    <img src="./assets/m2m3/team/Ellipse1.jpg" alt="">
+                    <h4 class='mt-4'>John Smith</h4>
+                    <p>Super duper position</p>
+                </div>
+                <div class="col-12 col-md-4 shadow flex-column d-flex  align-items-center">
+                    <img src="./assets/m2m3/team/Ellipse2.jpg" alt="">
+                    <h4 class='mt-4'>John Smith</h4>
+                    <p>Super duper position</p>
+                </div>
             </div>
         </div>
     </section>
-    <section id="oferta" class="">
+    <section id='rent'>
         <div class="container">
-            <h1 id="oferta-target">OFERTA</h1>
-            <div class="of">
-                <p class="oferta">LAST MINUTE: Wolny termin <span class="no-wrap">26 - 29.08.2021 r.</span></p>
-                    
-            </div>
-            <div class="btns">
-                <div class="btn cp btn-left oferta6 btn--active">
-                    <div class="circle"></div>
-                    <p>DO 6 OSÓB</p>
-                    <img src="./assets/6x_ludzikow.svg" alt="">
+            <div class="row">
+                
+                <div class="col-12 col-md-6">
+                    <div class="right">
+                        <h2 class="mb-2">Wynajem</h2>
+                        <ul>
+                            <li>posiadamy szeroką ofertę mieszkań i pokoi oraz samodzielnych apartamentów</li>
+                            <li>najlepsze lokalizacje w Łodzi</li>
+                            <li>gwarantujemy 100% bezpieczeństwa umowy najmu , kaucję rozliczamy zgodnie zz zapisami w umowie</li>
+                            <li>najemca nie płaci prowizji ani nie ponosi żadnych dodatkowych opłat</li>
+                            <li>nasze oferty oparte są na autentycznych zdjęciach proponowanych lokali</li>
+                            <li>dbamy o utrzymanie właściwego standardu naszych lokali</li>
+                            <li>zapewniamy  wyremontowane mieszkania z pełnym wyposażeniem</li>
+                            <li>pokoje są samodzielne i zamykane na klucz</li>
+                            <li>w lokalach mieszkalnych z pokojami  zapewniamy wifi i internet</li>
+                            <li>nie dyskryminujemy Najemców ze względu na wiek, płeć, rasę, wyznanie czy orientację seksualną</li>
+                            <li>nie odwiedzamy wynajętego lokalu  bez potrzeby i uzgodnienia terminu z najemcą , z wyjątkiem sytuacji awaryjnych</li>
+                        </ul>    
+                    </div>
                 </div>
-                <div class="btn cp btn-right oferta8">
-                    <div class="circle"></div>
-                    <p>DO 8 OSÓB</p>
-                    <img src="./assets/8x_ludzikow.svg" alt="">
+                <div class="col-12 col-md-6">
+                    <div class="left pt-5">
+                            <img class="dots" src="./assets/m2m3/dots.svg" alt="">
+                        <div>
+                            <img  src="./assets/m2m3/rooms/DSC01125.JPG" alt="">
+                        </div>
+                        <div>
+                            <img src="./assets/m2m3/rooms/DSC04178.JPG" alt="">
+                        </div>
+                        <div>
+                            <img src="./assets/m2m3/rooms/_066_FX05805.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="./assets/m2m3/rooms/DSC07611.JPG" alt="">
+                        </div>
+                                          </div>
                 </div>
-            </div>
-            <div class="oferty">
-                <div  class="oferta-1 promocja">
-                    <h4>Boże Narodzenie</h4>
-                    <p>min. 3 noce</p>
-                    <div class="icona over-hidden"
-                    
-                    >
-                        <img src="./assets/desktop/Oferta/walizki.svg" alt=""
-                        data-sal="slide-up"
-                        data-sal-easing="easeInOutSine"
-                        data-sal-duration='500'
-                        data-sal-delay='200'
-                        >
-                    </div>
-                    <div class="cena" data-cena-1="550" data-cena-2="650">
-                        650 zł
-                    </div>
-                    <div class="btn ucase  cp btn-g-fix">Rezerwuj</div>
-                </div>
-                <div  class="oferta-2 promocja">
-                    <h4>Sylwester</h4>
-                    <p>min. 4 noce</p>
-                    <div class="icona over-hidden" >
-                        <img src="./assets/desktop/Oferta/choinka.svg" alt=""
-                        data-sal="slide-up"
-                        data-sal-easing="easeInOutSine"
-                        data-sal-duration='500'
-                        data-sal-delay='400'
-                        >
-                    </div>
-                    <div class="cena" data-cena-1="550" data-cena-2="650">
-                        750 zł
-                    </div>
-                    <div class="btn  cp  ucase btn-g-fix">Rezerwuj</div>
-                </div>
-                <div class="oferta-3 promocja">
-                    <h4>Ferie</h4>
-                    <p>min. 4 noce</p>
-                    <div class="icona over-hidden">
-                        <img src="./assets/desktop/Oferta/sylwester.svg" alt=""
-                        data-sal="slide-up"
-                        data-sal-easing="easeInOutSine"
-                        data-sal-duration='500'
-                        data-sal-delay='600'
-                        >
-                    </div>
-                    <div class="cena" data-cena-1="550" data-cena-2="650">
-                        550 zł
-                    </div>
-                    <div class="btn ucase cp btn-g-fix">Rezerwuj</div>
-                </div>
-                <div class="oferta-4 promocja">
-                    <h4>marzec</h4>
-                    <p>min. 2 noce</p>
-                    <div class="icona over-hidden">
-                        <img src="./assets/desktop/Oferta/platek_sniegu.svg" alt=""
-                        data-sal="slide-up"
-                        data-sal-easing="easeInOutSine"
-                        data-sal-duration='500'
-                        data-sal-delay='800'
-                        >
-                    </div>
-                    <div class="cena" data-cena-1="550" data-cena-2="650">
-                        490 zł
-                    </div>
-                    <div class="btn cp btn-g-fix ucase">Rezerwuj</div>
-                </div>
-            </div>
-            <div class="content">
-                Podane ceny dotyczą 1 domku za 1 dobę oraz korzystania ze wszystkich atrakcji dla dzieci. <br>
-                Nie przyjmujemy zwierząt. <br> 
-                Zapraszamy od godz. 15.00, pobyt do 10.00.
-            </div>
-            <a href="#" class="button">
-                REZERWUJ DOWOLNY TERMIN
-            </a>
-        </div>
-    </section>
-    <section id="insta">
-        <div class="insta-head">
-        <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.99 5.818A6.167 6.167 0 007.634 7.62a6.148 6.148 0 000 8.701 6.168 6.168 0 008.715 0 6.148 6.148 0 000-8.701 6.167 6.167 0 00-4.357-1.802zm0 10.149a4.007 4.007 0 01-2.83-1.171 3.994 3.994 0 012.83-6.824c1.063 0 2.08.421 2.832 1.17a3.994 3.994 0 010 5.654c-.751.75-1.77 1.17-2.831 1.17zM18.397 7.026a1.436 1.436 0 10-1.437-1.434c0 .792.644 1.434 1.437 1.434z" fill="#144D29"></path><path d="M23.364 4.133A6.126 6.126 0 0019.855.631a8.816 8.816 0 00-2.913-.56C15.658.017 15.252 0 11.997 0 8.743 0 8.326 0 7.053.072c-.995.02-1.98.208-2.91.559a6.132 6.132 0 00-3.51 3.502 8.75 8.75 0 00-.558 2.909C.017 8.322 0 8.728 0 11.979c0 3.25 0 3.663.075 4.937.02.995.208 1.977.558 2.91a6.134 6.134 0 003.51 3.502c.93.364 1.915.566 2.913.599C8.339 23.983 8.746 24 12 24c3.255 0 3.672 0 4.945-.073a8.827 8.827 0 002.913-.558 6.15 6.15 0 003.509-3.503c.35-.932.538-1.914.558-2.91.058-1.28.075-1.685.075-4.936 0-3.25 0-3.663-.075-4.937a8.746 8.746 0 00-.56-2.95zm-1.623 12.684a6.702 6.702 0 01-.415 2.246 3.972 3.972 0 01-2.281 2.277 6.653 6.653 0 01-2.226.414c-1.266.058-1.623.073-4.87.073-3.249 0-3.58 0-4.87-.073a6.621 6.621 0 01-2.225-.414 3.979 3.979 0 01-2.291-2.277 6.75 6.75 0 01-.415-2.22c-.057-1.265-.07-1.621-.07-4.863 0-3.243 0-3.574.07-4.864a6.695 6.695 0 01.415-2.244 3.977 3.977 0 012.29-2.279 6.686 6.686 0 012.225-.413c1.268-.058 1.623-.074 4.871-.074s3.581 0 4.87.074c.76.009 1.513.149 2.226.413a3.987 3.987 0 012.281 2.279 6.75 6.75 0 01.415 2.22c.057 1.266.072 1.621.072 4.864 0 3.242 0 3.59-.057 4.862h-.015v-.001z" fill="#144D29"></path></svg>
-        <h1 id="hashtag">#DomkiDobreMiejsce</h1>
-        </div>
-        <div class="container grid-3">
-            <div class="insta-box over-hidden">
-                <img src="./assets/Rectangle 18.png" alt=""
-                data-sal="flip-left"
-                data-sal-easing="easeInOutSine"
-                data-sal-duration='500'
-                data-sal-delay='0'
-                >
-            </div>
-            <div class="insta-box over-hidden">
-                <img src="./assets/Rectangle 19.png" alt=""
-                data-sal="flip-right"
-                data-sal-easing="easeInOutSine"
-                data-sal-duration='500'
-                data-sal-delay='200'
-                >
-            </div>
-            <div class="insta-box over-hidden">
-                <img src="./assets/Rectangle 20.png" alt=""
-                data-sal="flip-left"
-                data-sal-easing="easeInOutSine"
-                data-sal-duration='500'
-                data-sal-delay='400'
-                >
-            </div>
-            <div class="insta-box over-hidden">
-                <img src="./assets/Rectangle 21.png" alt=""
-                data-sal="flip-right"
-                data-sal-easing="easeInOutSine"
-                data-sal-duration='500'
-                data-sal-delay='600'
-                >
             </div>
         </div>
     </section>
-    <section id="kontakt" class="py">
+    <section id="realizacje">
+        <h4 class="text-center">Realizacje</h4>
         <div class="container">
-            <h1  id="kontakt-target" class="text-center kontakt-title">KONTAKT</h1>
-            <div class="grid-contact">
-                <div class="contact-text">
-                    <p class="bold ucase">Domki Dobre Miejsce</p>
-                    <p class="mb-8">Karolina i Bartłomiej Sarka</p>
-                    <p>ul. Bystra 18</p>
-                    <p class="mb-8">34-700 Rabka-Zdrój</p>
-                    <p>+48 534 478 005</p>
-                    <a class="contact-link mb-8" href="mailto:kontakt@domkidobremiejsce.pl">kontakt@domkidobremiejsce.pl</a>
-                    <p>Konto bankowe:</p>
-                    <p class="mb-24">14 1050 1445 1000 0097 2146 2498</p>
-                    <p>Współpracujemy blisko <br> z <span class="bold">Willą Hanusia</span> do której <br> również serdecznie <br> zapraszamy rodziny z dziećmi : <br>  <a class="contact-link" href="https://www.hanusia-rabka.pl">www.hanusia-rabka.pl</a></p>
-                </div>
-                <div class="contact-form">
-                    <form action="">
-                        <div class="form-head">
-                            <div class="fname mb-8">
-                                <label for="fname">Imię</label>
-                                <input type="text" id="fname" name="firstname">   
-                            </div>
-                            <div class="email mb-8">
-                                <label for="email">Email</label>
-                                <input type="text" id="email" name="email">
-                            </div>
-                            <div class="tel">
-                                <label for="email">Tel. (opcjonalne)</label>
-                                <input type="text" id="email" name="email">
-                            </div>
-                        </div>
-                        <div class="form-content mb-8">
-                            <label for="content">Treść</label>
-                            <textarea name="content" id="" cols="30" rows="10">
-                            </textarea>
-                        </div>
-                        <div class="checkbox">
-                            <input type="checkbox" id="checkbox" name="checkbox" value="Bike">
-                            <div class="ct">
-                                <img class="ct-x hide-checkbox" src="./assets/checkboxx.svg" alt="">
-                              
-                            </div>
-                            <label class="ml-8" for="checkbox">Oświadczam, że zapoznałem się i akceptuję treść <a href="privacy.html">Polityki Prywatności</a></label>
-                        </div>
-                        <div class="sub">
-                            <input type=" submit" value="Wyślij" class="bold submit-btn btn-fix">
+           <div class="box">
+               <img src="./assets/m2m3/rooms/DSC01125.JPG" alt="">
+            </div>
+            <div class="box">
+               <img src="./assets/m2m3/rooms/DSC01150.JPG" alt="">
+            </div>
+            <div class="box">
+                <img src="./assets/m2m3/rooms/_041_FX05770.jpg" alt="">
+           </div>
+           <div class="box">
+               <img src="./assets/m2m3/rooms/DSC04178.JPG" alt="">
+            </div>
+            <div class="box">
+               <img src="./assets/m2m3/rooms/DSC04178.JPG" alt="">
+            </div>
+            <div class="box">
+               <img src="./assets/m2m3/rooms/DSC04178.JPG" alt="">
 
-                        </div>
+           </div>
+           <div class="box">
+            <img src="./assets/m2m3/rooms/DSC04933.JPG" alt="">
+           </div>
+           <div class="box">
+               <img src="./assets/m2m3/rooms/DSC04986.JPG" alt="">
+           </div>
+           <div class="box">
+               <img src="./assets/m2m3/rooms/DSC06766.JPG" alt="">
+            </div>
+            <div class="box">
+               <img src="./assets/m2m3/rooms/DSC06766.JPG" alt="">
+               
+            </div>
+            <div class="box">
+               <img src="./assets/m2m3/rooms/DSC06766.JPG" alt="">
+               
+            </div>
+            <div class="box">
+
+                <img src="./assets/m2m3/rooms/DSC06766.JPG" alt="">
+            </div>
+        </div>
+    </section>
+    <section id='newsletter'>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <img src="./assets/m2m3/newsletter.svg" alt="">
+                </div>
+                <div class="col-12 col-md-8 right">
+                    <h4>Zapisz się na Newsletter</h4>
+                    <p>I otrzymuj najnowsze informacje</p>
+                    <form>
+                        <input type="text" class="input"  placeholder="podaj swój email">
+                        <input type="button" class="button" value="SUBSCRIBE">
                     </form>
                 </div>
             </div>
         </div>
     </section>
-    <section id="map" class="">
-        <iframe id="googlemap"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2585.641805990502!2d19.938095615666743!3d49.60450387936761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4715e021c1d8dcb9%3A0xb75a9e869c3013c8!2sBystra%2018%2C%2034-700%20Rabka-Zdr%C3%B3j!5e0!3m2!1spl!2spl!4v1605432218948!5m2!1spl!2spl" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </section>
-    <section class="d-none">
-        <div class="container rekomendacje">
-                <div class="rekomendacje-box">
-                    <p class="bold text-center">
-                        ZNALEŹĆ NAS MOŻNA:
-                    </p>
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-6">
+                    <form>
+                        
+                    </form>
                 </div>
-                <div class="rekomendacje-box r-img">
-                    <img class="mb-8" src="./assets/image 6.svg" alt="">
-                    <img class="mb-8" src="./assets/image 6.svg" alt="">
-                    <img class="mb-8" src="./assets/image 6.svg" alt="">
-                </div>
-                <div class="rekomendacje-box r-img">
-                    <img class="mb-8" src="./assets/image 6.svg" alt="">
-                    <img class="mb-8" src="./assets/image 6.svg" alt="">
-                    <img class="mb-8" src="./assets/image 6.svg" alt="">
-                    
-                </div>
-                <div class="rekomendacje-box r-img">
-                    <img class="mb-8" src="./assets/image 6.svg" alt="">
-                    <img class="mb-8" src="./assets/image 6.svg" alt="">
-                    <img class="mb-8" src="./assets/image 6.svg" alt="">
-                    
-                </div>
-                <div class="rekomendacje-box r-img">
-                    <img class="mb-8" src="./assets/image 6.svg" alt="">
-                    <img class="mb-8" src="./assets/image 6.svg" alt="">
-                    <img class="mb-8" src="./assets/image 6.svg" alt="">
-
-                </div>
-
+                <div class="col-12 col-6"></div>
+            </div>
         </div>
+    </section>
+    <section id="map">
+            <iframe id='googlemap' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19760.663643458207!2d19.423452615737904!3d51.74980663252651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471a302565ee3ab5%3A0x2693d88f76c3a1e4!2zQXVjaGFuIMWBw7NkxbogUG9sZXNpZQ!5e0!3m2!1spl!2spl!4v1611817350739!5m2!1spl!2spl" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        
     </section>
     <footer>
-        <div class="footer">
-            <img class="footer__logo d-none" src="./assets/logo/logo_footer_DOBRE-MIEJSCE.png" srcset="./assets/logo/logo_footer_DOBRE-MIEJSCE@2x.png 2x" alt="">
-            <a href="#" class="footer__col footer__left">
-                Polityka prywatności.
-            </a>
-            <div class="footer__col footer__center">
-                © 2020 DOBRE MIEJSCE. All rights reserved.
-            </div>
-            <div class="footer__col footer__right">
-                Design: <a href="mocio.co">mocio.co</a>
-            </div>
-            <div class="up" data-scrollto="#top">
-                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="28" cy="28" r="28" fill="#E4F5EB"></circle>
-                    <path class="path-up" d="M23.728 39.144C26.116 39.144 27.532 37.776 27.532 35.304V30.6H25.612V35.232C25.612 36.828 24.928 37.488 23.74 37.488C22.564 37.488 21.868 36.828 21.868 35.232V30.6H19.924V35.304C19.924 37.776 21.34 39.144 23.728 39.144ZM33.089 30.6H29.453V39H31.397V36.684H33.089C35.333 36.684 36.737 35.52 36.737 33.648C36.737 31.764 35.333 30.6 33.089 30.6ZM32.981 35.1H31.397V32.184H32.981C34.169 32.184 34.769 32.724 34.769 33.648C34.769 34.56 34.169 35.1 32.981 35.1Z" fill="#144D29"></path>
-                    <path class="up-arrow" d="M34 20L28 14L22 20" stroke="#144D29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-                    
-            </div>
-        </div>
+        <img src="./assets/logo/logo-bw.svg" alt="">
     </footer>
-    <div class="over">
-        <div class="preloader">
-            <img src="./assets/logo/logo_DOBRE-MIEJSCE.png" srcset="./assets/logo/logo_DOBRE-MIEJSCE@2x.png 2x" alt="">
-        </div>
-    </div>
-    <div class="gallery2 ">
-
-        <div class="close-gallery2">
-            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line x1="1.11074" y1="2.00046" x2="22.6274" y2="23.5171" stroke="white" stroke-width="1.57082" stroke-linecap="round" stroke-linejoin="round"/>
-                <line x1="1.50879" y1="23.5167" x2="23.0255" y2="1.99999" stroke="white" stroke-width="1.57082" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                
-        </div>
-        <div class="arrows">
-            
-            <div class="arrow arrow-left">
-                <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17 0.999999L1 17L17 33" stroke="#144D29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                                        
-            </div>
-            <div class="arrow arrow-right">
-                <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 0.999999L17 17L1 33" stroke="#144D29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-            </div>
-        </div>
-        <div class="galery2-carousel">
-              
-        </div>
-
-    </div>
-    <div id="classes" class="
-        slide
-        slide-active
-        show-gallery2 
-        show-privacy 
-        hide hide-gallery2  
-        hide-checkbox 
-        showMobileMenu 
-        go 
-        btn--active 
-        active 
-        hide-img 
-        d-none 
-        show-menu-fixed-nav 
-        menu-fixed--scrolled">
-    </div>
-    <div class="privacy">
-        <p>
-            Ta strona używa cookies. Korzystając <br> z niej wyrażasz zgodę na wykorzystywanie cookies, zgodnie z ustawieniami Twojej przeglądarki. <br> Więcej w <a href="#">Polityce Prywatności</a>
-        </p>
-        <div class="btn privacy-btn">OK, ZAMKNIJ</div>
-    </div>
 </body>
 </html>

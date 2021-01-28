@@ -1,0 +1,29 @@
+#investments{
+    min-height: 100vh;
+    
+    .container{
+        
+        .left{
+            position: relative;
+            z-index: 2;
+            .dots{
+                z-index: -1 ;
+                position: absolute;
+                left: -61px;
+                top: -24px;
+                width: 480px;
+                height: 312px;
+
+            }           
+        }
+        .right{
+            color: $primary;
+            h2{
+            }
+            ul{
+                list-style: disc;
+                line-height: 24px;
+            }
+        }
+    }
+}

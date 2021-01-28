@@ -1,60 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
-@import '../node_modules/sal.js/dist/sal.css';
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap');
 
 @import './scss/reset';
 @import './scss/variables';
-@import './scss/lightbox';
-
+@import './scss/base';
 @import './scss/mobilenav';
-@import './scss/hero-lg';
 @import './scss/fixedmenu';
-@import './scss/footer';
-@import './scss/onas';
-@import './scss/gallery';
-@import './scss/gallery2';
-@import './scss/dzieci';
-@import './scss/okolica';
-@import './scss/domki';
-@import './scss/oferta';
-@import './scss/youtube';
-@import './scss/insta';
-@import './scss/info';
-@import './scss/kontakt';
-@import './scss/rekomendacje';
-@import './scss/preloader';
 @import './scss/map';
-@import './scss/uiux';
-@import './scss/preloader';
-@import './scss/privacy';
-@import './scss/extra';
 
+@import './scss/newscss/staticmenu.scss';
+@import './scss/newscss/newsletter.scss';
+@import './scss/newscss/hero.scss';
+@import './scss/newscss/investments.scss';
+@import './scss/newscss/team.scss';
+@import './scss/newscss/rent.scss';
+@import './scss/newscss/about.scss';
+@import './scss/newscss/realizations.scss';
+
+ @import './scss/uiux';
+@import './scss/footer';
 @import 'bootstrap-4-grid';
-.base-content{
-    min-height: 200vh;
-    padding-top: 100px;
-}
-footer{
-    margin-top: 200px!important;
-}
-.test-div{
-    position: fixed ;
-    z-index: 99;
-    left: 10px;
-    bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.over-hidden{
-  overflow: hidden;  
-}
-.ucase{
-    text-transform: uppercase!important;
-}
-.show{
-    opacity: 1!important;
-}
+
+img{max-width: 100%}
 html, body {
+    font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
@@ -68,27 +36,11 @@ html, body {
 }
 body{
     position: relative;
-    .patt1{
-        width: 225px;
-        height: 249px;
-        transform: translateX(25%);
-        
-        @media (min-width: 576px) { 
-            width: 316px;
-            height: 349px;
-            transform: translateX(60%);
-         }
 
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index:-1;
-    }
-}
-
-body{
     overflow-x : hidden!important;
 }
+
+
 .no-wrap{
     white-space: nowrap;
     @media  (max-width :400px){
@@ -101,44 +53,13 @@ body{
         opacity: .9;
     }
 }
-.up{
-    position: absolute;
-    top: -28px;
-    right: 0;
-    cursor: pointer;
-    svg{
-        circle{
-            transition: all ease-in-out 1s;
-
-        }
-    }
-    &:hover{
-        svg{
-            .up-arrow{
-                transform: translateY(-3px);
-            }
-            circle{
-                fill : $primary;
-            }
-            path{
-                stroke : $secondary;
-            }
-            .path-up{
-                fill : $secondary;
-                
-            }
-        }
+section{
+    // min-height: 100vh;
+    &:nth-child(odd){
+        background:  #fff;
     }
 }
-h1{
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: 48px;
-letter-spacing: 0px;
-text-align: center;
 
-}
 .my-1{
     margin-top: 1rem;
     margin-bottom: 1rem;
