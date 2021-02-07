@@ -71,34 +71,7 @@ module.exports = {
             
             
         }),
-        // new HtmlWebpackPlugin({   
-        //     template: path.join(__dirname , './src/base.html'),
-        //     filename : "base.html",
-        //     minify: false,
-        //     chunks: ['base']
-            
-            
-        // }),
-        // new HtmlWebpackPlugin({
-        //     template: path.join(__dirname , './src/gallery.html'),
-        //     filename : "gallery.html",
-        //     minify: false,
-        //     chunks: ['gallery']
-
-        // }),
-        // new HtmlWebpackPlugin({
-        //     template: path.join(__dirname , './src/privacy.html'),
-        //     filename : "privacy.html",
-        //     minify: false,
-        //     chunks: ['privacy']
-
-        // }),
-        // new HtmlWebpackPlugin({
-        //     template: path.join(__dirname , './src/page.html'),
-        //     filename : "page.html",
-        //     minify: false,
-        //     chunks: ['page']
-        // }),
+        
         new miniCssExtractPlugin({
             filename : "[name].css",
             chunkFilename : "[id].css"

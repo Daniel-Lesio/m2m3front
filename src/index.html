@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 <body>
     <div class="indicator-container">
@@ -14,10 +15,11 @@
             <a href="#" class="brand">
                 <img src="./assets/logo/logo-color.svg" alt="">
             </a>
-            <ul>
-                <li data-scroll="about">O nas</li>
+            <ul class="d-none d-md-flex">
+                <li data-scroll="about" class="no-wrap">O nas</li>
                 <li data-scroll="investments" >Inwestycje</li>
                 <li data-scroll="rent">Wynajem</li>
+                <li data-scroll="sales">Sprzedaż</li>
                 <li data-scroll="realizacje" >Realizacje</li>
                 <li data-scroll="hero">Home</li>
             </ul>
@@ -36,10 +38,11 @@
             <a href="#" class="brand">
                 <img src="./assets/logo/logo-color.svg" alt="">
             </a>
-            <ul>
-                <li data-scroll="about">O nas</li>
+            <ul class="d-none d-md-flex">
+                <li data-scroll="about" class="no-wrap">O nas</li>
                 <li data-scroll="investments" >Inwestycje</li>
                 <li data-scroll="rent">Wynajem</li>
+                <li data-scroll="sales">Sprzedaż</li>
                 <li data-scroll="realizacje" >Realizacje</li>
                 <li data-scroll="hero">Home</li>
             </ul>
@@ -63,14 +66,14 @@
                         <h1>Mieszkania w Łodzi...</h1>
                         <p>Szukasz mieszkania, pokoju ? A może chcesz zainwestować w mieszkania na wynajem. Świetnie trafiłeś, chętnie ci w tym pomożemy</p>
                         <div class="btns">
-                            <div class="btn btn-two">
-                                <span>Usługi</span>
+                            <div class="btn btn-two" data-scroll="realizacje">
+                                <span>Realizacje</span>
                                 <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10.9673 0.188738L6.00057 5.45056L1.03381 0.188105C0.797007 -0.0627017 0.413951 -0.0627017 0.177151 0.188105C-0.0590504 0.438912 -0.0590504 0.845259 0.177151 1.09607L5.57197 6.8119C5.80817 7.0627 6.19183 7.0627 6.42803 6.8119L11.8228 1.09612C12.059 0.845312 12.059 0.438331 11.8228 0.187525C11.5872 -0.0620682 11.2035 -0.0620683 10.9673 0.188738Z" fill="#972355"/>
                                 </svg>                            
                             </div>
                             <span style='width : 25px'></span>
-                            <div class="btn btn-one">
+                            <div class="btn btn-one" data-scroll="map">
                                 <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M21 5V4L18 6L15 4V5L18 7L21 5ZM22 0H2C0.9 0 0 0.9 0 2V16C0 17.1 0.9 18 2 18H22C23.1 18 23.99 17.1 23.99 16L24 2C24 0.9 23.1 0 22 0ZM8 3C9.66 3 11 4.34 11 6C11 7.66 9.66 9 8 9C6.34 9 5 7.66 5 6C5 4.34 6.34 3 8 3ZM14 15H2V14C2 12 6 10.9 8 10.9C10 10.9 14 12 14 14V15ZM22 9H14V3H22V9Z" fill="white"/>
                                 </svg>
@@ -93,7 +96,7 @@
                 </div>
                 <div class="col-12 col-md-6 right">
                     <img src="./assets/logo/logo-bw.svg" alt="" class="logo-w">
-                    <img src="./assets/m2m3/heroes/2.jpg" alt="">
+                    <img src="./assets/3.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -124,25 +127,35 @@
             </div>
         </div>
     </section>
-    <section id='team'>
+    <section id="team">
         <h2>Nasz zespół</h2>
         <div class="container">
             <div class="row">
                 
-                <div class="col-12 offset-md-2 mb-2 col-md-4 shadow d-flex flex-column align-items-center">
+                <div class=" col-12 col-sm-6  mb-2 col-md-3 shadow d-flex flex-column align-items-center">
                     <img src="./assets/m2m3/team/Ellipse1.jpg" alt="">
-                    <h4 class='mt-4'>John Smith</h4>
-                    <p>Super duper position</p>
+                    <h4 class='mt-4 text-center'>John Smith</h4>
+                    <p class="text-center">Super duper position</p>
                 </div>
-                <div class="col-12 col-md-4 shadow flex-column d-flex  align-items-center">
+                <div class="col-12 col-sm-6 col-md-3 shadow flex-column d-flex  align-items-center">
                     <img src="./assets/m2m3/team/Ellipse2.jpg" alt="">
-                    <h4 class='mt-4'>John Smith</h4>
-                    <p>Super duper position</p>
+                    <h4 class='mt-4 text-center'>John Smith</h4>
+                    <p class="text-center">Super duper position</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 shadow flex-column d-flex  align-items-center">
+                    <img src="./assets/m2m3/team/Ellipse2.jpg" alt="">
+                    <h4 class='mt-4 text-center'>John Smith</h4>
+                    <p class="text-center">Super duper position</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 shadow flex-column d-flex  align-items-center">
+                    <img src="./assets/m2m3/team/Ellipse2.jpg" alt="">
+                    <h4 class='mt-4 text-center'>John Smith</h4>
+                    <p class="text-center">Super duper position</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id='rent'>
+    <section id="rent" class="grid"> 
         <div class="container">
             <div class="row">
                 
@@ -184,51 +197,49 @@
             </div>
         </div>
     </section>
-    <section id="realizacje">
-        <h4 class="text-center">Realizacje</h4>
+    <section id="sales" class="grid"> 
         <div class="container">
-           <div class="box">
-               <img src="./assets/m2m3/rooms/DSC01125.JPG" alt="">
-            </div>
-            <div class="box">
-               <img src="./assets/m2m3/rooms/DSC01150.JPG" alt="">
-            </div>
-            <div class="box">
-                <img src="./assets/m2m3/rooms/_041_FX05770.jpg" alt="">
-           </div>
-           <div class="box">
-               <img src="./assets/m2m3/rooms/DSC04178.JPG" alt="">
-            </div>
-            <div class="box">
-               <img src="./assets/m2m3/rooms/DSC04178.JPG" alt="">
-            </div>
-            <div class="box">
-               <img src="./assets/m2m3/rooms/DSC04178.JPG" alt="">
-
-           </div>
-           <div class="box">
-            <img src="./assets/m2m3/rooms/DSC04933.JPG" alt="">
-           </div>
-           <div class="box">
-               <img src="./assets/m2m3/rooms/DSC04986.JPG" alt="">
-           </div>
-           <div class="box">
-               <img src="./assets/m2m3/rooms/DSC06766.JPG" alt="">
-            </div>
-            <div class="box">
-               <img src="./assets/m2m3/rooms/DSC06766.JPG" alt="">
-               
-            </div>
-            <div class="box">
-               <img src="./assets/m2m3/rooms/DSC06766.JPG" alt="">
-               
-            </div>
-            <div class="box">
-
-                <img src="./assets/m2m3/rooms/DSC06766.JPG" alt="">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="right">
+                        <h2 class="mb-2">Sprzedaż</h2>
+                        <ul>
+                            <li>oferujemy najbardziej poszukiwane lokalizacje</li>
+                            <li>proponujemy kupno mieszkania bezpośrednio od naszej firmy</li>
+                            <li>inwestorem jest podmiot działający od 2006r</li>
+                            <li>posiadamy wieloletnie doświadczenie na łódzkim  rynku nieruchomości</li>
+                            <li>mamy rekomendacje  klientów </li>
+                            <li>zapewniamy  bezpieczeństwo transakcji</li>
+                            <li>świadczymy pomoc w kwestiach podatkowych i prawnych  związanych z obrotem nieruchomościami</li>
+                            <li>istnieje możliwość rozliczenia w postaci zamiany nieruchomości</li>
+                            <li>wnioskujemy o niższe  koszty notarialne, szybką i przyjazną obsługę we współpracującej z nami kancelarii notarialnej</li>
+                            <li>gwarantujemy prace remontowe prowadzone  zgodnie ze sztuką budowlaną, potwierdzone wystawioną fakturą VAT wraz z gwarancją na wykonane usługi</li>
+                            <li>umożliwiamy wykończenie  wnętrz wg życzenia klienta</li>
+                            <li>załatwiamy wszelkie procedury związane z transakcją</li>
+                        </ul>    
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="left pt-5">
+                            <img class="dots" src="./assets/m2m3/dots.svg" alt="">
+                        <div>
+                            <img  src="./assets/m2m3/rooms/DSC01125.JPG" alt="">
+                        </div>
+                        <div>
+                            <img src="./assets/m2m3/rooms/DSC04178.JPG" alt="">
+                        </div>
+                        <div>
+                            <img src="./assets/m2m3/rooms/_066_FX05805.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="./assets/m2m3/rooms/DSC07611.JPG" alt="">
+                        </div>
+                                          </div>
+                </div>
             </div>
         </div>
     </section>
+    
     <section id='newsletter'>
         <div class="container">
             <div class="row">
@@ -242,6 +253,91 @@
                         <input type="text" class="input"  placeholder="podaj swój email">
                         <input type="button" class="button" value="SUBSCRIBE">
                     </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="realizacje">
+        <div class="container">
+            <h1 class="text-center my-5" >Nasze realizacje</h1>
+
+            <div class="row my-5">
+                <div class="col-12 col-md-6">
+                    <div class="swiper-container2">
+                        <div class="swiper-button-prev prev2"></div>
+                        <div class="swiper-button-next next2"></div>
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/m2m3/Rectangle 11.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/m2m3/5.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/m2m3/6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="col-12 col-md-6 color-primary">
+                    <h3>Sprzedaż</h3>
+                    <p>
+                        W swojej ofercie mamy mieszkania po gruntownym remoncie, modernizacji i adaptacji , tak aby spełniały Państwa oczekiwania. Proponujemy kawalerki w bloku lub kamienicy, mieszkania dwu i trzypokojowe nowocześnie zaprojektowane.
+                    </p>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-12 col-md-6">
+                    <div class="swiper-container2">
+                        <div class="swiper-button-prev prev2"></div>
+                        <div class="swiper-button-next next2"></div>
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/m2m3/Rectangle 11.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/m2m3/5.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/m2m3/6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="col-12 col-md-6 color-primary">
+                    <h3>Inwestycje</h3>
+                    <p>Inwestorom proponujemy zakup lokalu mieszkalnego przeznaczonego do wynajmu w trzech wariantach : wynajmu na pokoje, apartamenty oraz kawalerki. Zajmujemy się całościowo obsługą wynajmu.</p>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-12 col-md-6">
+                    <div class="swiper-container2">
+                        <div class="swiper-button-prev prev2"></div>
+                        <div class="swiper-button-next next2"></div>
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/m2m3/Rectangle 11.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/m2m3/5.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/m2m3/6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="col-12 col-md-6 color-primary">
+                    <h3>Wynajem</h3>
+                    <ul style="line-height : 24px">
+                        <li>samodzielne pokoje ze wspólna kuchnią oraz łazienką</li>
+                        <li> pokoje oraz kuchnia są w pełni wyposażone</li>
+                        <li>samodzielne studia/apartamenty z własną łazienką i aneksem kuchennym, komfortowe, w pełni wyposażone, w najdogodniejszych lokalizacjach</li>
+                        <li>samodzielne mieszkania</li>
+                    </ul>
                 </div>
             </div>
         </div>

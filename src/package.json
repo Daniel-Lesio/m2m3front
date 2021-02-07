@@ -1,0 +1,23 @@
+{
+  "name": "m2m3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniel-Lesio/m2m3.git#readme"
+  },
+  "author": "daniel-lesio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daniel-Lesio/m2m3/issues"
+  },
+  "homepage": "https://github.com/Daniel-Lesio/m2m3/tree/readme#readme",
+  "dependencies": {
+    "bootstrap-4-grid": "^3.4.0",
+    "jump.js": "^1.0.2"
+  }
+}

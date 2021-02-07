@@ -1,14 +1,18 @@
 #hero{
-    min-height: 100vh;
-    background: url('assets/m2m3/heroes/6.jpg')center no-repeat;
+    // margin-top: -80px;
+    opacity: 1;
+
+    min-height: calc(100vh - 80px);
+    background: url('assets/Heroes/h1.jpg')center no-repeat;
+    z-index: -1;
     background-size: cover;
     margin-bottom: 100px;
-    transform: translateY(-10px);    
+        
     .container{
         display: flex;
     }
     .hero-box{
-        padding-top: 160px;
+        padding-top: 100px;
         h1{
             padding-left: 24px;
             line-height: 70px;
